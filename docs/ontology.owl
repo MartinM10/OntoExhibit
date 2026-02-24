@@ -8,36 +8,53 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:schema="https://schema.org/">
-    <owl:Ontology rdf:about="https://w3id.org/OntoExhibit">
-        <owl:versionIRI rdf:resource="https://w3id.org/OntoExhibit#1.1.0"/>
-        <terms:abstract>OntoExhibit is an innovative ontology that accurately and extensively models museums, exhibitions, and artworks. Designed to capture the complexity and richness of these cultural elements, OntoExhibit provides a semantic framework that enables the organization and coherent linking of information.</terms:abstract>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-11-10</terms:created>
-        <terms:creator>Maria del Mar Roldán García</terms:creator>
-        <terms:creator>Martín Jerónimo Salvachúa</terms:creator>
-        <terms:creator>María Luisa Díez Platas</terms:creator>
-        <terms:creator>Nuria Rodriguez Ortega</terms:creator>
-        <terms:description>OntoExhibit consists of an OWL 2 (Ontology Web Language) ontology designed to facilitate the adoption of FAIR (Findable, Accessible, Interoperable, and Reusable) principles in managing information associated with the art exhibition domain, as a fundamental mean to guarantee its standardization, interoperability, reusability, and the extraction of new and strategic knowledge within this cultural sector. Within this context, OntoExhibit is conceived as a comprehensive ontology designed to address the needs and requirements of a range of target scenarios: 1. art historians and researchers engaged in exhibition and curatorial studies; 2. cultural heritage professionals involved in recording and documenting art exhibitions; 3. museum and independent curators; 4. gallery owners; and 5. CCI and tourism stakeholders.
-
-OntoExhibit is the result of transforming and extending the conceptual model underlying Expofinder, a relational database developed within the Exhibitium project (Rodríguez-Ortega, Cruces-Rodríguez, 2019). The Expofinder model adheres to the traditional conception of the exhibition field: a network made up of the relationships that exhibitions establish among heterogeneous actors (artists, curators, institutions, etc.) and the cultural objects displayed. This model served as the starting point for the design and construction of the OntoExhibit model, which is an enhanced version born out of a refined conceptualization of the exhibition field. This development was informed by extensive conversations and dialogues with a diverse community of researchers, curators, gallery owners, and art critics.
+     xmlns:vocab="https://w3id.org/widoco/vocab#"
+     xmlns:schema="https://schema.org/"
+     xmlns:schema1="http://schema.org/">
+    <owl:Ontology rdf:about="https://w3id.org/OntoExhibit#">
+        <owl:versionIRI rdf:resource="https://w3id.org/OntoExhibit/1.1.0"/>
+        <terms:abstract xml:lang="en">OntoExhibit is the result of transforming and extending the conceptual model underlying Expofinder, a relational database developed within the Exhibitium project (Rodríguez-Ortega, Cruces-Rodríguez, 2019). The Expofinder model adheres to the traditional conception of the exhibition field: a network made up of the relationships that exhibitions establish among heterogeneous actors (artists, curators, institutions, etc.) and the cultural objects displayed. This model served as the starting point for the design and construction of the OntoExhibit model, which is an enhanced version born out of a refined conceptualization of the exhibition field. This development was informed by extensive conversations and dialogues with a diverse community of researchers, curators, gallery owners, and art critics.
 
 OntoExhibit interprets the art exhibition domain as a complex cultural ecosystem, comprising a diverse array of actors (including both human and non-human entities) intertwined through discursive and social practices. These practices create a complex web of semantic layers that imbue the domain with symbolic values. OntoExhibit thus approaches the phenomenon of art exhibitions in its double condition: as a distinct discursive, social, and cultural production emerging from a set of practices and interactions, and as an active producer/generator of discourses and public spheres. These public spheres, in turn, are shaped by discursive and social practices that also convey meanings and generate symbolic value, which can influence subsequent exhibitions. This creates a dynamic and continuous cycle of cultural impact and significance.
 
-According to this conceptualization, OntoExhibit aims to deepen our understanding of the structures, networks, and behavioral patterns within this cultural ecosystem; unravel its social, discursive, and semantic intricacies; and enhance our insights into the engagement of individuals and communities with cultural heritage through exhibitions. To this end, OntoExhibit integrates traditional modeling approaches of the art exhibition domain with new extensions.</terms:description>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-16</terms:modified>
-        <terms:references>Rodríguez Ortega, Nuria y Cruces Rodríguez, Antonio. «Development of Technological Ecosystems for Cultural Analysis: The Case of Expofinder System and Art Exhibitions», Digital Scholarship in the Humanities, 34, n. 2, pp. 423-448.  fqy018, Oxford University Press, 2019, ISSN: 2055-768X (online), DOI: https://doi.org/10.1093/llc/fqy018</terms:references>
-        <terms:references>Rodríguez Ortega, Nuria. «Contours of Knowledge: Epistemological Implications of Semantic Models in the Representation of the Art Exhibition Domain through the Lens of the OntoExhibit Ontology», Život umjetnosti, special issue (Digital Art History) (in press, 2024).</terms:references>
-        <terms:rights>https://opensource.org/licenses/MIT</terms:rights>
-        <terms:title>OntoExhibit</terms:title>
+According to this conceptualization, OntoExhibit aims to deepen our understanding of the structures, networks, and behavioral patterns within this cultural ecosystem; unravel its social, discursive, and semantic intricacies; and enhance our insights into the engagement of individuals and communities with cultural heritage through exhibitions. To this end, OntoExhibit integrates traditional modeling approaches of the art exhibition domain with new extensions.</terms:abstract>
+        <terms:bibliographicCitation>Nuria Rodríguez Ortega, María del Mar Roldán García, Martín Jerónimo Salvachúa, María Luisa Díez Platas. OntoExhibit version 1.1.0. URL: https://w3id.org/OntoExhibit</terms:bibliographicCitation>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-11</terms:created>
+        <terms:creator rdf:resource="https://github.com/MartinM10"/>
+        <terms:creator>Maria del Mar Roldán García</terms:creator>
+        <terms:creator>María Luisa Díez Platas</terms:creator>
+        <terms:creator>Nuria Rodriguez Ortega</terms:creator>
+        <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://creativecommons.org/licenses/by/4.0/</terms:license>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-31</terms:modified>
+        <terms:references>Rodríguez Ortega, Nuria &amp; Cruces Rodríguez, Antonio (2019). “Development of Technological Ecosystems for Cultural Analysis: The Case of Expofinder System and Art Exhibitions”. Digital Scholarship in the Humanities, 34(2), 423–448. https://doi.org/10.1093/llc/fqy018</terms:references>
+        <terms:references>Rodríguez Ortega, Nuria; Roldán García, M.ª Mar; Díez Platas, M.ª Luisa; Salvachúa, Martín (2023). “OntoExhibit: una ontología para el modelado del ámbito de las exposiciones artísticas y sus expansiones semántico-discursivas”. VI Congreso de la Sociedad Internacional de Humanidades Digitales Hispánicas (HDH), Encuentros y Transformaciones, UNIR, Logroño, 18–20 October 2023.</terms:references>
+        <terms:references>Rodríguez Ortega, Nuria; Roldán García, M.ª Mar; Díez Platas, M.ª Luisa; Salvachúa, Martín (2024). “OntoExhibit: An Ontology for Modeling the Field of Art Exhibitions and Its Semantic-Discursive Dimension”. In: Karajgikar, Jajwalya; Janco, Andrew; Otis, Jessica (eds.), Digital Humanities 2024: Book of Abstracts, VA 2024. https://doi.org/10.5281/zenodo.13761079</terms:references>
+        <terms:references>Rodríguez-Ortega, Nuria (2024). “Contours of Knowledge: Epistemological Implications of Semantic Models in the Representation of the Art Exhibition Domain through the Lens of the OntoExhibit Ontology”. Život umjetnosti, vol. 114, no. 1, pp. 122–147. https://doi.org/10.31664/zu.2024.114.06</terms:references>
+        <terms:references>Rodríguez-Ortega, Nuria; Díez-Platas, M.ª Luisa; Ortiz Tello, María; Lumbreras Fernández, Ángel (2025). “Bridging Discourse: Integrating Text Catalogs and Art Reviews into Knowledge Graphs for Enriched Exhibition Analysis”. ADHO International Conference Digital Humanities 2025: Accessibility and Citizenship, 14–18 July 2025, Universidade Nova de Lisboa.</terms:references>
+        <terms:references>Rodríguez-Ortega, Nuria; Romero Ferrón, Bárbara (2025). “Cartografías entrelazadas: modelar la transnacionalidad en el ecosistema expositivo español (2000–2023) mediante análisis de redes”. VI Congreso de la HDH, Ad Cognoscendum, agendum vel operandum, 22–24 October 2025, Universidad de Valencia. https://doi.org/10.7203/PUV-OA-9788491338307</terms:references>
+        <terms:references>Rodríguez-Ortega, Nuria; Romero Ferrón, Bárbara; Salvachúa, Martín (2025). “Empowering Peripheral Voices: Data Sovereignty and Low-Tech Solutions for Art Galleries Data Preservation”. ADHO International Conference Digital Humanities 2025: Accessibility and Citizenship, 14–18 July 2025, Universidade Nova de Lisboa.</terms:references>
+        <terms:references>Romero Ferrón, Bárbara; Rodríguez-Ortega, Nuria (2025). “Ni son todas las que están, ni están todas las que son: Estructuras, márgenes y mujeres artistas en el sistema expositivo andaluz”. VI Congreso de la HDH, Ad Cognoscendum, agendum vel operandum, 22–24 October 2025, Universidad de Valencia. https://doi.org/10.7203/PUV-OA-9788491338307</terms:references>
+        <terms:title xml:lang="en">OntoExhibit</terms:title>
         <vann:preferredNamespacePrefix>oex</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/OntoExhibit#</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="en">OntoExhibit consists of an OWL 2 (Ontology Web Language) ontology designed to facilitate the adoption of FAIR (Findable, Accessible, Interoperable, and Reusable) principles in managing information associated with the art exhibition domain, as a fundamental mean to guarantee its standardization, interoperability, reusability, and the extraction of new and strategic knowledge within this cultural sector. Within this context, OntoExhibit is conceived as a comprehensive ontology designed to address the needs and requirements of a range of target scenarios: 1. art historians and researchers engaged in exhibition and curatorial studies; 2. cultural heritage professionals involved in recording and documenting art exhibitions; 3. museum and independent curators; 4. gallery owners; and 5. CCI and tourism stakeholders.</rdfs:comment>
         <owl:versionInfo>1.1.0</owl:versionInfo>
-        <schema:codeRepository rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/Complexhibit-Project</schema:codeRepository>
+        <schema:codeRepository rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/iArtHis-Lab/OntoExhibit</schema:codeRepository>
         <schema:funder rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://ciencia.sede.gob.es/</schema:funder>
         <schema:funder rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.juntadeandalucia.es/</schema:funder>
         <schema:funding rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://andalexproject.iarthislab.eu/</schema:funding>
-        <schema:funding rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://complexhibit.eu/inicio/</schema:funding>
-        <schema:logo rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/Complexhibit-Project/.github/refs/heads/main/resources/logo_ontoexhibit.png</schema:logo>
+        <schema:funding rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://complexhibit.eu/</schema:funding>
+        <schema:logo rdf:resource="https://raw.githubusercontent.com/iArtHis-Lab/.github/refs/heads/main/resources/logo_ontoexhibit.png"/>
+        <vocab:introduction xml:lang="en">OntoExhibit is being aligned with reference ontologies, specifically with CIDOC-CRM (7.2.1.) and FRBRoo (3.0). These ontologies have informed the definition of some of the classes and properties, while new classes and properties are being created to respond to the requirements of the art exhibition domain as defined in section 1. This is not a CIDOC-CRM specification as such, as only a few entities and properties have been adopted to facilitate alignment. OntoExhibit presents a conceptual structure and a hierarchy of classes different from that of CIDOC-CRM, which is better suited to the current configuration of the art exhibition domain and to the conceptualization of this phenomenon as a complex cultural ecosystem (Rodríguez Ortega, in press).
+
+This research has been funded by the Ministerio de Ciencia e Innovación (Spanish Government), grant number PID2021-125037NB-I00, and by the Junta de Andalucía, grant numbers PY20_00508, UMA20-FEDERJA-126.
+
+Referenced ontologies
+- frbroo: https://www.iflastandards.info/fr/frbr/frbroo.html
+- cidoc-crm: http://www.cidoc-crm.org/cidoc-crm/
+
+Referenced ontology design patterns
+- agentRole: http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl</vocab:introduction>
     </owl:Ontology>
     
 
@@ -58,6 +75,13 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
     
 
 
@@ -86,6 +110,13 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
@@ -131,6 +162,20 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
     
 
 
+    <!-- http://schema.org/image -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/image"/>
+    
+
+
+    <!-- http://schema.org/logo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/logo"/>
+    
+
+
     <!-- http://www.w3.org/2002/07/owl#equivalentClass -->
 
 
@@ -173,10 +218,24 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
     
 
 
+    <!-- https://schema.org/image -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/image"/>
+    
+
+
     <!-- https://schema.org/logo -->
 
 
     <owl:AnnotationProperty rdf:about="https://schema.org/logo"/>
+    
+
+
+    <!-- https://w3id.org/widoco/vocab#introduction -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#introduction"/>
     
 
 
@@ -208,17 +267,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
      -->
 
 
-    
-
-
-    <!-- https://w3id.org/OntoExhibit#CollaboratesWith -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#CollaboratesWith">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Actant"/>
-        <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Actant"/>
-    </owl:ObjectProperty>
     
 
 
@@ -323,6 +371,17 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
         <owl:inverseOf rdf:resource="https://w3id.org/OntoExhibit#propositionAssignedBy"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Propositional_Entity"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Proposition_Assignment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OntoExhibit#collaboratesWith -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#collaboratesWith">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Actant"/>
+        <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Actant"/>
     </owl:ObjectProperty>
     
 
@@ -433,7 +492,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#executivePositionHeldsBy">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/OntoExhibit#executivePositionHeldsIn"/>
         <rdfs:domain rdf:resource="https://www.iflastandards.info/fr/frbr/frbroo#F11_Corporate_Body"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Executive_Position"/>
@@ -445,7 +503,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#executivePositionHeldsIn">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Executive_Position"/>
         <rdfs:range rdf:resource="https://www.iflastandards.info/fr/frbr/frbroo#F11_Corporate_Body"/>
     </owl:ObjectProperty>
@@ -641,7 +698,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#hasCelebratedFigure">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/OntoExhibit#isCelebratedFigureOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Conmemorative_Event"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Human_Actant"/>
@@ -656,6 +712,18 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
         <owl:inverseOf rdf:resource="https://w3id.org/OntoExhibit#isCelebratedThemeOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Conmemorative_Event"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Theme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OntoExhibit#hasCity -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#hasCity">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/OntoExhibit#hasSubTerritory"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/OntoExhibit#isCityOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#State"/>
+        <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#City"/>
     </owl:ObjectProperty>
     
 
@@ -1089,7 +1157,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#hasExecutivePositionTimeRange">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/OntoExhibit#isExecutivePositionTimeRangeOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Executive_Position"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Time_Range"/>
@@ -1254,7 +1321,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#hasHeadquartersTimeRange">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/OntoExhibit#isHeadquartersTimeRangeOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Headquarter"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Time_Range"/>
@@ -1511,7 +1577,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#hasParentDigitalPlace">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/OntoExhibit#isParentDigitalPlaceOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Digital_Site"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Digital_Place"/>
@@ -1523,10 +1588,20 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#hasParentOrganization">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/OntoExhibit#isParentOrganzationOf"/>
         <rdfs:domain rdf:resource="https://www.iflastandards.info/fr/frbr/frbroo#F11_Corporate_Body"/>
         <rdfs:range rdf:resource="https://www.iflastandards.info/fr/frbr/frbroo#F11_Corporate_Body"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OntoExhibit#hasParentTerritory -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#hasParentTerritory">
+        <owl:inverseOf rdf:resource="https://w3id.org/OntoExhibit#hasSubTerritory"/>
+        <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Territorial_Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Territorial_Entity"/>
     </owl:ObjectProperty>
     
 
@@ -1546,7 +1621,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#hasPlaceForActivity">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/OntoExhibit#isPlaceForActivityOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Place_Of_Activity"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Territorial_Entity"/>
@@ -1777,7 +1851,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#hasPlaceOfResidency">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/OntoExhibit#isPlaceOfResidencyOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Place_Of_Residence"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Territorial_Entity"/>
@@ -1864,7 +1937,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#hasPropositionAssignment">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Proposition_Assignment"/>
     </owl:ObjectProperty>
@@ -1978,7 +2050,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#hasResidencyTimeRange">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/OntoExhibit#isResidencyTimeRangeOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Place_Of_Residence"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Time_Range"/>
@@ -2001,7 +2072,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#hasSecondaryCenter">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/OntoExhibit#isSecondaryCenterOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Collective_Human_Actant"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Secondary_Center"/>
@@ -2013,7 +2083,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#hasSecondaryCenterRangeTime">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/OntoExhibit#isSecondaryCenterTimeRangeOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Secondary_Center"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Time_Range"/>
@@ -2025,7 +2094,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#hasSiteForSecondaryCenter">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/OntoExhibit#isSiteForSecondaryCenterOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Secondary_Center"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Physical_Site"/>
@@ -2066,7 +2134,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#hasSpatialUnit">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/OntoExhibit#isSpatialUnitOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Physical_Site"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Spatial_Unit"/>
@@ -2093,6 +2160,25 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Time_Range"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Date"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OntoExhibit#hasState -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#hasState">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/OntoExhibit#hasSubTerritory"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/OntoExhibit#isStateOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Country"/>
+        <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OntoExhibit#hasSubTerritory -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#hasSubTerritory"/>
     
 
 
@@ -2199,7 +2285,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#holdsExecutivePosition">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/OntoExhibit#isExecutivePositionOf"/>
         <rdfs:domain rdf:resource="https://cidoc-crm.org/cidoc-crm/7.1.1/E21_Person"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Executive_Position"/>
@@ -2211,7 +2296,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#hostsOperationOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/OntoExhibit#operatesIn"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Techno-Place"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Techno-Actant"/>
@@ -2447,10 +2531,19 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#isCelebratedThrough">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/OntoExhibit#serveAsCelebrationOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Conmemorative_Event"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Planned_Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OntoExhibit#isCityOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#isCityOf">
+        <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#City"/>
+        <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#State"/>
     </owl:ObjectProperty>
     
 
@@ -2848,7 +2941,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#isDiscipleOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/OntoExhibit#isMasterOf"/>
         <rdfs:domain rdf:resource="https://cidoc-crm.org/cidoc-crm/7.1.1/E21_Person"/>
         <rdfs:range rdf:resource="https://cidoc-crm.org/cidoc-crm/7.1.1/E21_Person"/>
@@ -2919,7 +3011,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#isExecutivePositionOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Executive_Position"/>
         <rdfs:range rdf:resource="https://cidoc-crm.org/cidoc-crm/7.1.1/E21_Person"/>
     </owl:ObjectProperty>
@@ -2930,7 +3021,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#isExecutivePositionTimeRangeOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Time_Range"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Executive_Position"/>
     </owl:ObjectProperty>
@@ -3119,7 +3209,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#isHeadquartersTimeRangeOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Time_Range"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Headquarter"/>
     </owl:ObjectProperty>
@@ -3227,7 +3316,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#isLocationTimeRangeOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Time_Range"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Location"/>
     </owl:ObjectProperty>
@@ -3270,7 +3358,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#isMasterOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://cidoc-crm.org/cidoc-crm/7.1.1/E21_Person"/>
         <rdfs:range rdf:resource="https://cidoc-crm.org/cidoc-crm/7.1.1/E21_Person"/>
     </owl:ObjectProperty>
@@ -3318,7 +3405,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#isMembershipTimeRangeOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Time_Range"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Membership"/>
     </owl:ObjectProperty>
@@ -3418,7 +3504,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#isParentDigitalPlaceOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Digital_Place"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Digital_Site"/>
     </owl:ObjectProperty>
@@ -3429,7 +3514,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#isParentOrganzationOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://www.iflastandards.info/fr/frbr/frbroo#F11_Corporate_Body"/>
         <rdfs:range rdf:resource="https://www.iflastandards.info/fr/frbr/frbroo#F11_Corporate_Body"/>
     </owl:ObjectProperty>
@@ -3450,7 +3534,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#isPlaceForActivityOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Territorial_Entity"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Place_Of_Activity"/>
     </owl:ObjectProperty>
@@ -3489,7 +3572,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#isPlaceOfActivityTimeRangeOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Time_Range"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Place_Of_Activity"/>
     </owl:ObjectProperty>
@@ -3685,7 +3767,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#isPlaceOfResidencyOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Territorial_Entity"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Place_Of_Residence"/>
     </owl:ObjectProperty>
@@ -3696,7 +3777,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#isPreliminaryIdeasOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Preliminary_Ideas"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Conceptual_Work"/>
     </owl:ObjectProperty>
@@ -3874,7 +3954,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#isRepresentationTimeRangeOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Time_Range"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Representation"/>
     </owl:ObjectProperty>
@@ -3903,7 +3982,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#isResidencyOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Place_Of_Residence"/>
         <rdfs:range rdf:resource="https://cidoc-crm.org/cidoc-crm/7.1.1/E21_Person"/>
     </owl:ObjectProperty>
@@ -3914,7 +3992,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#isResidencyTimeRangeOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Time_Range"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Place_Of_Residence"/>
     </owl:ObjectProperty>
@@ -3935,7 +4012,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#isSecondaryCenterOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Physical_Site"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Collective_Human_Actant"/>
     </owl:ObjectProperty>
@@ -3946,7 +4022,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#isSecondaryCenterTimeRangeOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Time_Range"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Secondary_Center"/>
     </owl:ObjectProperty>
@@ -3957,7 +4032,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#isSiteForSecondaryCenterOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Physical_Site"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Secondary_Center"/>
     </owl:ObjectProperty>
@@ -4015,7 +4089,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#isSpatialUnitOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Spatial_Unit"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Physical_Site"/>
     </owl:ObjectProperty>
@@ -4038,6 +4111,16 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#isStartingDateOf">
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Date"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Time_Range"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OntoExhibit#isStateOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#isStateOf">
+        <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#State"/>
+        <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Country"/>
     </owl:ObjectProperty>
     
 
@@ -4126,7 +4209,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#isVisitorOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Visitor"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Exhibitionary_Event"/>
     </owl:ObjectProperty>
@@ -4177,7 +4259,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#operatesIn">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Techno-Actant"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Techno-Place"/>
     </owl:ObjectProperty>
@@ -4215,7 +4296,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/OntoExhibit#serveAsCelebrationOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Planned_Activity"/>
         <rdfs:range rdf:resource="https://w3id.org/OntoExhibit#Conmemorative_Event"/>
     </owl:ObjectProperty>
@@ -4375,6 +4455,7 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
     <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Physical_Site"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Territorial_Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">geo:lat</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -4384,14 +4465,9 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/OntoExhibit#Physical_Site"/>
-                    <rdf:Description rdf:about="https://w3id.org/OntoExhibit#Territorial_Entity"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Physical_Site"/>
+        <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Territorial_Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">geo:long</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -4493,8 +4569,12 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/OntoExhibit#address">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Headquarter"/>
+        <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Location"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Physical_Site"/>
+        <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Place_Of_Activity"/>
+        <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Place_Of_Residence"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">address</rdfs:label>
         <rdfs:label xml:lang="es">dirección postal</rdfs:label>
     </owl:DatatypeProperty>
@@ -4519,6 +4599,7 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/OntoExhibit#awards">
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Art_Competition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <terms:description xml:lang="en">Describes the prizes or recognitions that will be awarded to the winners.</terms:description>
         <rdfs:label xml:lang="en">awards</rdfs:label>
         <rdfs:label xml:lang="es">premio</rdfs:label>
@@ -4566,6 +4647,7 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/OntoExhibit#description">
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <terms:description xml:lang="en">A detailed textual description of the entity, including its purpose, functionalities, and key features.</terms:description>
         <rdfs:label xml:lang="es">descripción</rdfs:label>
         <rdfs:label xml:lang="en">description</rdfs:label>
@@ -4589,7 +4671,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/OntoExhibit#executive_position_type">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Executive_Position"/>
         <rdfs:range>
             <rdfs:Datatype>
@@ -4755,7 +4836,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/OntoExhibit#professional_activity">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://cidoc-crm.org/cidoc-crm/7.1.1/E21_Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="es">actividad profesional</rdfs:label>
@@ -4772,6 +4852,18 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">program</rdfs:label>
         <rdfs:label xml:lang="es">programa</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/OntoExhibit#size -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/OntoExhibit#size">
+        <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">size</rdfs:label>
+        <rdfs:label xml:lang="es">tamaño</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4879,7 +4971,6 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/OntoExhibit#techno-placeType">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Techno-Place"/>
         <rdfs:range>
             <rdfs:Datatype>
@@ -4928,13 +5019,27 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
     
 
 
+    <!-- https://w3id.org/OntoExhibit#type -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/OntoExhibit#type">
+        <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Exhibitionary_Event"/>
+        <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Work_Manifestation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">tipo</rdfs:label>
+        <rdfs:label xml:lang="en">type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/OntoExhibit#url -->
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/OntoExhibit#url">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/OntoExhibit#Techno-Place"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label xml:lang="en">url</rdfs:label>
+        <rdfs:label xml:lang="es">url</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4951,7 +5056,7 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="es">página web</rdfs:label>
         <rdfs:label xml:lang="en">webpage</rdfs:label>
     </owl:DatatypeProperty>
@@ -5592,6 +5697,15 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
     
 
 
+    <!-- https://w3id.org/OntoExhibit#City -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OntoExhibit#City">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OntoExhibit#Territorial_Entity"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/OntoExhibit#Closing -->
 
 
@@ -5851,6 +5965,15 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
         <rdfs:comment>para la imagen de marca de las instituciones y corporaciones</rdfs:comment>
         <rdfs:label xml:lang="en">corporate visual branding</rdfs:label>
         <rdfs:label xml:lang="es">identidad visual corporativa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OntoExhibit#Country -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OntoExhibit#Country">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OntoExhibit#Territorial_Entity"/>
     </owl:Class>
     
 
@@ -7553,6 +7676,15 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
         <terms:description xml:lang="en">Represents a specific segment or part of a larger spatial structure that serves a distinct function or holds significance within the overall environment. This class includes rooms, halls, wings, or any other designated areas within buildings, complexes, or other types of larger spaces. For example: the “Sala Noble” (spatial unit) is the spatial unit of Palacio de Villalón (Building – physical site), which is the headquarters of Museo Carmen Thyssen (Museum – cultural institution).</terms:description>
         <rdfs:label xml:lang="en">spatial unit</rdfs:label>
         <rdfs:label xml:lang="es">unidad espacial</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OntoExhibit#State -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OntoExhibit#State">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OntoExhibit#Territorial_Entity"/>
     </owl:Class>
     
 

@@ -10,15 +10,14 @@
 <link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
 <link rel="stylesheet" href="resources/slider.css" media="screen"/>
 <meta name="color-scheme" content="dark light">
-<script type="module" src="resources/dark-mode-toggle.mjs"></script>
-<div class="darkmode">
+<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
 	<dark-mode-toggle class="slider"></dark-mode-toggle>
 </div>
  <title>OntoExhibit</title>
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/OntoExhibit#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/OntoExhibit#","name":"OntoExhibit", "headline":"OntoExhibit is an innovative ontology that accurately and extensively models museums, exhibitions, and artworks. Designed to capture the complexity and richness of these cultural elements, OntoExhibit provides a semantic framework that enables the organization and coherent linking of information.", "dateReleased":"2022-11-10", "dateModified":"2024-12-16", "version":"1.1.0", "codeRepository":"https://github.com/Complexhibit-Project", "author":[{"@type":"Person","name":"Maria del Mar Roldán García"},{"@type":"Person","name":"Martín Jerónimo Salvachúa"},{"@type":"Person","name":"María Luisa Díez Platas"},{"@type":"Person","name":"Nuria Rodriguez Ortega"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/OntoExhibit#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/OntoExhibit#","name":"OntoExhibit", "headline":"OntoExhibit is the result of transforming and extending the conceptual model underlying Expofinder, a relational database developed within the Exhibitium project (Rodríguez-Ortega, Cruces-Rodríguez, 2019). The Expofinder model adheres to the traditional conception of the exhibition field: a network made up of the relationships that exhibitions establish among heterogeneous actors (artists, curators, institutions, etc.) and the cultural objects displayed. This model served as the starting point for the design and construction of the OntoExhibit model, which is an enhanced version born out of a refined conceptualization of the exhibition field. This development was informed by extensive conversations and dialogues with a diverse community of researchers, curators, gallery owners, and art critics.OntoExhibit interprets the art exhibition domain as a complex cultural ecosystem, comprising a diverse array of actors (including both human and non-human entities) intertwined through discursive and social practices. These practices create a complex web of semantic layers that imbue the domain with symbolic values. OntoExhibit thus approaches the phenomenon of art exhibitions in its double condition: as a distinct discursive, social, and cultural production emerging from a set of practices and interactions, and as an active producer/generator of discourses and public spheres. These public spheres, in turn, are shaped by discursive and social practices that also convey meanings and generate symbolic value, which can influence subsequent exhibitions. This creates a dynamic and continuous cycle of cultural impact and significance.According to this conceptualization, OntoExhibit aims to deepen our understanding of the structures, networks, and behavioral patterns within this cultural ecosystem; unravel its social, discursive, and semantic intricacies; and enhance our insights into the engagement of individuals and communities with cultural heritage through exhibitions. To this end, OntoExhibit integrates traditional modeling approaches of the art exhibition domain with new extensions.", "dateReleased":"2022-11", "dateModified":"2025-12-31", "version":"1.1.0", "license":"https://creativecommons.org/licenses/by/4.0/", "codeRepository":"https://github.com/iArtHis-Lab/OntoExhibit", "author":[{"@type":"Person","name":"https://github.com/MartinM10","url":"https://github.com/MartinM10"},{"@type":"Person","name":"Maria del Mar Roldán García"},{"@type":"Person","name":"María Luisa Díez Platas"},{"@type":"Person","name":"Nuria Rodriguez Ortega"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -67,74 +66,67 @@ $(function(){
 <div class="head">
 <div style="float:right">language <a href="index-en.html"><b>en</b></a> <a href="index-es.html"><b>es</b></a> </div>
 <h1>OntoExhibit</h1>
-<img src="https://raw.githubusercontent.com/Complexhibit-Project/.github/refs/heads/main/resources/logo_ontoexhibit.png" width="200/">
-<h2>Release: 2022-11-10</h2>
+<img src="https://raw.githubusercontent.com/iArtHis-Lab/.github/refs/heads/main/resources/logo_ontoexhibit.png" width="50/">
+<h2>Release: 2022-11</h2>
 
 
 <dl>
-	<dt>Modified on: 2024-12-16</dt>
-	<dt>This version:</dt>
-	<dd><a href="https://w3id.org/OntoExhibit#1.1.0">https://w3id.org/OntoExhibit#1.1.0</a></dd>
-	<dt>Latest version:</dt>
-	<dd><a href="https://w3id.org/OntoExhibit#">https://w3id.org/OntoExhibit#</a></dd>
-	<dt>Revision:</dt>
-	<dd>1.1.0</dd>
-	<dt>Authors:</dt>
-	<dd>Maria del Mar Roldán García</dd><dd>Martín Jerónimo Salvachúa</dd><dd>María Luisa Díez Platas</dd><dd>Nuria Rodriguez Ortega</dd>
+<dt>Modified on: 2025-12-31</dt>
+<dt>This version:</dt>
+<dd><a href="https://w3id.org/OntoExhibit/1.1.0">https://w3id.org/OntoExhibit/1.1.0</a></dd>
+<dt>Revision:</dt>
+<dd>1.1.0</dd>
+<dt>Authors:</dt>
+<dd><a href="https://github.com/MartinM10">https://github.com/MartinM10</a></dd><dd>Maria del Mar Roldán García</dd><dd>María Luisa Díez Platas</dd><dd>Nuria Rodriguez Ortega</dd>
 
-	<dt>Funder:</dt>
-	<dd><a href="https://ciencia.sede.gob.es/">https://ciencia.sede.gob.es/</a></dd><dd><a href="https://www.juntadeandalucia.es/">https://www.juntadeandalucia.es/</a></dd>
+<dt>Funder:</dt>
+<dd><a href="https://ciencia.sede.gob.es/">https://ciencia.sede.gob.es/</a></dd><dd><a href="https://www.juntadeandalucia.es/">https://www.juntadeandalucia.es/</a></dd>
 
-	<dt>Funding:</dt>
-	<dd><a href="https://andalexproject.iarthislab.eu/">https://andalexproject.iarthislab.eu/</a></dd><dd><a href="https://complexhibit.eu/inicio/">https://complexhibit.eu/inicio/</a></dd>
+<dt>Funding:</dt>
+<dd><a href="https://andalexproject.iarthislab.eu/">https://andalexproject.iarthislab.eu/</a></dd><dd><a href="https://complexhibit.eu/">https://complexhibit.eu/</a></dd>
 
-	<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://insertlicenseURIhere.example.org" target="_blank"><img src="https://img.shields.io/badge/License-license%20name%20goes%20here-blue.svg" alt="http://insertlicenseURIhere.example.org" /></a>
-	</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
-	<dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd><dt>Cite as:</dt>
-	<dd>Maria del Mar Roldán García, Martín Jerónimo Salvachúa, María Luisa Díez Platas, Nuria Rodriguez Ortega. OntoExhibit. Revision: 1.1.0. Retrieved from: https://w3id.org/OntoExhibit#1.1.0</dd>
-	<dt>Vocabulary maintained at:</dt>
-	<dd><a href="https://github.com/Complexhibit-Project">https://github.com/Complexhibit-Project</a></dd>
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by/4.0/-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/" /></a>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd><dt>Cite as:</dt>
+<dd>Nuria Rodríguez Ortega, María del Mar Roldán García, Martín Jerónimo Salvachúa, María Luisa Díez Platas. OntoExhibit version 1.1.0. URL: https://w3id.org/OntoExhibit</dd>
+<dt>Vocabulary maintained at:</dt>
+<dd><a href="https://github.com/iArtHis-Lab/OntoExhibit">https://github.com/iArtHis-Lab/OntoExhibit</a></dd>
 </dl>
 
-<hr/>
+<a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
 </div>
 <div class="status">
-	<div>
-		<span>Ontology Specification Draft</span>
-	</div>
-</div
-<div id="abstract"><h2>Abstract</h2>
-	OntoExhibit is an innovative ontology that accurately and extensively models museums, exhibitions, and artworks. Designed to capture the complexity and richness of these cultural elements, OntoExhibit provides a semantic framework that enables the organization and coherent linking of information.
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+OntoExhibit is the result of transforming and extending the conceptual model underlying Expofinder, a relational database developed within the Exhibitium project (Rodríguez-Ortega, Cruces-Rodríguez, 2019). The Expofinder model adheres to the traditional conception of the exhibition field: a network made up of the relationships that exhibitions establish among heterogeneous actors (artists, curators, institutions, etc.) and the cultural objects displayed. This model served as the starting point for the design and construction of the OntoExhibit model, which is an enhanced version born out of a refined conceptualization of the exhibition field. This development was informed by extensive conversations and dialogues with a diverse community of researchers, curators, gallery owners, and art critics.
+
+OntoExhibit interprets the art exhibition domain as a complex cultural ecosystem, comprising a diverse array of actors (including both human and non-human entities) intertwined through discursive and social practices. These practices create a complex web of semantic layers that imbue the domain with symbolic values. OntoExhibit thus approaches the phenomenon of art exhibitions in its double condition: as a distinct discursive, social, and cultural production emerging from a set of practices and interactions, and as an active producer/generator of discourses and public spheres. These public spheres, in turn, are shaped by discursive and social practices that also convey meanings and generate symbolic value, which can influence subsequent exhibitions. This creates a dynamic and continuous cycle of cultural impact and significance.
+
+According to this conceptualization, OntoExhibit aims to deepen our understanding of the structures, networks, and behavioral patterns within this cultural ecosystem; unravel its social, discursive, and semantic intricacies; and enhance our insights into the engagement of individuals and communities with cultural heritage through exhibitions. To this end, OntoExhibit integrates traditional modeling approaches of the art exhibition domain with new extensions.</span>
 </div>
 <div id="toc"></div> 
 
 <!--INTRODUCTION SECTION-->
-<div id="introduction">
-<h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-	OntoExhibit is being aligned with reference ontologies, specifically with CIDOC-CRM (7.2.1.) and FRBRoo (3.0). These ontologies have informed the definition of some of the classes and properties, while new classes and properties are being created to respond to the requirements of the art exhibition domain as defined in section 1. This is not a CIDOC-CRM specification as such, as only a few entities and properties have been adopted to facilitate alignment. OntoExhibit presents a conceptual structure and a hierarchy of classes different from that of CIDOC-CRM, which is better suited to the current configuration of the art exhibition domain and to the conceptualization of this phenomenon as a complex cultural ecosystem (Rodríguez Ortega, in press).
-	<ul>
-		<li>Referenced ontologies
-			<ul>
-				<li>frbroo: <a href="https://www.iflastandards.info/fr/frbr/frbroo.html">https://www.iflastandards.info/fr/frbr/frbroo.html</a></li>
-				<li>cidoc-crm: <a href="http://www.cidoc-crm.org/cidoc-crm">http://www.cidoc-crm.org/cidoc-crm</a></li>
-			</ul>
-		<li>Referenced ontology design patterns
-			<ul>
-			<li>agentRole: <a href="http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl">http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl</a></li>
-			</ul>
-		</li>
-	</ul>
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">OntoExhibit is being aligned with reference ontologies, specifically with CIDOC-CRM (7.2.1.) and FRBRoo (3.0). These ontologies have informed the definition of some of the classes and properties, while new classes and properties are being created to respond to the requirements of the art exhibition domain as defined in section 1. This is not a CIDOC-CRM specification as such, as only a few entities and properties have been adopted to facilitate alignment. OntoExhibit presents a conceptual structure and a hierarchy of classes different from that of CIDOC-CRM, which is better suited to the current configuration of the art exhibition domain and to the conceptualization of this phenomenon as a complex cultural ecosystem (Rodríguez Ortega, in press).
+
+This research has been funded by the Ministerio de Ciencia e Innovación (Spanish Government), grant number PID2021-125037NB-I00, and by the Junta de Andalucía, grant numbers PY20_00508, UMA20-FEDERJA-126.
+
+Referenced ontologies
+- frbroo: https://www.iflastandards.info/fr/frbr/frbroo.html
+- cidoc-crm: http://www.cidoc-crm.org/cidoc-crm/
+
+Referenced ontology design patterns
+- agentRole: http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl</span>
 </div>
   
 
 <!--OVERVIEW SECTION-->
-<div id="overview">
-	<h2 id="overv" class="list">
-		OntoExhibit: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span>
-	</h2>
-	<span class="markdown">
-		This ontology has the following classes and properties.
-	</span>
+    <div id="overview"><h2 id="overv" class="list">OntoExhibit: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
 <h4>Classes</h4>
 <ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -279,6 +271,11 @@ $(function(){
       <a href="#chapter" title="https://w3id.org/OntoExhibit#chapter">chapter</a>
    </li>
    <li>
+      <a href="#City" title="https://w3id.org/OntoExhibit#City">
+         <span>City</span>
+      </a>
+   </li>
+   <li>
       <a href="#Closing" title="https://w3id.org/OntoExhibit#Closing">closing</a>
    </li>
    <li>
@@ -363,6 +360,11 @@ $(function(){
    <li>
       <a href="#Corporate_Visual_Branding"
          title="https://w3id.org/OntoExhibit#Corporate_Visual_Branding">corporate visual branding</a>
+   </li>
+   <li>
+      <a href="#Country" title="https://w3id.org/OntoExhibit#Country">
+         <span>Country</span>
+      </a>
    </li>
    <li>
       <a href="#https://cidoc-crm.org/cidoc-crm/7.1.1/E65_Creation"
@@ -848,6 +850,11 @@ $(function(){
       <a href="#Supporter" title="https://w3id.org/OntoExhibit#Supporter">sponsor</a>
    </li>
    <li>
+      <a href="#State" title="https://w3id.org/OntoExhibit#State">
+         <span>State</span>
+      </a>
+   </li>
+   <li>
       <a href="#Techno-Actant" title="https://w3id.org/OntoExhibit#Techno-Actant">techno-actant</a>
    </li>
    <li>
@@ -965,8 +972,8 @@ $(function(){
       </a>
    </li>
    <li>
-      <a href="#CollaboratesWith" title="https://w3id.org/OntoExhibit#CollaboratesWith">
-         <span>Collaborates With</span>
+      <a href="#collaboratesWith" title="https://w3id.org/OntoExhibit#collaboratesWith">
+         <span>collaborates With</span>
       </a>
    </li>
    <li>
@@ -1128,6 +1135,11 @@ $(function(){
       </a>
    </li>
    <li>
+      <a href="#hasCity" title="https://w3id.org/OntoExhibit#hasCity">
+         <span>has City</span>
+      </a>
+   </li>
+   <li>
       <a href="#hasClosing" title="https://w3id.org/OntoExhibit#hasClosing">
          <span>has Closing</span>
       </a>
@@ -1255,7 +1267,8 @@ $(function(){
       </a>
    </li>
    <li>
-      <a href="#hasDigitalAnalogous" title="https://w3id.org/OntoExhibit#hasDigitalAnalogous">
+      <a href="#hasDigitalAnalogous"
+         title="https://w3id.org/OntoExhibit#hasDigitalAnalogous">
          <span>has Digital Analogous</span>
       </a>
    </li>
@@ -1506,6 +1519,11 @@ $(function(){
       </a>
    </li>
    <li>
+      <a href="#hasParentTerritory" title="https://w3id.org/OntoExhibit#hasParentTerritory">
+         <span>has Parent Territory</span>
+      </a>
+   </li>
+   <li>
       <a href="#hasParticipant" title="https://w3id.org/OntoExhibit#hasParticipant">
          <span>has Participant</span>
       </a>
@@ -1737,6 +1755,11 @@ $(function(){
       </a>
    </li>
    <li>
+      <a href="#hasState" title="https://w3id.org/OntoExhibit#hasState">
+         <span>has State</span>
+      </a>
+   </li>
+   <li>
       <a href="#hasTheme" title="https://w3id.org/OntoExhibit#hasTheme">
          <span>has Theme</span>
       </a>
@@ -1914,6 +1937,11 @@ $(function(){
       <a href="#isCelebratedThrough"
          title="https://w3id.org/OntoExhibit#isCelebratedThrough">
          <span>is Celebrated Through</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isCityOf" title="https://w3id.org/OntoExhibit#isCityOf">
+         <span>is City Of</span>
       </a>
    </li>
    <li>
@@ -2663,6 +2691,11 @@ $(function(){
       </a>
    </li>
    <li>
+      <a href="#isStateOf" title="https://w3id.org/OntoExhibit#isStateOf">
+         <span>is State Of</span>
+      </a>
+   </li>
+   <li>
       <a href="#isTerritorialLocationOf"
          title="https://w3id.org/OntoExhibit#isTerritorialLocationOf">
          <span>is Territorial Location Of</span>
@@ -2873,6 +2906,9 @@ $(function(){
       <a href="#program" title="https://w3id.org/OntoExhibit#program">program</a>
    </li>
    <li>
+      <a href="#size" title="https://w3id.org/OntoExhibit#size">size</a>
+   </li>
+   <li>
       <a href="#socialNetworkProfile"
          title="https://w3id.org/OntoExhibit#socialNetworkProfile">social network profile</a>
    </li>
@@ -2896,9 +2932,10 @@ $(function(){
       <a href="#ticket_price" title="https://w3id.org/OntoExhibit#ticket_price">ticket price</a>
    </li>
    <li>
-      <a href="#url" title="https://w3id.org/OntoExhibit#url">
-         <span>url</span>
-      </a>
+      <a href="#type" title="https://w3id.org/OntoExhibit#type">type</a>
+   </li>
+   <li>
+      <a href="#url" title="https://w3id.org/OntoExhibit#url">url</a>
    </li>
    <li>
       <a href="#webPage" title="https://w3id.org/OntoExhibit#webPage">webpage</a>
@@ -2909,6 +2946,11 @@ $(function(){
    <li>
       <a href="#http://purl.org/dc/terms/abstract" title="http://purl.org/dc/terms/abstract">
          <span>abstract</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/bibliographicCitation" title="http://purl.org/dc/terms/bibliographicCitation">
+         <span>bibliographic Citation</span>
       </a>
    </li>
    <li>
@@ -2949,6 +2991,31 @@ $(function(){
    <li>
       <a href="#https://schema.org/funding" title="https://schema.org/funding">
          <span>funding</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://schema.org/image" title="http://schema.org/image">
+         <span>image</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://schema.org/image" title="https://schema.org/image">
+         <span>image</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/widoco/vocab#introduction" title="https://w3id.org/widoco/vocab#introduction">
+         <span>introduction</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">
+         <span>license</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://schema.org/logo" title="http://schema.org/logo">
+         <span>logo</span>
       </a>
    </li>
    <li>
@@ -3002,32 +3069,14 @@ $(function(){
   
 
 <!--DESCRIPTION SECTION-->
-<div id="description">
-	<h2 id="desc" class="list">
-		OntoExhibit: Description <span class="backlink"> back to <a href="#toc">ToC</a></span>
-	</h2>
-	<p>
-	OntoExhibit consists of an OWL 2 (Ontology Web Language) ontology designed to facilitate the adoption of FAIR (Findable, Accessible, Interoperable, and Reusable) principles in managing information associated with the art exhibition domain, as a fundamental mean to guarantee its standardization, interoperability, reusability, and the extraction of new and strategic knowledge within this cultural sector. Within this context, OntoExhibit is conceived as a comprehensive ontology designed to address the needs and requirements of a range of target scenarios: 1. art historians and researchers engaged in exhibition and curatorial studies; 2. cultural heritage professionals involved in recording and documenting art exhibitions; 3. museum and independent curators; 4. gallery owners; and 5. CCI and tourism stakeholders.
-	</p>
-	<p>
-	OntoExhibit is the result of transforming and extending the conceptual model underlying Expofinder, a relational database developed within the Exhibitium project (Rodríguez-Ortega, Cruces-Rodríguez, 2019). The Expofinder model adheres to the traditional conception of the exhibition field: a network made up of the relationships that exhibitions establish among heterogeneous actors (artists, curators, institutions, etc.) and the cultural objects displayed. This model served as the starting point for the design and construction of the OntoExhibit model, which is an enhanced version born out of a refined conceptualization of the exhibition field. This development was informed by extensive conversations and dialogues with a diverse community of researchers, curators, gallery owners, and art critics.
-	</p>
-	<p>
-	OntoExhibit interprets the art exhibition domain as a complex cultural ecosystem, comprising a diverse array of actors (including both human and non-human entities) intertwined through discursive and social practices. These practices create a complex web of semantic layers that imbue the domain with symbolic values. OntoExhibit thus approaches the phenomenon of art exhibitions in its double condition: as a distinct discursive, social, and cultural production emerging from a set of practices and interactions, and as an active producer/generator of discourses and public spheres. These public spheres, in turn, are shaped by discursive and social practices that also convey meanings and generate symbolic value, which can influence subsequent exhibitions. This creates a dynamic and continuous cycle of cultural impact and significance.
-	</p>
-	<p>
-	According to this conceptualization, OntoExhibit aims to deepen our understanding of the structures, networks, and behavioral patterns within this cultural ecosystem; unravel its social, discursive, and semantic intricacies; and enhance our insights into the engagement of individuals and communities with cultural heritage through exhibitions. To this end, OntoExhibit integrates traditional modeling approaches of the art exhibition domain with new extensions.
-	</p>  
-</div>
+    <div id="description"><h2 id="desc" class="list">OntoExhibit: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+<span class="markdown">OntoExhibit consists of an OWL 2 (Ontology Web Language) ontology designed to facilitate the adoption of FAIR (Findable, Accessible, Interoperable, and Reusable) principles in managing information associated with the art exhibition domain, as a fundamental mean to guarantee its standardization, interoperability, reusability, and the extraction of new and strategic knowledge within this cultural sector. Within this context, OntoExhibit is conceived as a comprehensive ontology designed to address the needs and requirements of a range of target scenarios: 1. art historians and researchers engaged in exhibition and curatorial studies; 2. cultural heritage professionals involved in recording and documenting art exhibitions; 3. museum and independent curators; 4. gallery owners; and 5. CCI and tourism stakeholders.</span></div>
+   
 
 <!--CROSSREF SECTION-->
-<div id="crossref">
-	<h2 id="crossreference" class="list">
-		Cross-reference for OntoExhibit classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span>
-	</h2>
-	<span class="markdown">
-		This section provides details for each class and property defined by OntoExhibit.
-	</span>
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for OntoExhibit classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by OntoExhibit.
 <div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
  <h3 id="classes-headline" class="list">Classes</h3>
  <ul class="hlist">
@@ -3073,6 +3122,7 @@ $(function(){
   <li><a href="#Caption" title="https://w3id.org/OntoExhibit#Caption">caption</a></li>
   <li><a href="#Catalog" title="https://w3id.org/OntoExhibit#Catalog">catalogue</a></li>
   <li><a href="#chapter" title="https://w3id.org/OntoExhibit#chapter">chapter</a></li>
+  <li><a href="#City" title="https://w3id.org/OntoExhibit#City"> <span>City</span> </a></li>
   <li><a href="#Closing" title="https://w3id.org/OntoExhibit#Closing">closing</a></li>
   <li><a href="#Collaborator" title="https://w3id.org/OntoExhibit#Collaborator">collaborator</a></li>
   <li><a href="#Collective_Human_Actant" title="https://w3id.org/OntoExhibit#Collective_Human_Actant">collective human actant</a></li>
@@ -3097,6 +3147,7 @@ $(function(){
   <li><a href="#https://www.iflastandards.info/fr/frbr/frbroo#F11_Corporate_Body" title="https://www.iflastandards.info/fr/frbr/frbroo#F11_Corporate_Body">corporate body</a></li>
   <li><a href="#Corporate_Body_Unit" title="https://w3id.org/OntoExhibit#Corporate_Body_Unit">corporate body unit</a></li>
   <li><a href="#Corporate_Visual_Branding" title="https://w3id.org/OntoExhibit#Corporate_Visual_Branding">corporate visual branding</a></li>
+  <li><a href="#Country" title="https://w3id.org/OntoExhibit#Country"> <span>Country</span> </a></li>
   <li><a href="#https://cidoc-crm.org/cidoc-crm/7.1.1/E65_Creation" title="https://cidoc-crm.org/cidoc-crm/7.1.1/E65_Creation">creation</a></li>
   <li><a href="#Creator" title="https://w3id.org/OntoExhibit#Creator">creator</a></li>
   <li><a href="#Review" title="https://w3id.org/OntoExhibit#Review">critique</a></li>
@@ -3243,6 +3294,7 @@ $(function(){
   <li><a href="#Social_Publication" title="https://w3id.org/OntoExhibit#Social_Publication">social publication</a></li>
   <li><a href="#Spatial_Unit" title="https://w3id.org/OntoExhibit#Spatial_Unit">spatial unit</a></li>
   <li><a href="#Supporter" title="https://w3id.org/OntoExhibit#Supporter">sponsor</a></li>
+  <li><a href="#State" title="https://w3id.org/OntoExhibit#State"> <span>State</span> </a></li>
   <li><a href="#Techno-Actant" title="https://w3id.org/OntoExhibit#Techno-Actant">techno-actant</a></li>
   <li><a href="#Techno-Place" title="https://w3id.org/OntoExhibit#Techno-Place">techno-place</a></li>
   <li><a href="#Technological_Corporation" title="https://w3id.org/OntoExhibit#Technological_Corporation">technological corporation</a></li>
@@ -3297,13 +3349,13 @@ $(function(){
     is in domain of
    </dt>
    <dd>
-    <a href="#CollaboratesWith" title="https://w3id.org/OntoExhibit#CollaboratesWith">Collaborates With</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasRole" title="https://w3id.org/OntoExhibit#hasRole">has Role</a> <sup class="type-op" title="object property">op</sup>, <a href="#isExhibitingActantIn" title="https://w3id.org/OntoExhibit#isExhibitingActantIn">is Exhibiting Actant In</a> <sup class="type-op" title="object property">op</sup>, <a href="#isSourceOfInformationOf" title="https://w3id.org/OntoExhibit#isSourceOfInformationOf">is Source Of Information Of</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#collaboratesWith" title="https://w3id.org/OntoExhibit#collaboratesWith">collaborates With</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasRole" title="https://w3id.org/OntoExhibit#hasRole">has Role</a> <sup class="type-op" title="object property">op</sup>, <a href="#isExhibitingActantIn" title="https://w3id.org/OntoExhibit#isExhibitingActantIn">is Exhibiting Actant In</a> <sup class="type-op" title="object property">op</sup>, <a href="#isSourceOfInformationOf" title="https://w3id.org/OntoExhibit#isSourceOfInformationOf">is Source Of Information Of</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#CollaboratesWith" title="https://w3id.org/OntoExhibit#CollaboratesWith">Collaborates With</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasExhibitingActant" title="https://w3id.org/OntoExhibit#hasExhibitingActant">has Exhibiting Actant</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasSourceOfInformation" title="https://w3id.org/OntoExhibit#hasSourceOfInformation">has Source Of Information</a> <sup class="type-op" title="object property">op</sup>, <a href="#isRoleOf" title="https://w3id.org/OntoExhibit#isRoleOf">is Role Of</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#collaboratesWith" title="https://w3id.org/OntoExhibit#collaboratesWith">collaborates With</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasExhibitingActant" title="https://w3id.org/OntoExhibit#hasExhibitingActant">has Exhibiting Actant</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasSourceOfInformation" title="https://w3id.org/OntoExhibit#hasSourceOfInformation">has Source Of Information</a> <sup class="type-op" title="object property">op</sup>, <a href="#isRoleOf" title="https://w3id.org/OntoExhibit#isRoleOf">is Role Of</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -4028,6 +4080,30 @@ $(function(){
    </dd>
   </dl>
  </div>
+ <div class="entity" id="City">
+  <h3>City<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#City</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Territorial_Entity" title="https://w3id.org/OntoExhibit#Territorial_Entity">territorial entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#isCityOf" title="https://w3id.org/OntoExhibit#isCityOf">is City Of</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasCity" title="https://w3id.org/OntoExhibit#hasCity">has City</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="Closing">
   <h3>closing<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#Closing</p>
@@ -4234,7 +4310,7 @@ $(function(){
     is in domain of
    </dt>
    <dd>
-    <a href="#ISIC4Category" title="https://w3id.org/OntoExhibit#ISIC4Category">ISIC4 category</a> <sup class="type-dp" title="data property">dp</sup>
+    <a href="#ISIC4Category" title="https://w3id.org/OntoExhibit#ISIC4Category">ISIC4 category</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#size" title="https://w3id.org/OntoExhibit#size">size</a> <sup class="type-dp" title="data property">dp</sup>
    </dd>
   </dl>
  </div>
@@ -4596,6 +4672,30 @@ $(function(){
    </dt>
    <dd>
     <a href="#Visual_Information_Object" title="https://w3id.org/OntoExhibit#Visual_Information_Object">visual information object</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Country">
+  <h3>Country<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#Country</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Territorial_Entity" title="https://w3id.org/OntoExhibit#Territorial_Entity">territorial entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasState" title="https://w3id.org/OntoExhibit#hasState">has State</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#isStateOf" title="https://w3id.org/OntoExhibit#isStateOf">is State Of</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -5249,7 +5349,7 @@ $(function(){
     is in domain of
    </dt>
    <dd>
-    <a href="#hasDigitalPlaceOfLocation" title="https://w3id.org/OntoExhibit#hasDigitalPlaceOfLocation">has Digital Place Of Location</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasLocationTimeRange" title="https://w3id.org/OntoExhibit#hasLocationTimeRange">has Location Time Range</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfLocation" title="https://w3id.org/OntoExhibit#hasPlaceOfLocation">has Place Of Location</a> <sup class="type-op" title="object property">op</sup>, <a href="#isLocationOf" title="https://w3id.org/OntoExhibit#isLocationOf">is Location Of</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#address" title="https://w3id.org/OntoExhibit#address">address</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasDigitalPlaceOfLocation" title="https://w3id.org/OntoExhibit#hasDigitalPlaceOfLocation">has Digital Place Of Location</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasLocationTimeRange" title="https://w3id.org/OntoExhibit#hasLocationTimeRange">has Location Time Range</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfLocation" title="https://w3id.org/OntoExhibit#hasPlaceOfLocation">has Place Of Location</a> <sup class="type-op" title="object property">op</sup>, <a href="#isLocationOf" title="https://w3id.org/OntoExhibit#isLocationOf">is Location Of</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
@@ -5480,7 +5580,7 @@ $(function(){
     is in domain of
    </dt>
    <dd>
-    <a href="#displays" title="https://w3id.org/OntoExhibit#displays">displays</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasExhibitingActant" title="https://w3id.org/OntoExhibit#hasExhibitingActant">has Exhibiting Actant</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasExhibitionMaking" title="https://w3id.org/OntoExhibit#hasExhibitionMaking">has Exhibition Making</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasExhibitor" title="https://w3id.org/OntoExhibit#hasExhibitor">has Exhibitor</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasVernissage" title="https://w3id.org/OntoExhibit#hasVernissage">has Vernissage</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasVisitor" title="https://w3id.org/OntoExhibit#hasVisitor">has Visitor</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#displays" title="https://w3id.org/OntoExhibit#displays">displays</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasExhibitingActant" title="https://w3id.org/OntoExhibit#hasExhibitingActant">has Exhibiting Actant</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasExhibitionMaking" title="https://w3id.org/OntoExhibit#hasExhibitionMaking">has Exhibition Making</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasExhibitor" title="https://w3id.org/OntoExhibit#hasExhibitor">has Exhibitor</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasVernissage" title="https://w3id.org/OntoExhibit#hasVernissage">has Vernissage</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasVisitor" title="https://w3id.org/OntoExhibit#hasVisitor">has Visitor</a> <sup class="type-op" title="object property">op</sup>, <a href="#type" title="https://w3id.org/OntoExhibit#type">type</a> <sup class="type-dp" title="data property">dp</sup>
    </dd>
    <dt>
     is in range of
@@ -5750,7 +5850,7 @@ $(function(){
     is in domain of
    </dt>
    <dd>
-    <a href="#hasHeadquartersTimeRange" title="https://w3id.org/OntoExhibit#hasHeadquartersTimeRange">has Headquarters Time Range</a> <sup class="type-op" title="object property">op</sup>, <a href="#isHeadquarteredAt" title="https://w3id.org/OntoExhibit#isHeadquarteredAt">is Headquartered At</a> <sup class="type-op" title="object property">op</sup>, <a href="#isHeadquartersOf" title="https://w3id.org/OntoExhibit#isHeadquartersOf">is Headquarters Of</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#address" title="https://w3id.org/OntoExhibit#address">address</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasHeadquartersTimeRange" title="https://w3id.org/OntoExhibit#hasHeadquartersTimeRange">has Headquarters Time Range</a> <sup class="type-op" title="object property">op</sup>, <a href="#isHeadquarteredAt" title="https://w3id.org/OntoExhibit#isHeadquarteredAt">is Headquartered At</a> <sup class="type-op" title="object property">op</sup>, <a href="#isHeadquartersOf" title="https://w3id.org/OntoExhibit#isHeadquartersOf">is Headquarters Of</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
@@ -6773,7 +6873,7 @@ $(function(){
     is in domain of
    </dt>
    <dd>
-    <a href="#hasDigitalPlaceForActivity" title="https://w3id.org/OntoExhibit#hasDigitalPlaceForActivity">has Digital Place For Activity</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceForActivity" title="https://w3id.org/OntoExhibit#hasPlaceForActivity">has Place For Activity</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfActivityTimeRange" title="https://w3id.org/OntoExhibit#hasPlaceOfActivityTimeRange">has Place Of Activity Time Range</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfActivityOf" title="https://w3id.org/OntoExhibit#isPlaceOfActivityOf">is Place Of Activity Of</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#address" title="https://w3id.org/OntoExhibit#address">address</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasDigitalPlaceForActivity" title="https://w3id.org/OntoExhibit#hasDigitalPlaceForActivity">has Digital Place For Activity</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceForActivity" title="https://w3id.org/OntoExhibit#hasPlaceForActivity">has Place For Activity</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfActivityTimeRange" title="https://w3id.org/OntoExhibit#hasPlaceOfActivityTimeRange">has Place Of Activity Time Range</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfActivityOf" title="https://w3id.org/OntoExhibit#isPlaceOfActivityOf">is Place Of Activity Of</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
@@ -7253,7 +7353,7 @@ $(function(){
     is in domain of
    </dt>
    <dd>
-    <a href="#hasPlaceOfResidency" title="https://w3id.org/OntoExhibit#hasPlaceOfResidency">has Place Of Residency</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasResidencyTimeRange" title="https://w3id.org/OntoExhibit#hasResidencyTimeRange">has Residency Time Range</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasSiteOfResidency" title="https://w3id.org/OntoExhibit#hasSiteOfResidency">has Site Of Residency</a> <sup class="type-op" title="object property">op</sup>, <a href="#isResidencyOf" title="https://w3id.org/OntoExhibit#isResidencyOf">is Residency Of</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#address" title="https://w3id.org/OntoExhibit#address">address</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasPlaceOfResidency" title="https://w3id.org/OntoExhibit#hasPlaceOfResidency">has Place Of Residency</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasResidencyTimeRange" title="https://w3id.org/OntoExhibit#hasResidencyTimeRange">has Residency Time Range</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasSiteOfResidency" title="https://w3id.org/OntoExhibit#hasSiteOfResidency">has Site Of Residency</a> <sup class="type-op" title="object property">op</sup>, <a href="#isResidencyOf" title="https://w3id.org/OntoExhibit#isResidencyOf">is Residency Of</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
@@ -7485,6 +7585,30 @@ $(function(){
    </dd>
   </dl>
  </div>
+ <div class="entity" id="State">
+  <h3>State<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#State</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Territorial_Entity" title="https://w3id.org/OntoExhibit#Territorial_Entity">territorial entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasCity" title="https://w3id.org/OntoExhibit#hasCity">has City</a> <sup class="type-op" title="object property">op</sup>, <a href="#isStateOf" title="https://w3id.org/OntoExhibit#isStateOf">is State Of</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasState" title="https://w3id.org/OntoExhibit#hasState">has State</a> <sup class="type-op" title="object property">op</sup>, <a href="#isCityOf" title="https://w3id.org/OntoExhibit#isCityOf">is City Of</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="Techno-Actant">
   <h3>techno-actant<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#Techno-Actant</p>
@@ -7574,16 +7698,22 @@ $(function(){
     <a href="#https://cidoc-crm.org/cidoc-crm/7.1.1/Place" title="https://cidoc-crm.org/cidoc-crm/7.1.1/Place">place</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#City" title="https://w3id.org/OntoExhibit#City">City</a> <sup class="type-c" title="class">c</sup>, <a href="#Country" title="https://w3id.org/OntoExhibit#Country">Country</a> <sup class="type-c" title="class">c</sup>, <a href="#State" title="https://w3id.org/OntoExhibit#State">State</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
     is in domain of
    </dt>
    <dd>
-    <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#lat" title="http://www.w3.org/2003/01/geo/wgs84_pos#lat">geo:lat</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#long" title="http://www.w3.org/2003/01/geo/wgs84_pos#long">geo:long</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#isPlaceForActivityOf" title="https://w3id.org/OntoExhibit#isPlaceForActivityOf">is Place For Activity Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOf" title="https://w3id.org/OntoExhibit#isPlaceOf">is Place Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfBirthOf" title="https://w3id.org/OntoExhibit#isPlaceOfBirthOf">is Place Of Birth Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfConceptionOf" title="https://w3id.org/OntoExhibit#isPlaceOfConceptionOf">is Place Of Conception Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfCreationOf" title="https://w3id.org/OntoExhibit#isPlaceOfCreationOf">is Place Of Creation Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfCurationOf" title="https://w3id.org/OntoExhibit#isPlaceOfCurationOf">is Place Of Curation Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfDeadthOf" title="https://w3id.org/OntoExhibit#isPlaceOfDeadthOf">is Place Of Deadth Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfDestructionOf" title="https://w3id.org/OntoExhibit#isPlaceOfDestructionOf">is Place Of Destruction Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfDissolutionOf" title="https://w3id.org/OntoExhibit#isPlaceOfDissolutionOf">is Place Of Dissolution Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfExhibitionMakingOf" title="https://w3id.org/OntoExhibit#isPlaceOfExhibitionMakingOf">is Place Of Exhibition Making Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfFoundationOf" title="https://w3id.org/OntoExhibit#isPlaceOfFoundationOf">is Place Of Foundation Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfLocationOf" title="https://w3id.org/OntoExhibit#isPlaceOfLocationOf">is Place Of Location Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfProductionOf" title="https://w3id.org/OntoExhibit#isPlaceOfProductionOf">is Place Of Production Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfPublicationOf" title="https://w3id.org/OntoExhibit#isPlaceOfPublicationOf">is Place Of Publication Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfResidencyOf" title="https://w3id.org/OntoExhibit#isPlaceOfResidencyOf">is Place Of Residency Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isTerritorialLocationOf" title="https://w3id.org/OntoExhibit#isTerritorialLocationOf">is Territorial Location Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#population" title="https://w3id.org/OntoExhibit#population">population</a> <sup class="type-dp" title="data property">dp</sup>
+    <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#lat" title="http://www.w3.org/2003/01/geo/wgs84_pos#lat">geo:lat</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#long" title="http://www.w3.org/2003/01/geo/wgs84_pos#long">geo:long</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasParentTerritory" title="https://w3id.org/OntoExhibit#hasParentTerritory">has Parent Territory</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceForActivityOf" title="https://w3id.org/OntoExhibit#isPlaceForActivityOf">is Place For Activity Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOf" title="https://w3id.org/OntoExhibit#isPlaceOf">is Place Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfBirthOf" title="https://w3id.org/OntoExhibit#isPlaceOfBirthOf">is Place Of Birth Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfConceptionOf" title="https://w3id.org/OntoExhibit#isPlaceOfConceptionOf">is Place Of Conception Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfCreationOf" title="https://w3id.org/OntoExhibit#isPlaceOfCreationOf">is Place Of Creation Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfCurationOf" title="https://w3id.org/OntoExhibit#isPlaceOfCurationOf">is Place Of Curation Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfDeadthOf" title="https://w3id.org/OntoExhibit#isPlaceOfDeadthOf">is Place Of Deadth Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfDestructionOf" title="https://w3id.org/OntoExhibit#isPlaceOfDestructionOf">is Place Of Destruction Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfDissolutionOf" title="https://w3id.org/OntoExhibit#isPlaceOfDissolutionOf">is Place Of Dissolution Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfExhibitionMakingOf" title="https://w3id.org/OntoExhibit#isPlaceOfExhibitionMakingOf">is Place Of Exhibition Making Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfFoundationOf" title="https://w3id.org/OntoExhibit#isPlaceOfFoundationOf">is Place Of Foundation Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfLocationOf" title="https://w3id.org/OntoExhibit#isPlaceOfLocationOf">is Place Of Location Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfProductionOf" title="https://w3id.org/OntoExhibit#isPlaceOfProductionOf">is Place Of Production Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfPublicationOf" title="https://w3id.org/OntoExhibit#isPlaceOfPublicationOf">is Place Of Publication Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPlaceOfResidencyOf" title="https://w3id.org/OntoExhibit#isPlaceOfResidencyOf">is Place Of Residency Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isTerritorialLocationOf" title="https://w3id.org/OntoExhibit#isTerritorialLocationOf">is Territorial Location Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#population" title="https://w3id.org/OntoExhibit#population">population</a> <sup class="type-dp" title="data property">dp</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#hasPlaceForActivity" title="https://w3id.org/OntoExhibit#hasPlaceForActivity">has Place For Activity</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfBirth" title="https://w3id.org/OntoExhibit#hasPlaceOfBirth">has Place Of Birth</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfConception" title="https://w3id.org/OntoExhibit#hasPlaceOfConception">has Place Of Conception</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfCreation" title="https://w3id.org/OntoExhibit#hasPlaceOfCreation">has Place Of Creation</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfCuration" title="https://w3id.org/OntoExhibit#hasPlaceOfCuration">has Place Of Curation</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfDeadth" title="https://w3id.org/OntoExhibit#hasPlaceOfDeadth">has Place Of Deadth</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfDestruction" title="https://w3id.org/OntoExhibit#hasPlaceOfDestruction">has Place Of Destruction</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfDissolution" title="https://w3id.org/OntoExhibit#hasPlaceOfDissolution">has Place Of Dissolution</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfExhibitionMaking" title="https://w3id.org/OntoExhibit#hasPlaceOfExhibitionMaking">has Place Of Exhibition Making</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfFoundation" title="https://w3id.org/OntoExhibit#hasPlaceOfFoundation">has Place Of Foundation</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfLocation" title="https://w3id.org/OntoExhibit#hasPlaceOfLocation">has Place Of Location</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfProduction" title="https://w3id.org/OntoExhibit#hasPlaceOfProduction">has Place Of Production</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfPublication" title="https://w3id.org/OntoExhibit#hasPlaceOfPublication">has Place Of Publication</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfResidency" title="https://w3id.org/OntoExhibit#hasPlaceOfResidency">has Place Of Residency</a> <sup class="type-op" title="object property">op</sup>, <a href="#isLocatedAt" title="https://w3id.org/OntoExhibit#isLocatedAt">is Located At</a> <sup class="type-op" title="object property">op</sup>, <a href="#takesPlaceAt" title="https://w3id.org/OntoExhibit#takesPlaceAt">takes Place At</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasParentTerritory" title="https://w3id.org/OntoExhibit#hasParentTerritory">has Parent Territory</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceForActivity" title="https://w3id.org/OntoExhibit#hasPlaceForActivity">has Place For Activity</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfBirth" title="https://w3id.org/OntoExhibit#hasPlaceOfBirth">has Place Of Birth</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfConception" title="https://w3id.org/OntoExhibit#hasPlaceOfConception">has Place Of Conception</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfCreation" title="https://w3id.org/OntoExhibit#hasPlaceOfCreation">has Place Of Creation</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfCuration" title="https://w3id.org/OntoExhibit#hasPlaceOfCuration">has Place Of Curation</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfDeadth" title="https://w3id.org/OntoExhibit#hasPlaceOfDeadth">has Place Of Deadth</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfDestruction" title="https://w3id.org/OntoExhibit#hasPlaceOfDestruction">has Place Of Destruction</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfDissolution" title="https://w3id.org/OntoExhibit#hasPlaceOfDissolution">has Place Of Dissolution</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfExhibitionMaking" title="https://w3id.org/OntoExhibit#hasPlaceOfExhibitionMaking">has Place Of Exhibition Making</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfFoundation" title="https://w3id.org/OntoExhibit#hasPlaceOfFoundation">has Place Of Foundation</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfLocation" title="https://w3id.org/OntoExhibit#hasPlaceOfLocation">has Place Of Location</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfProduction" title="https://w3id.org/OntoExhibit#hasPlaceOfProduction">has Place Of Production</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfPublication" title="https://w3id.org/OntoExhibit#hasPlaceOfPublication">has Place Of Publication</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPlaceOfResidency" title="https://w3id.org/OntoExhibit#hasPlaceOfResidency">has Place Of Residency</a> <sup class="type-op" title="object property">op</sup>, <a href="#isLocatedAt" title="https://w3id.org/OntoExhibit#isLocatedAt">is Located At</a> <sup class="type-op" title="object property">op</sup>, <a href="#takesPlaceAt" title="https://w3id.org/OntoExhibit#takesPlaceAt">takes Place At</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -7892,7 +8022,7 @@ $(function(){
     is in domain of
    </dt>
    <dd>
-    <a href="#hasCommunicationDispositif" title="https://w3id.org/OntoExhibit#hasCommunicationDispositif">has Communication Dispositif</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasExpansionDispositif" title="https://w3id.org/OntoExhibit#hasExpansionDispositif">has Expansion Dispositif</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasMediationDispositif" title="https://w3id.org/OntoExhibit#hasMediationDispositif">has Mediation Dispositif</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPreliminaryPropositionalObject" title="https://w3id.org/OntoExhibit#hasPreliminaryPropositionalObject">has Preliminary Propositional Object</a> <sup class="type-op" title="object property">op</sup>, <a href="#isConmemorativeWorkOf" title="https://w3id.org/OntoExhibit#isConmemorativeWorkOf">is Conmemorative Work Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isManifestationOf" title="https://w3id.org/OntoExhibit#isManifestationOf">is Manifestation Of</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasCommunicationDispositif" title="https://w3id.org/OntoExhibit#hasCommunicationDispositif">has Communication Dispositif</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasExpansionDispositif" title="https://w3id.org/OntoExhibit#hasExpansionDispositif">has Expansion Dispositif</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasMediationDispositif" title="https://w3id.org/OntoExhibit#hasMediationDispositif">has Mediation Dispositif</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPreliminaryPropositionalObject" title="https://w3id.org/OntoExhibit#hasPreliminaryPropositionalObject">has Preliminary Propositional Object</a> <sup class="type-op" title="object property">op</sup>, <a href="#isConmemorativeWorkOf" title="https://w3id.org/OntoExhibit#isConmemorativeWorkOf">is Conmemorative Work Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isManifestationOf" title="https://w3id.org/OntoExhibit#isManifestationOf">is Manifestation Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#type" title="https://w3id.org/OntoExhibit#type">type</a> <sup class="type-dp" title="data property">dp</sup>
    </dd>
    <dt>
     is in range of
@@ -7944,7 +8074,7 @@ $(function(){
   <li><a href="#assingsCritiqueTo" title="https://w3id.org/OntoExhibit#assingsCritiqueTo"> <span>assings Critique To</span> </a></li>
   <li><a href="#assingsInterpretation" title="https://w3id.org/OntoExhibit#assingsInterpretation"> <span>assings Interpretation</span> </a></li>
   <li><a href="#assingsProposition" title="https://w3id.org/OntoExhibit#assingsProposition"> <span>assings Proposition</span> </a></li>
-  <li><a href="#CollaboratesWith" title="https://w3id.org/OntoExhibit#CollaboratesWith"> <span>Collaborates With</span> </a></li>
+  <li><a href="#collaboratesWith" title="https://w3id.org/OntoExhibit#collaboratesWith"> <span>collaborates With</span> </a></li>
   <li><a href="#commemorates" title="https://w3id.org/OntoExhibit#commemorates"> <span>commemorates</span> </a></li>
   <li><a href="#comprisesProposition" title="https://w3id.org/OntoExhibit#comprisesProposition"> <span>comprises Proposition</span> </a></li>
   <li><a href="#conveys" title="https://w3id.org/OntoExhibit#conveys"> <span>conveys</span> </a></li>
@@ -7974,6 +8104,7 @@ $(function(){
   <li><a href="#hasBranch" title="https://w3id.org/OntoExhibit#hasBranch"> <span>has Branch</span> </a></li>
   <li><a href="#hasCelebratedFigure" title="https://w3id.org/OntoExhibit#hasCelebratedFigure"> <span>has Celebrated Figure</span> </a></li>
   <li><a href="#hasCelebratedTheme" title="https://w3id.org/OntoExhibit#hasCelebratedTheme"> <span>has Celebrated Theme</span> </a></li>
+  <li><a href="#hasCity" title="https://w3id.org/OntoExhibit#hasCity"> <span>has City</span> </a></li>
   <li><a href="#hasClosing" title="https://w3id.org/OntoExhibit#hasClosing"> <span>has Closing</span> </a></li>
   <li><a href="#hasCollaborator" title="https://w3id.org/OntoExhibit#hasCollaborator"> <span>has Collaborator</span> </a></li>
   <li><a href="#hasComissioner" title="https://w3id.org/OntoExhibit#hasComissioner"> <span>has Comissioner</span> </a></li>
@@ -8044,6 +8175,7 @@ $(function(){
   <li><a href="#hasParentActivity" title="https://w3id.org/OntoExhibit#hasParentActivity"> <span>has Parent Activity</span> </a></li>
   <li><a href="#hasParentDigitalPlace" title="https://w3id.org/OntoExhibit#hasParentDigitalPlace"> <span>has Parent Digital Place</span> </a></li>
   <li><a href="#hasParentOrganization" title="https://w3id.org/OntoExhibit#hasParentOrganization"> <span>has Parent Organization</span> </a></li>
+  <li><a href="#hasParentTerritory" title="https://w3id.org/OntoExhibit#hasParentTerritory"> <span>has Parent Territory</span> </a></li>
   <li><a href="#hasParticipant" title="https://w3id.org/OntoExhibit#hasParticipant"> <span>has Participant</span> </a></li>
   <li><a href="#hasPlaceForActivity" title="https://w3id.org/OntoExhibit#hasPlaceForActivity"> <span>has Place For Activity</span> </a></li>
   <li><a href="#hasPlaceOfActivity" title="https://w3id.org/OntoExhibit#hasPlaceOfActivity"> <span>has Place Of Activity</span> </a></li>
@@ -8086,6 +8218,7 @@ $(function(){
   <li><a href="#hasSpatialUnit" title="https://w3id.org/OntoExhibit#hasSpatialUnit"> <span>has Spatial Unit</span> </a></li>
   <li><a href="#hasSponsor" title="https://w3id.org/OntoExhibit#hasSponsor"> <span>has Sponsor</span> </a></li>
   <li><a href="#hasStartingDate" title="https://w3id.org/OntoExhibit#hasStartingDate"> <span>has Starting Date</span> </a></li>
+  <li><a href="#hasState" title="https://w3id.org/OntoExhibit#hasState"> <span>has State</span> </a></li>
   <li><a href="#hasTheme" title="https://w3id.org/OntoExhibit#hasTheme"> <span>has Theme</span> </a></li>
   <li><a href="#hasTimeRange" title="https://w3id.org/OntoExhibit#hasTimeRange"> <span>has Time Range</span> </a></li>
   <li><a href="#hasTimeSpan" title="https://w3id.org/OntoExhibit#hasTimeSpan"> <span>has Time Span</span> </a></li>
@@ -8119,6 +8252,7 @@ $(function(){
   <li><a href="#isCelebratedFigureOf" title="https://w3id.org/OntoExhibit#isCelebratedFigureOf"> <span>is Celebrated Figure Of</span> </a></li>
   <li><a href="#isCelebratedThemeOf" title="https://w3id.org/OntoExhibit#isCelebratedThemeOf"> <span>is Celebrated Theme Of</span> </a></li>
   <li><a href="#isCelebratedThrough" title="https://w3id.org/OntoExhibit#isCelebratedThrough"> <span>is Celebrated Through</span> </a></li>
+  <li><a href="#isCityOf" title="https://w3id.org/OntoExhibit#isCityOf"> <span>is City Of</span> </a></li>
   <li><a href="#isClosingOf" title="https://w3id.org/OntoExhibit#isClosingOf"> <span>is Closing Of</span> </a></li>
   <li><a href="#isCollaboratorOf" title="https://w3id.org/OntoExhibit#isCollaboratorOf"> <span>is Collaborator Of</span> </a></li>
   <li><a href="#isComissionerOf" title="https://w3id.org/OntoExhibit#isComissionerOf"> <span>is Comissioner Of</span> </a></li>
@@ -8255,6 +8389,7 @@ $(function(){
   <li><a href="#isSpatialUnitOf" title="https://w3id.org/OntoExhibit#isSpatialUnitOf"> <span>is Spatial Unit Of</span> </a></li>
   <li><a href="#isSponsorOf" title="https://w3id.org/OntoExhibit#isSponsorOf"> <span>is Sponsor Of</span> </a></li>
   <li><a href="#isStartingDateOf" title="https://w3id.org/OntoExhibit#isStartingDateOf"> <span>is Starting Date Of</span> </a></li>
+  <li><a href="#isStateOf" title="https://w3id.org/OntoExhibit#isStateOf"> <span>is State Of</span> </a></li>
   <li><a href="#isTerritorialLocationOf" title="https://w3id.org/OntoExhibit#isTerritorialLocationOf"> <span>is Territorial Location Of</span> </a></li>
   <li><a href="#isThemeOf" title="https://w3id.org/OntoExhibit#isThemeOf"> <span>is Theme Of</span> </a></li>
   <li><a href="#isTimeRangeOf" title="https://w3id.org/OntoExhibit#isTimeRangeOf"> <span>is Time Range Of</span> </a></li>
@@ -8568,9 +8703,9 @@ $(function(){
    </dl>
   </div>
  </div>
- <div class="entity" id="CollaboratesWith">
-  <h3>Collaborates With<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#CollaboratesWith</p>
+ <div class="entity" id="collaboratesWith">
+  <h3>collaborates With<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#collaboratesWith</p>
   <div class="description">
    <p><strong>has characteristics: </strong> symmetric</p>
    <dl>
@@ -8865,12 +9000,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -8896,12 +9025,6 @@ $(function(){
   <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#executivePositionHeldsIn</p>
   <div class="description">
    <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
     <dt>
      has domain
     </dt>
@@ -9375,12 +9498,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -9423,6 +9540,38 @@ $(function(){
     </dt>
     <dd>
      <a href="#isCelebratedThemeOf" title="https://w3id.org/OntoExhibit#isCelebratedThemeOf">is Celebrated Theme Of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasCity">
+  <h3>has City<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#hasCity</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/OntoExhibit#hasSubTerritory" target="_blank" title="https://w3id.org/OntoExhibit#hasSubTerritory">has Sub Territory</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#State" title="https://w3id.org/OntoExhibit#State">State</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#City" title="https://w3id.org/OntoExhibit#City">City</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#isCityOf" title="https://w3id.org/OntoExhibit#isCityOf">is City Of</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -10375,12 +10524,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -10748,12 +10891,6 @@ $(function(){
   <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#hasHeadquartersTimeRange</p>
   <div class="description">
    <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
     <dt>
      has domain
     </dt>
@@ -11357,12 +11494,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -11389,12 +11520,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -11411,6 +11536,32 @@ $(function(){
     </dt>
     <dd>
      <a href="#isParentOrganzationOf" title="https://w3id.org/OntoExhibit#isParentOrganzationOf">is Parent Organzation Of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasParentTerritory">
+  <h3>has Parent Territory<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#hasParentTerritory</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Territorial_Entity" title="https://w3id.org/OntoExhibit#Territorial_Entity">territorial entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Territorial_Entity" title="https://w3id.org/OntoExhibit#Territorial_Entity">territorial entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="https://w3id.org/OntoExhibit#hasSubTerritory" target="_blank" title="https://w3id.org/OntoExhibit#hasSubTerritory">has Sub Territory</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -11446,12 +11597,6 @@ $(function(){
   <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#hasPlaceForActivity</p>
   <div class="description">
    <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
     <dt>
      has domain
     </dt>
@@ -11915,12 +12060,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -12126,12 +12265,6 @@ $(function(){
   <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#hasPropositionAssignment</p>
   <div class="description">
    <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
     <dt>
      has sub-properties
     </dt>
@@ -12374,12 +12507,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -12432,12 +12559,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -12464,12 +12585,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -12495,12 +12610,6 @@ $(function(){
   <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#hasSiteForSecondaryCenter</p>
   <div class="description">
    <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
     <dt>
      has domain
     </dt>
@@ -12580,12 +12689,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -12654,6 +12757,38 @@ $(function(){
     </dt>
     <dd>
      <a href="#isStartingDateOf" title="https://w3id.org/OntoExhibit#isStartingDateOf">is Starting Date Of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasState">
+  <h3>has State<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#hasState</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="https://w3id.org/OntoExhibit#hasSubTerritory" target="_blank" title="https://w3id.org/OntoExhibit#hasSubTerritory">has Sub Territory</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Country" title="https://w3id.org/OntoExhibit#Country">Country</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#State" title="https://w3id.org/OntoExhibit#State">State</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#isStateOf" title="https://w3id.org/OntoExhibit#isStateOf">is State Of</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -12910,12 +13045,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -12941,12 +13070,6 @@ $(function(){
   <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#hostsOperationOf</p>
   <div class="description">
    <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
     <dt>
      has domain
     </dt>
@@ -13544,12 +13667,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -13566,6 +13683,32 @@ $(function(){
     </dt>
     <dd>
      <a href="#serveAsCelebrationOf" title="https://w3id.org/OntoExhibit#serveAsCelebrationOf">serve As Celebration Of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isCityOf">
+  <h3>is City Of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#isCityOf</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#City" title="https://w3id.org/OntoExhibit#City">City</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#State" title="https://w3id.org/OntoExhibit#State">State</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasCity" title="https://w3id.org/OntoExhibit#hasCity">has City</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -14562,12 +14705,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -14730,12 +14867,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -14761,12 +14892,6 @@ $(function(){
   <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#isExecutivePositionTimeRangeOf</p>
   <div class="description">
    <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
     <dt>
      has domain
     </dt>
@@ -15241,12 +15366,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -15487,12 +15606,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -15609,12 +15722,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -15718,12 +15825,6 @@ $(function(){
   <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#isMembershipTimeRangeOf</p>
   <div class="description">
    <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
     <dt>
      has domain
     </dt>
@@ -15991,12 +16092,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -16022,12 +16117,6 @@ $(function(){
   <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#isParentOrganzationOf</p>
   <div class="description">
    <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
     <dt>
      has domain
     </dt>
@@ -16080,12 +16169,6 @@ $(function(){
   <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#isPlaceForActivityOf</p>
   <div class="description">
    <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
     <dt>
      has domain
     </dt>
@@ -16170,12 +16253,6 @@ $(function(){
   <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#isPlaceOfActivityTimeRangeOf</p>
   <div class="description">
    <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
     <dt>
      has domain
     </dt>
@@ -16587,12 +16664,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -16618,12 +16689,6 @@ $(function(){
   <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#isPreliminaryIdeasOf</p>
   <div class="description">
    <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
     <dt>
      has domain
     </dt>
@@ -17078,12 +17143,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -17136,12 +17195,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -17167,12 +17220,6 @@ $(function(){
   <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#isResidencyTimeRangeOf</p>
   <div class="description">
    <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
     <dt>
      has domain
     </dt>
@@ -17226,12 +17273,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -17258,12 +17299,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -17289,12 +17324,6 @@ $(function(){
   <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#isSiteForSecondaryCenterOf</p>
   <div class="description">
    <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
     <dt>
      has domain
     </dt>
@@ -17426,12 +17455,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -17500,6 +17523,32 @@ $(function(){
     </dt>
     <dd>
      <a href="#hasStartingDate" title="https://w3id.org/OntoExhibit#hasStartingDate">has Starting Date</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isStateOf">
+  <h3>is State Of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#isStateOf</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#State" title="https://w3id.org/OntoExhibit#State">State</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Country" title="https://w3id.org/OntoExhibit#Country">Country</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasState" title="https://w3id.org/OntoExhibit#hasState">has State</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -17730,12 +17779,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -17866,12 +17909,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -17955,12 +17992,6 @@ $(function(){
   <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#serveAsCelebrationOf</p>
   <div class="description">
    <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
     <dt>
      has domain
     </dt>
@@ -18199,6 +18230,7 @@ $(function(){
   <li><a href="#population" title="https://w3id.org/OntoExhibit#population">population</a></li>
   <li><a href="#professional_activity" title="https://w3id.org/OntoExhibit#professional_activity">professional activity</a></li>
   <li><a href="#program" title="https://w3id.org/OntoExhibit#program">program</a></li>
+  <li><a href="#size" title="https://w3id.org/OntoExhibit#size">size</a></li>
   <li><a href="#socialNetworkProfile" title="https://w3id.org/OntoExhibit#socialNetworkProfile">social network profile</a></li>
   <li><a href="#software_version" title="https://w3id.org/OntoExhibit#software_version">software version</a></li>
   <li><a href="#status" title="https://w3id.org/OntoExhibit#status">status</a></li>
@@ -18206,7 +18238,8 @@ $(function(){
   <li><a href="#technical_specifications" title="https://w3id.org/OntoExhibit#technical_specifications">technical specifications</a></li>
   <li><a href="#techno-placeType" title="https://w3id.org/OntoExhibit#techno-placeType">techno-place type</a></li>
   <li><a href="#ticket_price" title="https://w3id.org/OntoExhibit#ticket_price">ticket price</a></li>
-  <li><a href="#url" title="https://w3id.org/OntoExhibit#url"> <span>url</span> </a></li>
+  <li><a href="#type" title="https://w3id.org/OntoExhibit#type">type</a></li>
+  <li><a href="#url" title="https://w3id.org/OntoExhibit#url">url</a></li>
   <li><a href="#webPage" title="https://w3id.org/OntoExhibit#webPage">webpage</a></li>
  </ul>
  <div class="entity" id="access">
@@ -18275,16 +18308,28 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
+     <a href="#Headquarter" title="https://w3id.org/OntoExhibit#Headquarter">headquarters</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#Location" title="https://w3id.org/OntoExhibit#Location">emplazamiento</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
      <a href="#Physical_Site" title="https://w3id.org/OntoExhibit#Physical_Site">physical site</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#Place_Of_Activity" title="https://w3id.org/OntoExhibit#Place_Of_Activity">place of activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#Place_Of_Residence" title="https://w3id.org/OntoExhibit#Place_Of_Residence">residency</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
     </dd>
    </dl>
   </div>
@@ -18319,6 +18364,12 @@ $(function(){
     </dt>
     <dd>
      <a href="#Art_Competition" title="https://w3id.org/OntoExhibit#Art_Competition">art competition</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
     </dd>
    </dl>
   </div>
@@ -18388,6 +18439,12 @@ $(function(){
     <dd>
      <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
     </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
    </dl>
   </div>
  </div>
@@ -18416,12 +18473,6 @@ $(function(){
   <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#executive_position_type</p>
   <div class="description">
    <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
     <dt>
      has domain
     </dt>
@@ -18471,6 +18522,12 @@ $(function(){
     <dd>
      <a href="#Territorial_Entity" title="https://w3id.org/OntoExhibit#Territorial_Entity">territorial entity</a> <sup class="type-c" title="class">c</sup>
     </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
    </dl>
   </div>
  </div>
@@ -18483,7 +18540,16 @@ $(function(){
      has domain
     </dt>
     <dd>
-     <a href="#Physical_Site" title="https://w3id.org/OntoExhibit#Physical_Site">physical site</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#Territorial_Entity" title="https://w3id.org/OntoExhibit#Territorial_Entity">territorial entity</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Physical_Site" title="https://w3id.org/OntoExhibit#Physical_Site">physical site</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#Territorial_Entity" title="https://w3id.org/OntoExhibit#Territorial_Entity">territorial entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
     </dd>
    </dl>
   </div>
@@ -18668,12 +18734,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -18698,6 +18758,26 @@ $(function(){
     </dt>
     <dd>
      <a href="#Planned_Activity" title="https://w3id.org/OntoExhibit#Planned_Activity">planned activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="size">
+  <h3>size<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#size</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Company" title="https://w3id.org/OntoExhibit#Company">company</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -18802,12 +18882,6 @@ $(function(){
   <div class="description">
    <dl>
     <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
      has domain
     </dt>
     <dd>
@@ -18842,17 +18916,34 @@ $(function(){
    </dl>
   </div>
  </div>
+ <div class="entity" id="type">
+  <h3>type<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#type</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Exhibitionary_Event" title="https://w3id.org/OntoExhibit#Exhibitionary_Event">exhibitionary event</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#Work_Manifestation" title="https://w3id.org/OntoExhibit#Work_Manifestation">work manifestation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="url">
   <h3>url<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/OntoExhibit#url</p>
   <div class="description">
    <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
     <dt>
      has domain
     </dt>
@@ -18883,7 +18974,7 @@ $(function(){
      has range
     </dt>
     <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#anyURI" target="_blank" title="http://www.w3.org/2001/XMLSchema#anyURI">any U R I</a>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
     </dd>
    </dl>
   </div>
@@ -18892,6 +18983,7 @@ $(function(){
  <h3 id="annotationproperties" class="list">Annotation Properties</h3>
  <ul class="hlist">
   <li><a href="#http://purl.org/dc/terms/abstract" title="http://purl.org/dc/terms/abstract"> <span>abstract</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/bibliographicCitation" title="http://purl.org/dc/terms/bibliographicCitation"> <span>bibliographic Citation</span> </a></li>
   <li><a href="#https://schema.org/codeRepository" title="https://schema.org/codeRepository"> <span>code Repository</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/contributor" title="http://purl.org/dc/terms/contributor"> <span>contributor</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created"> <span>created</span> </a></li>
@@ -18900,6 +18992,11 @@ $(function(){
   <li><a href="#http://www.w3.org/2002/07/owl#equivalentClass" title="http://www.w3.org/2002/07/owl#equivalentClass"> <span>equivalent Class</span> </a></li>
   <li><a href="#https://schema.org/funder" title="https://schema.org/funder"> <span>funder</span> </a></li>
   <li><a href="#https://schema.org/funding" title="https://schema.org/funding"> <span>funding</span> </a></li>
+  <li><a href="#http://schema.org/image" title="http://schema.org/image"> <span>image</span> </a></li>
+  <li><a href="#https://schema.org/image" title="https://schema.org/image"> <span>image</span> </a></li>
+  <li><a href="#https://w3id.org/widoco/vocab#introduction" title="https://w3id.org/widoco/vocab#introduction"> <span>introduction</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license"> <span>license</span> </a></li>
+  <li><a href="#http://schema.org/logo" title="http://schema.org/logo"> <span>logo</span> </a></li>
   <li><a href="#https://schema.org/logo" title="https://schema.org/logo"> <span>logo</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified"> <span>modified</span> </a></li>
   <li><a href="#http://purl.org/vocab/vann/preferredNamespacePrefix" title="http://purl.org/vocab/vann/preferredNamespacePrefix"> <span>preferred Namespace Prefix</span> </a></li>
@@ -18913,6 +19010,10 @@ $(function(){
  <div class="entity" id="http://purl.org/dc/terms/abstract">
   <h3>abstract<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/abstract</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/bibliographicCitation">
+  <h3>bibliographic Citation<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/bibliographicCitation</p>
  </div>
  <div class="entity" id="https://schema.org/codeRepository">
   <h3>code Repository<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
@@ -18945,6 +19046,26 @@ $(function(){
  <div class="entity" id="https://schema.org/funding">
   <h3>funding<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://schema.org/funding</p>
+ </div>
+ <div class="entity" id="http://schema.org/image">
+  <h3>image<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://schema.org/image</p>
+ </div>
+ <div class="entity" id="https://schema.org/image">
+  <h3>image<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://schema.org/image</p>
+ </div>
+ <div class="entity" id="https://w3id.org/widoco/vocab#introduction">
+  <h3>introduction<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/widoco/vocab#introduction</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/license">
+  <h3>license<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/license</p>
+ </div>
+ <div class="entity" id="http://schema.org/logo">
+  <h3>logo<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://schema.org/logo</p>
  </div>
  <div class="entity" id="https://schema.org/logo">
   <h3>logo<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
@@ -18996,15 +19117,8 @@ $(function(){
 <!--REFERENCES SECTION-->
   <div id="references">
 <h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<ul>
-	<li>
-		Rodríguez Ortega, Nuria y Cruces Rodríguez, Antonio. Development of Technological Ecosystems for Cultural Analysis: The Case of Expofinder System and Art Exhibitions. Digital Scholarship in the Humanities, 34, n. 2, pp. 423-448. fqy018, Oxford University Press, 2019.
-		ISSN: 2055-768X (online); DOI: <a href="https://doi.org/10.1093/llc/fqy018">https://doi.org/10.1093/llc/fqy018</a>
-	</li>
-	<li>
-		Rodríguez Ortega, Nuria. Contours of Knowledge: Epistemological Implications of Semantic Models in the Representation of the Art Exhibition Domain through the Lens of the OntoExhibit Ontology. Život umjetnosti, special issue (Digital Art History) (in press, 2024).
-	</li>
-</ul>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
 
 </div>
 <div id="acknowledgments">

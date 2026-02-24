@@ -44,6 +44,11 @@ jobs:
         run: |
           find docs -name "*.html" -exec sed -i -E 's/width="50\/?\/*"/width="200"/g' {} +
 
+      - name: Deploy Premium Landing Page
+        run: |
+          cp resources/logo_ontoexhibit.png docs/logo_ontoexhibit.png
+          cp resources/landing/index.html docs/index.html
+
       - name: Commit and Push changes
         run: |
           git config --global user.name "github-actions[bot]"

@@ -42,7 +42,7 @@ jobs:
 
       - name: Post-process Logo Size
         run: |
-          find docs -name "*.html" -exec sed -i 's/width="50"/width="200"/g' {} +
+          find docs -name "*.html" -exec sed -i -E 's/width="50\/?\/*"/width="200"/g' {} +
 
       - name: Commit and Push changes
         run: |

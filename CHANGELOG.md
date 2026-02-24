@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Documentation automation using Java 17 and Widoco v1.4.25.
 - Annotation properties and united sections support in generated documentation.
 
+### Changed
+- Increased logo size in generated documentation to 200px for better visibility.
+
 ## [1.1.0] - 2025-12-31
 
 ### Added

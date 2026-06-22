@@ -13,7 +13,7 @@
 OntoExhibit interprets the art exhibition domain as a complex cultural ecosystem, comprising a diverse array of actors (including both human and non-human entities) intertwined through discursive and social practices. These practices create a complex web of semantic layers that imbue the domain with symbolic values. OntoExhibit thus approaches the phenomenon of art exhibitions in its double condition: as a distinct discursive, social, and cultural production emerging from a set of practices and interactions, and as an active producer/generator of discourses and public spheres. These public spheres, in turn, are shaped by discursive and social practices that also convey meanings and generate symbolic value, which can influence subsequent exhibitions. This creates a dynamic and continuous cycle of cultural impact and significance.
 
 According to this conceptualization, OntoExhibit aims to deepen our understanding of the structures, networks, and behavioral patterns within this cultural ecosystem; unravel its social, discursive, and semantic intricacies; and enhance our insights into the engagement of individuals and communities with cultural heritage through exhibitions. To this end, OntoExhibit integrates traditional modeling approaches of the art exhibition domain with new extensions."""@en ;
-                                 <http://purl.org/dc/terms/bibliographicCitation> "Nuria Rodríguez Ortega, María del Mar Roldán García, Martín Jerónimo Salvachúa, María Luisa Díez Platas. OntoExhibit version 1.1.0. URL: https://w3id.org/OntoExhibit" ;
+                                 <http://purl.org/dc/terms/bibliographicCitation> "Nuria Rodríguez Ortega, Maria del Mar Roldán García, Martín Jerónimo Salvachúa, María Luisa Díez Platas. OntoExhibit version 1.0.0. URL: https://complexhibit-project.github.io/OntoExhibit/index-en.html#1.0.0" ;
                                  <http://purl.org/dc/terms/created> "2022-11"^^xsd:date ;
                                  <http://purl.org/dc/terms/creator> <https://github.com/MartinM10> ,
                                                                     "Maria del Mar Roldán García" ,
@@ -22,9 +22,9 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
                                  <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
                                  <http://purl.org/dc/terms/modified> "2025-12-31"^^xsd:date ;
                                  <http://purl.org/dc/terms/references> "Rodríguez Ortega, Nuria & Cruces Rodríguez, Antonio (2019). “Development of Technological Ecosystems for Cultural Analysis: The Case of Expofinder System and Art Exhibitions”. Digital Scholarship in the Humanities, 34(2), 423–448. https://doi.org/10.1093/llc/fqy018" ,
+                                                                       "Rodríguez Ortega, Nuria. «Contours of Knowledge: Epistemological Implications of Semantic Models in the Representation of the Art Exhibition Domain through the Lens of the OntoExhibit Ontology», Život umjetnosti, special issue (Digital Art History) (in press, 2024)." ,
                                                                        "Rodríguez Ortega, Nuria; Roldán García, M.ª Mar; Díez Platas, M.ª Luisa; Salvachúa, Martín (2023). “OntoExhibit: una ontología para el modelado del ámbito de las exposiciones artísticas y sus expansiones semántico-discursivas”. VI Congreso de la Sociedad Internacional de Humanidades Digitales Hispánicas (HDH), Encuentros y Transformaciones, UNIR, Logroño, 18–20 October 2023." ,
                                                                        "Rodríguez Ortega, Nuria; Roldán García, M.ª Mar; Díez Platas, M.ª Luisa; Salvachúa, Martín (2024). “OntoExhibit: An Ontology for Modeling the Field of Art Exhibitions and Its Semantic-Discursive Dimension”. In: Karajgikar, Jajwalya; Janco, Andrew; Otis, Jessica (eds.), Digital Humanities 2024: Book of Abstracts, VA 2024. https://doi.org/10.5281/zenodo.13761079" ,
-                                                                       "Rodríguez-Ortega, Nuria (2024). “Contours of Knowledge: Epistemological Implications of Semantic Models in the Representation of the Art Exhibition Domain through the Lens of the OntoExhibit Ontology”. Život umjetnosti, vol. 114, no. 1, pp. 122–147. https://doi.org/10.31664/zu.2024.114.06" ,
                                                                        "Rodríguez-Ortega, Nuria; Díez-Platas, M.ª Luisa; Ortiz Tello, María; Lumbreras Fernández, Ángel (2025). “Bridging Discourse: Integrating Text Catalogs and Art Reviews into Knowledge Graphs for Enriched Exhibition Analysis”. ADHO International Conference Digital Humanities 2025: Accessibility and Citizenship, 14–18 July 2025, Universidade Nova de Lisboa." ,
                                                                        "Rodríguez-Ortega, Nuria; Romero Ferrón, Bárbara (2025). “Cartografías entrelazadas: modelar la transnacionalidad en el ecosistema expositivo español (2000–2023) mediante análisis de redes”. VI Congreso de la HDH, Ad Cognoscendum, agendum vel operandum, 22–24 October 2025, Universidad de Valencia. https://doi.org/10.7203/PUV-OA-9788491338307" ,
                                                                        "Rodríguez-Ortega, Nuria; Romero Ferrón, Bárbara; Salvachúa, Martín (2025). “Empowering Peripheral Voices: Data Sovereignty and Low-Tech Solutions for Art Galleries Data Preservation”. ADHO International Conference Digital Humanities 2025: Accessibility and Citizenship, 14–18 July 2025, Universidade Nova de Lisboa." ,
@@ -147,6 +147,18 @@ owl:versionIRI rdf:type owl:AnnotationProperty .
 <https://schema.org/logo> rdf:type owl:AnnotationProperty .
 
 
+###  https://w3id.org/OntoExhibit#modelingNote
+:modelingNote rdf:type owl:AnnotationProperty ;
+              rdfs:label "modeling note"@en ,
+                         "nota de modelado"@es .
+
+
+###  https://w3id.org/OntoExhibit#roce_facet
+:roce_facet rdf:type owl:AnnotationProperty ;
+            rdfs:label "rol de faceta"@es ,
+                       "rol facet"@en .
+
+
 ###  https://w3id.org/widoco/vocab#introduction
 <https://w3id.org/widoco/vocab#introduction> rdf:type owl:AnnotationProperty .
 
@@ -162,6 +174,13 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 #    Object Properties
 #################################################################
+
+###  https://w3id.org/OntoExhibit#CollaboratesWith
+:CollaboratesWith rdf:type owl:ObjectProperty ,
+                           owl:SymmetricProperty ;
+                  rdfs:domain :Actant ;
+                  rdfs:range :Actant .
+
 
 ###  https://w3id.org/OntoExhibit#assesmentAssignedBy
 :assesmentAssignedBy rdf:type owl:ObjectProperty ;
@@ -232,13 +251,6 @@ xsd:date rdf:type rdfs:Datatype .
                     rdfs:range :Proposition_Assignment .
 
 
-###  https://w3id.org/OntoExhibit#collaboratesWith
-:collaboratesWith rdf:type owl:ObjectProperty ,
-                           owl:SymmetricProperty ;
-                  rdfs:domain :Actant ;
-                  rdfs:range :Actant .
-
-
 ###  https://w3id.org/OntoExhibit#commemorates
 :commemorates rdf:type owl:ObjectProperty ;
               owl:inverseOf :isCommemoratedBy ;
@@ -257,7 +269,9 @@ xsd:date rdf:type rdfs:Datatype .
 :conveys rdf:type owl:ObjectProperty ;
          owl:inverseOf :isConveyedBy ;
          rdfs:domain :Propositional_Entity ;
-         rdfs:range :Proposition .
+         rdfs:range :Proposition ;
+         <http://purl.org/dc/terms/description> "Conveys relates a propositional entity to one or more propositions that it bears as propositional content."@en ;
+         rdfs:label "conveys"@en .
 
 
 ###  https://w3id.org/OntoExhibit#critiqueAssignedBy
@@ -294,7 +308,9 @@ xsd:date rdf:type rdfs:Datatype .
 :embodies rdf:type owl:ObjectProperty ;
           owl:inverseOf :isEmbodiedBy ;
           rdfs:domain :Propositional_Object ;
-          rdfs:range :Proposition .
+          rdfs:range :Proposition ;
+          <http://purl.org/dc/terms/description> "Embodies relates a propositional object to a proposition when that proposition is materially instantiated in the object (physically or computationally), i.e., realized in its structure, configuration, or operation."@en ;
+          rdfs:label "embodies"@en .
 
 
 ###  https://w3id.org/OntoExhibit#embodiesCuratorialDiscourse
@@ -307,6 +323,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#executivePositionHeldsBy
 :executivePositionHeldsBy rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf owl:topObjectProperty ;
                           owl:inverseOf :executivePositionHeldsIn ;
                           rdfs:domain <https://www.iflastandards.info/fr/frbr/frbroo#F11_Corporate_Body> ;
                           rdfs:range :Executive_Position .
@@ -314,6 +331,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#executivePositionHeldsIn
 :executivePositionHeldsIn rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf owl:topObjectProperty ;
                           rdfs:domain :Executive_Position ;
                           rdfs:range <https://www.iflastandards.info/fr/frbr/frbroo#F11_Corporate_Body> .
 
@@ -373,7 +391,7 @@ xsd:date rdf:type rdfs:Datatype .
                       rdfs:subPropertyOf :hasPropositionAssigned ;
                       owl:inverseOf :isAssesmentAssignedOf ;
                       rdfs:domain :Assement_Assignment ;
-                      rdfs:range :Assesment .
+                      rdfs:range :Assessment .
 
 
 ###  https://w3id.org/OntoExhibit#hasAssesmentAssignment
@@ -438,6 +456,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#hasCelebratedFigure
 :hasCelebratedFigure rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
                      owl:inverseOf :isCelebratedFigureOf ;
                      rdfs:domain :Conmemorative_Event ;
                      rdfs:range :Human_Actant .
@@ -448,14 +467,6 @@ xsd:date rdf:type rdfs:Datatype .
                     owl:inverseOf :isCelebratedThemeOf ;
                     rdfs:domain :Conmemorative_Event ;
                     rdfs:range :Theme .
-
-
-###  https://w3id.org/OntoExhibit#hasCity
-:hasCity rdf:type owl:ObjectProperty ;
-         rdfs:subPropertyOf :hasSubTerritory ;
-         owl:inverseOf :isCityOf ;
-         rdfs:domain :State ;
-         rdfs:range :City .
 
 
 ###  https://w3id.org/OntoExhibit#hasClosing
@@ -481,6 +492,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#hasCommunicationDispositif
 :hasCommunicationDispositif rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf :hasDispositif ;
                             owl:inverseOf :isCommunicationDispositifOf ;
                             rdfs:domain [ rdf:type owl:Class ;
                                           owl:unionOf ( <https://cidoc-crm.org/cidoc-crm/7.1.1/E5_Event>
@@ -492,7 +504,8 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#hasCommunicationResource
 :hasCommunicationResource rdf:type owl:ObjectProperty ;
-                          owl:inverseOf :serveAsCommunicationResourceOf ;
+                          rdfs:subPropertyOf :hasDispositifResource ;
+                          owl:inverseOf :servesAsCommunicationResourceOf ;
                           rdfs:domain :Communication_Dispositif ;
                           rdfs:range [ rdf:type owl:Class ;
                                        owl:unionOf ( :Planned_Activity
@@ -591,7 +604,7 @@ xsd:date rdf:type rdfs:Datatype .
                      rdfs:subPropertyOf :hasPropositionAssigned ;
                      owl:inverseOf :isCritiqueAssignedOf ;
                      rdfs:domain :assingment_critique ;
-                     rdfs:range :Review .
+                     rdfs:range :Critique .
 
 
 ###  https://w3id.org/OntoExhibit#hasCritiqueAssignment
@@ -665,15 +678,8 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/OntoExhibit#hasDigitalPlaceForActivity
 :hasDigitalPlaceForActivity rdf:type owl:ObjectProperty ;
                             owl:inverseOf :isDigitalPlaceForActivityOf ;
-                            rdfs:domain :Place_Of_Activity ;
+                            rdfs:domain :Activity_Place ;
                             rdfs:range :Digital_Place .
-
-
-###  https://w3id.org/OntoExhibit#hasDigitalPlaceOfLocation
-:hasDigitalPlaceOfLocation rdf:type owl:ObjectProperty ;
-                           owl:inverseOf :isDigitalPlaceOfLocationOf ;
-                           rdfs:domain :Location ;
-                           rdfs:range :Digital_Place .
 
 
 ###  https://w3id.org/OntoExhibit#hasDigitalSite
@@ -696,6 +702,29 @@ xsd:date rdf:type rdfs:Datatype .
                    <http://purl.org/dc/terms/description> "The \"hasDigitalVersion\" property represents a relationship between an entity and its digital counterpart, where the digital version is not merely a reproduction but a variation or interpretation of the original entity. This digital version may incorporate additional elements, contextual adjustments, or creative reinterpretations that distinguish it from a straightforward digital copy. The property emphasizes the transformative nature of the digital version, which can offer new perspectives, enhanced features, or alternative forms of engagement with the original entity. The relationship between an entity and its exact digital counterpart is defined as “hasDigitalAnalogous,” while the relationship between an activity and its mere recording is defined as “hasDigitalRecording.”"@en .
 
 
+###  https://w3id.org/OntoExhibit#hasDispositif
+:hasDispositif rdf:type owl:ObjectProperty ;
+               owl:inverseOf :isDispositifOf ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( <https://cidoc-crm.org/cidoc-crm/7.1.1/E5_Event>
+                                           :Work_Manifestation
+                                         )
+                           ] ;
+               rdfs:range :Dispositif .
+
+
+###  https://w3id.org/OntoExhibit#hasDispositifResource
+:hasDispositifResource rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf :hasDispositifResource ;
+                       owl:inverseOf :servesAsDispositifResourceOf ;
+                       rdfs:domain :Dispositif ;
+                       rdfs:range [ rdf:type owl:Class ;
+                                    owl:unionOf ( :Planned_Activity
+                                                  :Propositional_Object
+                                                )
+                                  ] .
+
+
 ###  https://w3id.org/OntoExhibit#hasDissolution
 :hasDissolution rdf:type owl:ObjectProperty ;
                 owl:inverseOf :isDissolutionOf ;
@@ -705,6 +734,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#hasDocumentationDispositif
 :hasDocumentationDispositif rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf :hasDispositif ;
                             owl:inverseOf :isDocumentationDispositifOf ;
                             rdfs:domain [ rdf:type owl:Class ;
                                           owl:unionOf ( <https://cidoc-crm.org/cidoc-crm/7.1.1/E5_Event>
@@ -718,6 +748,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#hasDocumentationResource
 :hasDocumentationResource rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf :hasDispositifResource ;
                           owl:inverseOf :servesAsDocumentationResourceOf ;
                           rdfs:domain :Documentation_Dispositif ;
                           rdfs:range :Propositional_Object .
@@ -732,6 +763,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#hasExecutivePositionTimeRange
 :hasExecutivePositionTimeRange rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf owl:topObjectProperty ;
                                owl:inverseOf :isExecutivePositionTimeRangeOf ;
                                rdfs:domain :Executive_Position ;
                                rdfs:range :Time_Range .
@@ -779,6 +811,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#hasExpansionDispositif
 :hasExpansionDispositif rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :hasDispositif ;
                         owl:inverseOf :isExpansionDispositifOf ;
                         rdfs:domain [ rdf:type owl:Class ;
                                       owl:unionOf ( :Planned_Activity
@@ -790,6 +823,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#hasExpansionResource
 :hasExpansionResource rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :hasDispositifResource ;
                       owl:inverseOf :servesAsExpansionResourceOf ;
                       rdfs:domain :Expansion_Dispositif ;
                       rdfs:range [ rdf:type owl:Class ;
@@ -833,13 +867,14 @@ xsd:date rdf:type rdfs:Datatype .
 :hasHeadquarters rdf:type owl:ObjectProperty ;
                  owl:inverseOf :isHeadquartersOf ;
                  rdfs:domain :Collective_Human_Actant ;
-                 rdfs:range :Headquarter .
+                 rdfs:range :headquarter_assignment .
 
 
 ###  https://w3id.org/OntoExhibit#hasHeadquartersTimeRange
 :hasHeadquartersTimeRange rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf owl:topObjectProperty ;
                           owl:inverseOf :isHeadquartersTimeRangeOf ;
-                          rdfs:domain :Headquarter ;
+                          rdfs:domain :headquarter_assignment ;
                           rdfs:range :Time_Range .
 
 
@@ -910,6 +945,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#hasMediationDispositif
 :hasMediationDispositif rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :hasDispositif ;
                         owl:inverseOf :isMediationDispositifOf ;
                         rdfs:domain [ rdf:type owl:Class ;
                                       owl:unionOf ( :Exhibition
@@ -921,6 +957,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#hasMediationResource
 :hasMediationResource rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :hasDispositifResource ;
                       owl:inverseOf :servesAsMediationResourceOf ;
                       rdfs:domain :Mediation_Dispositif ;
                       rdfs:range [ rdf:type owl:Class ;
@@ -978,6 +1015,14 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:range :Opening .
 
 
+###  https://w3id.org/OntoExhibit#hasOrderingPrinciple
+:hasOrderingPrinciple rdf:type owl:ObjectProperty ;
+                      owl:inverseOf :isOrderingPrincipleOf ;
+                      rdfs:domain :Organization_Schema ;
+                      rdfs:range :ordering_principle ;
+                      <http://purl.org/dc/terms/description> "Relates an organization schema to the ordering principle(s) it implements. A schema may implement multiple principles (e.g., thematic + chronological), and a principle may be realized by multiple schemas."@en .
+
+
 ###  https://w3id.org/OntoExhibit#hasOrganizer
 :hasOrganizer rdf:type owl:ObjectProperty ;
               owl:inverseOf :isOrganizerOf ;
@@ -1001,6 +1046,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#hasParentDigitalPlace
 :hasParentDigitalPlace rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
                        owl:inverseOf :isParentDigitalPlaceOf ;
                        rdfs:domain :Digital_Site ;
                        rdfs:range :Digital_Place .
@@ -1008,16 +1054,10 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#hasParentOrganization
 :hasParentOrganization rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
                        owl:inverseOf :isParentOrganzationOf ;
                        rdfs:domain <https://www.iflastandards.info/fr/frbr/frbroo#F11_Corporate_Body> ;
                        rdfs:range <https://www.iflastandards.info/fr/frbr/frbroo#F11_Corporate_Body> .
-
-
-###  https://w3id.org/OntoExhibit#hasParentTerritory
-:hasParentTerritory rdf:type owl:ObjectProperty ;
-                    owl:inverseOf :hasSubTerritory ;
-                    rdfs:domain :Territorial_Entity ;
-                    rdfs:range :Territorial_Entity .
 
 
 ###  https://w3id.org/OntoExhibit#hasParticipant
@@ -1029,8 +1069,9 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#hasPlaceForActivity
 :hasPlaceForActivity rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
                      owl:inverseOf :isPlaceForActivityOf ;
-                     rdfs:domain :Place_Of_Activity ;
+                     rdfs:domain :Activity_Place ;
                      rdfs:range :Territorial_Entity .
 
 
@@ -1038,13 +1079,13 @@ xsd:date rdf:type rdfs:Datatype .
 :hasPlaceOfActivity rdf:type owl:ObjectProperty ;
                     owl:inverseOf :isPlaceOfActivityOf ;
                     rdfs:domain :Human_Actant ;
-                    rdfs:range :Place_Of_Activity .
+                    rdfs:range :Activity_Place .
 
 
 ###  https://w3id.org/OntoExhibit#hasPlaceOfActivityTimeRange
 :hasPlaceOfActivityTimeRange rdf:type owl:ObjectProperty ;
                              owl:inverseOf :isPlaceOfActivityTimeRangeOf ;
-                             rdfs:domain :Place_Of_Activity ;
+                             rdfs:domain :Activity_Place ;
                              rdfs:range :Time_Range .
 
 
@@ -1060,11 +1101,7 @@ xsd:date rdf:type rdfs:Datatype .
                       rdfs:subPropertyOf :hasPlaceOfCreation ;
                       owl:inverseOf :isPlaceOfConceptionOf ;
                       rdfs:domain :Conception ;
-                      rdfs:range [ rdf:type owl:Class ;
-                                   owl:unionOf ( :Digital_Place
-                                                 :Territorial_Entity
-                                               )
-                                 ] .
+                      rdfs:range :process_locus .
 
 
 ###  https://w3id.org/OntoExhibit#hasPlaceOfCreation
@@ -1072,11 +1109,7 @@ xsd:date rdf:type rdfs:Datatype .
                     rdfs:subPropertyOf :takesPlaceAt ;
                     owl:inverseOf :isPlaceOfCreationOf ;
                     rdfs:domain <https://cidoc-crm.org/cidoc-crm/7.1.1/E65_Creation> ;
-                    rdfs:range [ rdf:type owl:Class ;
-                                 owl:unionOf ( :Digital_Place
-                                               :Territorial_Entity
-                                             )
-                               ] .
+                    rdfs:range :process_locus .
 
 
 ###  https://w3id.org/OntoExhibit#hasPlaceOfCuration
@@ -1084,11 +1117,7 @@ xsd:date rdf:type rdfs:Datatype .
                     rdfs:subPropertyOf :hasPlaceOfConception ;
                     owl:inverseOf :isPlaceOfCurationOf ;
                     rdfs:domain :Curation ;
-                    rdfs:range [ rdf:type owl:Class ;
-                                 owl:unionOf ( :Digital_Place
-                                               :Territorial_Entity
-                                             )
-                               ] .
+                    rdfs:range :process_locus .
 
 
 ###  https://w3id.org/OntoExhibit#hasPlaceOfDeadth
@@ -1103,11 +1132,7 @@ xsd:date rdf:type rdfs:Datatype .
                        rdfs:subPropertyOf :takesPlaceAt ;
                        owl:inverseOf :isPlaceOfDestructionOf ;
                        rdfs:domain <https://cidoc-crm.org/cidoc-crm/7.1.1/E6_Destruction> ;
-                       rdfs:range [ rdf:type owl:Class ;
-                                    owl:unionOf ( :Digital_Place
-                                                  :Territorial_Entity
-                                                )
-                                  ] .
+                       rdfs:range :process_locus .
 
 
 ###  https://w3id.org/OntoExhibit#hasPlaceOfDissolution
@@ -1115,11 +1140,7 @@ xsd:date rdf:type rdfs:Datatype .
                        rdfs:subPropertyOf :takesPlaceAt ;
                        owl:inverseOf :isPlaceOfDissolutionOf ;
                        rdfs:domain <https://cidoc-crm.org/cidoc-crm/7.1.1/E68_Dissolution> ;
-                       rdfs:range [ rdf:type owl:Class ;
-                                    owl:unionOf ( :Digital_Place
-                                                  :Territorial_Entity
-                                                )
-                                  ] .
+                       rdfs:range :process_locus .
 
 
 ###  https://w3id.org/OntoExhibit#hasPlaceOfExhibitionMaking
@@ -1127,11 +1148,7 @@ xsd:date rdf:type rdfs:Datatype .
                             rdfs:subPropertyOf :hasPlaceOfProduction ;
                             owl:inverseOf :isPlaceOfExhibitionMakingOf ;
                             rdfs:domain :Exhibition_Making ;
-                            rdfs:range [ rdf:type owl:Class ;
-                                         owl:unionOf ( :Digital_Place
-                                                       :Territorial_Entity
-                                                     )
-                                       ] .
+                            rdfs:range :process_locus .
 
 
 ###  https://w3id.org/OntoExhibit#hasPlaceOfFoundation
@@ -1139,18 +1156,18 @@ xsd:date rdf:type rdfs:Datatype .
                       rdfs:subPropertyOf :hasPlaceOfCreation ;
                       owl:inverseOf :isPlaceOfFoundationOf ;
                       rdfs:domain :Foundation ;
-                      rdfs:range [ rdf:type owl:Class ;
-                                   owl:unionOf ( :Digital_Place
-                                                 :Territorial_Entity
-                                               )
-                                 ] .
+                      rdfs:range :process_locus .
 
 
 ###  https://w3id.org/OntoExhibit#hasPlaceOfLocation
 :hasPlaceOfLocation rdf:type owl:ObjectProperty ;
                     owl:inverseOf :isPlaceOfLocationOf ;
                     rdfs:domain :Location ;
-                    rdfs:range :Territorial_Entity .
+                    rdfs:range [ rdf:type owl:Class ;
+                                 owl:unionOf ( :Techno-Place
+                                               :Territorial_Entity
+                                             )
+                               ] .
 
 
 ###  https://w3id.org/OntoExhibit#hasPlaceOfProduction
@@ -1158,11 +1175,7 @@ xsd:date rdf:type rdfs:Datatype .
                       rdfs:subPropertyOf :hasPlaceOfCreation ;
                       owl:inverseOf :isPlaceOfProductionOf ;
                       rdfs:domain <https://cidoc-crm.org/cidoc-crm/7.1.1/E12_Production> ;
-                      rdfs:range [ rdf:type owl:Class ;
-                                   owl:unionOf ( :Digital_Place
-                                                 :Territorial_Entity
-                                               )
-                                 ] .
+                      rdfs:range :process_locus .
 
 
 ###  https://w3id.org/OntoExhibit#hasPlaceOfPublication
@@ -1175,6 +1188,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#hasPlaceOfResidency
 :hasPlaceOfResidency rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
                      owl:inverseOf :isPlaceOfResidencyOf ;
                      rdfs:domain :Place_Of_Residence ;
                      rdfs:range :Territorial_Entity .
@@ -1230,6 +1244,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#hasPropositionAssignment
 :hasPropositionAssignment rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf owl:topObjectProperty ;
                           rdfs:domain owl:Thing ;
                           rdfs:range :Proposition_Assignment .
 
@@ -1260,7 +1275,8 @@ xsd:date rdf:type rdfs:Datatype .
 :hasReenactment rdf:type owl:ObjectProperty ;
                 owl:inverseOf :isReenactmentOf ;
                 rdf:type owl:SymmetricProperty ;
-                rdfs:domain :Exhibition .
+                rdfs:domain :Exhibition ;
+                rdfs:range :Exhibition .
 
 
 ###  https://w3id.org/OntoExhibit#hasRelatedConceptualizationMaterial
@@ -1301,6 +1317,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#hasResidencyTimeRange
 :hasResidencyTimeRange rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
                        owl:inverseOf :isResidencyTimeRangeOf ;
                        rdfs:domain :Place_Of_Residence ;
                        rdfs:range :Time_Range .
@@ -1315,22 +1332,25 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#hasSecondaryCenter
 :hasSecondaryCenter rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
                     owl:inverseOf :isSecondaryCenterOf ;
                     rdfs:domain :Collective_Human_Actant ;
-                    rdfs:range :Secondary_Center .
+                    rdfs:range :secondary_center_assignment .
 
 
 ###  https://w3id.org/OntoExhibit#hasSecondaryCenterRangeTime
 :hasSecondaryCenterRangeTime rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf owl:topObjectProperty ;
                              owl:inverseOf :isSecondaryCenterTimeRangeOf ;
-                             rdfs:domain :Secondary_Center ;
+                             rdfs:domain :secondary_center_assignment ;
                              rdfs:range :Time_Range .
 
 
 ###  https://w3id.org/OntoExhibit#hasSiteForSecondaryCenter
 :hasSiteForSecondaryCenter rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf owl:topObjectProperty ;
                            owl:inverseOf :isSiteForSecondaryCenterOf ;
-                           rdfs:domain :Secondary_Center ;
+                           rdfs:domain :secondary_center_assignment ;
                            rdfs:range :Physical_Site .
 
 
@@ -1352,8 +1372,19 @@ xsd:date rdf:type rdfs:Datatype .
                                    ] .
 
 
+###  https://w3id.org/OntoExhibit#hasSpatialLocus
+:hasSpatialLocus rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :isSpatialLocusOf ;
+                 rdfs:domain <https://cidoc-crm.org/cidoc-crm/7.1.1/E5_Event> ;
+                 rdfs:range <https://cidoc-crm.org/cidoc-crm/7.1.1/Place> ;
+                 <http://purl.org/dc/terms/description> """This property relates an Event to a spatial anchor—physical or digital—used to situate the event in space when such contextualization is meaningful. It is intentionally broad and optional: many events can be spatially located in principle, but the location may be unknown, irrelevant, or not recorded. Use hasSpatialLocus for lightweight contextual placement (e.g., an interaction occurring in a messaging platform, an assignment made within an institutional system, a reaction recorded via a device), without implying that the event has a formal venue or that spatial information is a primary descriptive feature.
+
+Typical use: contextual, “if needed” spatialization of any event (including non-programmed or non-operational events)."""@en .
+
+
 ###  https://w3id.org/OntoExhibit#hasSpatialUnit
 :hasSpatialUnit rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
                 owl:inverseOf :isSpatialUnitOf ;
                 rdfs:domain :Physical_Site ;
                 rdfs:range :Spatial_Unit .
@@ -1371,18 +1402,6 @@ xsd:date rdf:type rdfs:Datatype .
                  owl:inverseOf :isStartingDateOf ;
                  rdfs:domain :Time_Range ;
                  rdfs:range :Date .
-
-
-###  https://w3id.org/OntoExhibit#hasState
-:hasState rdf:type owl:ObjectProperty ;
-          rdfs:subPropertyOf :hasSubTerritory ;
-          owl:inverseOf :isStateOf ;
-          rdfs:domain :Country ;
-          rdfs:range :State .
-
-
-###  https://w3id.org/OntoExhibit#hasSubTerritory
-:hasSubTerritory rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/OntoExhibit#hasTheme
@@ -1448,8 +1467,16 @@ xsd:date rdf:type rdfs:Datatype .
                    rdfs:range :Visual_Identity .
 
 
+###  https://w3id.org/OntoExhibit#hasVisualOrganizationSchema
+:hasVisualOrganizationSchema rdf:type owl:ObjectProperty ;
+                             owl:inverseOf :isVisualOrganizationSchemaOf ;
+                             rdfs:domain :Propositional_Object ;
+                             rdfs:range :Visual_Organization_Schema .
+
+
 ###  https://w3id.org/OntoExhibit#holdsExecutivePosition
 :holdsExecutivePosition rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf owl:topObjectProperty ;
                         owl:inverseOf :isExecutivePositionOf ;
                         rdfs:domain <https://cidoc-crm.org/cidoc-crm/7.1.1/E21_Person> ;
                         rdfs:range :Executive_Position .
@@ -1457,6 +1484,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#hostsOperationOf
 :hostsOperationOf rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
                   owl:inverseOf :operatesIn ;
                   rdfs:domain :Techno-Place ;
                   rdfs:range :Techno-Actant .
@@ -1530,7 +1558,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/OntoExhibit#isAssesmentAssignedOf
 :isAssesmentAssignedOf rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf :isPropositionAssignedOf ;
-                       rdfs:domain :Assesment ;
+                       rdfs:domain :Assessment ;
                        rdfs:range :Assement_Assignment .
 
 
@@ -1565,7 +1593,13 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#isAuthorOf
 :isAuthorOf rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf :isCreatorOf .
+            rdfs:subPropertyOf :isCreatorOf ;
+            rdfs:domain :Author ;
+            rdfs:range [ rdf:type owl:Class ;
+                         owl:unionOf ( <https://cidoc-crm.org/cidoc-crm/7.1.1/E12_Production>
+                                       :Conception
+                                     )
+                       ] .
 
 
 ###  https://w3id.org/OntoExhibit#isBasedOnExhibitionIdea
@@ -1601,15 +1635,10 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#isCelebratedThrough
 :isCelebratedThrough rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
                      owl:inverseOf :serveAsCelebrationOf ;
                      rdfs:domain :Conmemorative_Event ;
                      rdfs:range :Planned_Activity .
-
-
-###  https://w3id.org/OntoExhibit#isCityOf
-:isCityOf rdf:type owl:ObjectProperty ;
-          rdfs:domain :City ;
-          rdfs:range :State .
 
 
 ###  https://w3id.org/OntoExhibit#isClosingOf
@@ -1638,6 +1667,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#isCommunicationDispositifOf
 :isCommunicationDispositifOf rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf :isDispositifOf ;
                              rdfs:domain :Communication_Dispositif ;
                              rdfs:range [ rdf:type owl:Class ;
                                           owl:unionOf ( <https://cidoc-crm.org/cidoc-crm/7.1.1/E5_Event>
@@ -1735,7 +1765,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/OntoExhibit#isCritiqueAssignedOf
 :isCritiqueAssignedOf rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf :isPropositionAssignedOf ;
-                      rdfs:domain :Review ;
+                      rdfs:domain :Critique ;
                       rdfs:range :assingment_critique .
 
 
@@ -1824,13 +1854,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/OntoExhibit#isDigitalPlaceForActivityOf
 :isDigitalPlaceForActivityOf rdf:type owl:ObjectProperty ;
                              rdfs:domain :Digital_Place ;
-                             rdfs:range :Place_Of_Activity .
-
-
-###  https://w3id.org/OntoExhibit#isDigitalPlaceOfLocationOf
-:isDigitalPlaceOfLocationOf rdf:type owl:ObjectProperty ;
-                            rdfs:domain :Digital_Place ;
-                            rdfs:range :Location .
+                             rdfs:range :Activity_Place .
 
 
 ###  https://w3id.org/OntoExhibit#isDigitalSiteOf
@@ -1852,6 +1876,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#isDiscipleOf
 :isDiscipleOf rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
               owl:inverseOf :isMasterOf ;
               rdfs:domain <https://cidoc-crm.org/cidoc-crm/7.1.1/E21_Person> ;
               rdfs:range <https://cidoc-crm.org/cidoc-crm/7.1.1/E21_Person> .
@@ -1863,6 +1888,16 @@ xsd:date rdf:type rdfs:Datatype .
                rdfs:range :Exhibitionary_Event .
 
 
+###  https://w3id.org/OntoExhibit#isDispositifOf
+:isDispositifOf rdf:type owl:ObjectProperty ;
+                rdfs:domain :Dispositif ;
+                rdfs:range [ rdf:type owl:Class ;
+                             owl:unionOf ( <https://cidoc-crm.org/cidoc-crm/7.1.1/E5_Event>
+                                           :Work_Manifestation
+                                         )
+                           ] .
+
+
 ###  https://w3id.org/OntoExhibit#isDissolutionOf
 :isDissolutionOf rdf:type owl:ObjectProperty ;
                  rdfs:domain <https://cidoc-crm.org/cidoc-crm/7.1.1/E68_Dissolution> ;
@@ -1871,6 +1906,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#isDocumentationDispositifOf
 :isDocumentationDispositifOf rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf :isDispositifOf ;
                              rdfs:domain :Documentation_Dispositif ;
                              rdfs:range [ rdf:type owl:Class ;
                                           owl:unionOf ( <https://cidoc-crm.org/cidoc-crm/7.1.1/E5_Event>
@@ -1895,12 +1931,14 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#isExecutivePositionOf
 :isExecutivePositionOf rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
                        rdfs:domain :Executive_Position ;
                        rdfs:range <https://cidoc-crm.org/cidoc-crm/7.1.1/E21_Person> .
 
 
 ###  https://w3id.org/OntoExhibit#isExecutivePositionTimeRangeOf
 :isExecutivePositionTimeRangeOf rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf owl:topObjectProperty ;
                                 rdfs:domain :Time_Range ;
                                 rdfs:range :Executive_Position .
 
@@ -1955,6 +1993,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#isExpansionDispositifOf
 :isExpansionDispositifOf rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf :isDispositifOf ;
                          rdfs:domain :Expansion_Dispositif ;
                          rdfs:range [ rdf:type owl:Class ;
                                       owl:unionOf ( :Planned_Activity
@@ -2005,21 +2044,22 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#isHeadquarteredAt
 :isHeadquarteredAt rdf:type owl:ObjectProperty ;
-                   owl:inverseOf :isSiteOfHeadquartersOf ;
-                   rdfs:domain :Headquarter ;
-                   rdfs:range :Physical_Site .
+                   owl:inverseOf :isPlaceOfHeadquartersOf ;
+                   rdfs:domain :headquarter_assignment ;
+                   rdfs:range :physical_place .
 
 
 ###  https://w3id.org/OntoExhibit#isHeadquartersOf
 :isHeadquartersOf rdf:type owl:ObjectProperty ;
-                  rdfs:domain :Headquarter ;
+                  rdfs:domain :headquarter_assignment ;
                   rdfs:range :Collective_Human_Actant .
 
 
 ###  https://w3id.org/OntoExhibit#isHeadquartersTimeRangeOf
 :isHeadquartersTimeRangeOf rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf owl:topObjectProperty ;
                            rdfs:domain :Time_Range ;
-                           rdfs:range :Headquarter .
+                           rdfs:range :headquarter_assignment .
 
 
 ###  https://w3id.org/OntoExhibit#isInstatiatedAs
@@ -2083,6 +2123,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#isLocationTimeRangeOf
 :isLocationTimeRangeOf rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
                        rdfs:domain :Time_Range ;
                        rdfs:range :Location .
 
@@ -2109,12 +2150,14 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#isMasterOf
 :isMasterOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
             rdfs:domain <https://cidoc-crm.org/cidoc-crm/7.1.1/E21_Person> ;
             rdfs:range <https://cidoc-crm.org/cidoc-crm/7.1.1/E21_Person> .
 
 
 ###  https://w3id.org/OntoExhibit#isMediationDispositifOf
 :isMediationDispositifOf rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf :isDispositifOf ;
                          rdfs:domain :Mediation_Dispositif ;
                          rdfs:range [ rdf:type owl:Class ;
                                       owl:unionOf ( :Exhibition
@@ -2137,6 +2180,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#isMembershipTimeRangeOf
 :isMembershipTimeRangeOf rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf owl:topObjectProperty ;
                          rdfs:domain :Time_Range ;
                          rdfs:range :Membership .
 
@@ -2177,6 +2221,12 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:range :Planned_Activity .
 
 
+###  https://w3id.org/OntoExhibit#isOrderingPrincipleOf
+:isOrderingPrincipleOf rdf:type owl:ObjectProperty ;
+                       rdfs:domain :ordering_principle ;
+                       rdfs:range :Organization_Schema .
+
+
 ###  https://w3id.org/OntoExhibit#isOrganizerOf
 :isOrganizerOf rdf:type owl:ObjectProperty ;
                rdfs:domain :Organizer ;
@@ -2197,12 +2247,14 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#isParentDigitalPlaceOf
 :isParentDigitalPlaceOf rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf owl:topObjectProperty ;
                         rdfs:domain :Digital_Place ;
                         rdfs:range :Digital_Site .
 
 
 ###  https://w3id.org/OntoExhibit#isParentOrganzationOf
 :isParentOrganzationOf rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
                        rdfs:domain <https://www.iflastandards.info/fr/frbr/frbroo#F11_Corporate_Body> ;
                        rdfs:range <https://www.iflastandards.info/fr/frbr/frbroo#F11_Corporate_Body> .
 
@@ -2215,31 +2267,34 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#isPlaceForActivityOf
 :isPlaceForActivityOf rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty ;
                       rdfs:domain :Territorial_Entity ;
-                      rdfs:range :Place_Of_Activity .
+                      rdfs:range :Activity_Place .
 
 
 ###  https://w3id.org/OntoExhibit#isPlaceOf
 :isPlaceOf rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :isSpatialLocusOf ;
            owl:inverseOf :takesPlaceAt ;
            rdfs:domain [ rdf:type owl:Class ;
-                         owl:unionOf ( :Digital_Place
+                         owl:unionOf ( :Techno-Place
                                        :Territorial_Entity
                                      )
                        ] ;
-           rdfs:range <https://cidoc-crm.org/cidoc-crm/7.1.1/E5_Event> .
+           rdfs:range :Activity .
 
 
 ###  https://w3id.org/OntoExhibit#isPlaceOfActivityOf
 :isPlaceOfActivityOf rdf:type owl:ObjectProperty ;
-                     rdfs:domain :Place_Of_Activity ;
+                     rdfs:domain :Activity_Place ;
                      rdfs:range :Human_Actant .
 
 
 ###  https://w3id.org/OntoExhibit#isPlaceOfActivityTimeRangeOf
 :isPlaceOfActivityTimeRangeOf rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf owl:topObjectProperty ;
                               rdfs:domain :Time_Range ;
-                              rdfs:range :Place_Of_Activity .
+                              rdfs:range :Activity_Place .
 
 
 ###  https://w3id.org/OntoExhibit#isPlaceOfBirthOf
@@ -2251,33 +2306,21 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/OntoExhibit#isPlaceOfConceptionOf
 :isPlaceOfConceptionOf rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf :isPlaceOfCreationOf ;
-                       rdfs:domain [ rdf:type owl:Class ;
-                                     owl:unionOf ( :Digital_Place
-                                                   :Territorial_Entity
-                                                 )
-                                   ] ;
+                       rdfs:domain :process_locus ;
                        rdfs:range :Conception .
 
 
 ###  https://w3id.org/OntoExhibit#isPlaceOfCreationOf
 :isPlaceOfCreationOf rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf :isPlaceOf ;
-                     rdfs:domain [ rdf:type owl:Class ;
-                                   owl:unionOf ( :Digital_Place
-                                                 :Territorial_Entity
-                                               )
-                                 ] ;
+                     rdfs:domain :process_locus ;
                      rdfs:range <https://cidoc-crm.org/cidoc-crm/7.1.1/E65_Creation> .
 
 
 ###  https://w3id.org/OntoExhibit#isPlaceOfCurationOf
 :isPlaceOfCurationOf rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf :isPlaceOfConceptionOf ;
-                     rdfs:domain [ rdf:type owl:Class ;
-                                   owl:unionOf ( :Digital_Place
-                                                 :Territorial_Entity
-                                               )
-                                 ] ;
+                     rdfs:domain :process_locus ;
                      rdfs:range :Curation .
 
 
@@ -2290,61 +2333,51 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/OntoExhibit#isPlaceOfDestructionOf
 :isPlaceOfDestructionOf rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf :isPlaceOf ;
-                        rdfs:domain [ rdf:type owl:Class ;
-                                      owl:unionOf ( :Digital_Place
-                                                    :Territorial_Entity
-                                                  )
-                                    ] ;
+                        rdfs:domain :process_locus ;
                         rdfs:range <https://cidoc-crm.org/cidoc-crm/7.1.1/E6_Destruction> .
 
 
 ###  https://w3id.org/OntoExhibit#isPlaceOfDissolutionOf
 :isPlaceOfDissolutionOf rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf :isPlaceOf ;
-                        rdfs:domain [ rdf:type owl:Class ;
-                                      owl:unionOf ( :Digital_Place
-                                                    :Territorial_Entity
-                                                  )
-                                    ] ;
+                        rdfs:domain :process_locus ;
                         rdfs:range <https://cidoc-crm.org/cidoc-crm/7.1.1/E68_Dissolution> .
 
 
 ###  https://w3id.org/OntoExhibit#isPlaceOfExhibitionMakingOf
 :isPlaceOfExhibitionMakingOf rdf:type owl:ObjectProperty ;
                              rdfs:subPropertyOf :isPlaceOfProductionOf ;
-                             rdfs:domain [ rdf:type owl:Class ;
-                                           owl:unionOf ( :Digital_Place
-                                                         :Territorial_Entity
-                                                       )
-                                         ] ;
+                             rdfs:domain :process_locus ;
                              rdfs:range :Exhibition_Making .
 
 
 ###  https://w3id.org/OntoExhibit#isPlaceOfFoundationOf
 :isPlaceOfFoundationOf rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf :isPlaceOfCreationOf ;
-                       rdfs:domain [ rdf:type owl:Class ;
-                                     owl:unionOf ( :Digital_Place
-                                                   :Territorial_Entity
-                                                 )
-                                   ] ;
+                       rdfs:domain :process_locus ;
                        rdfs:range :Foundation .
+
+
+###  https://w3id.org/OntoExhibit#isPlaceOfHeadquartersOf
+:isPlaceOfHeadquartersOf rdf:type owl:ObjectProperty ;
+                         rdfs:domain :physical_place ;
+                         rdfs:range :headquarter_assignment .
 
 
 ###  https://w3id.org/OntoExhibit#isPlaceOfLocationOf
 :isPlaceOfLocationOf rdf:type owl:ObjectProperty ;
-                     rdfs:domain :Territorial_Entity ;
+                     rdfs:domain [ rdf:type owl:Class ;
+                                   owl:unionOf ( :Techno-Place
+                                                 :Territorial_Entity
+                                               )
+                                 ] ;
                      rdfs:range :Location .
 
 
 ###  https://w3id.org/OntoExhibit#isPlaceOfProductionOf
 :isPlaceOfProductionOf rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf :isPlaceOfCreationOf ;
-                       rdfs:domain [ rdf:type owl:Class ;
-                                     owl:unionOf ( :Digital_Place
-                                                   :Territorial_Entity
-                                                 )
-                                   ] ;
+                       rdfs:domain :process_locus ;
                        rdfs:range <https://cidoc-crm.org/cidoc-crm/7.1.1/E12_Production> .
 
 
@@ -2357,12 +2390,14 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#isPlaceOfResidencyOf
 :isPlaceOfResidencyOf rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty ;
                       rdfs:domain :Territorial_Entity ;
                       rdfs:range :Place_Of_Residence .
 
 
 ###  https://w3id.org/OntoExhibit#isPreliminaryIdeasOf
 :isPreliminaryIdeasOf rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty ;
                       rdfs:domain :Preliminary_Ideas ;
                       rdfs:range :Conceptual_Work .
 
@@ -2445,7 +2480,8 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/OntoExhibit#isReenactmentOf
 :isReenactmentOf rdf:type owl:ObjectProperty ,
                           owl:AsymmetricProperty ;
-                 rdfs:domain :Exhibition .
+                 rdfs:domain :Exhibition ;
+                 rdfs:range :Exhibition .
 
 
 ###  https://w3id.org/OntoExhibit#isRelatedConceptualizationMaterialOf
@@ -2470,6 +2506,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#isRepresentationTimeRangeOf
 :isRepresentationTimeRangeOf rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf owl:topObjectProperty ;
                              rdfs:domain :Time_Range ;
                              rdfs:range :Representation .
 
@@ -2487,12 +2524,14 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#isResidencyOf
 :isResidencyOf rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
                rdfs:domain :Place_Of_Residence ;
                rdfs:range <https://cidoc-crm.org/cidoc-crm/7.1.1/E21_Person> .
 
 
 ###  https://w3id.org/OntoExhibit#isResidencyTimeRangeOf
 :isResidencyTimeRangeOf rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf owl:topObjectProperty ;
                         rdfs:domain :Time_Range ;
                         rdfs:range :Place_Of_Residence .
 
@@ -2505,26 +2544,23 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#isSecondaryCenterOf
 :isSecondaryCenterOf rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
                      rdfs:domain :Physical_Site ;
                      rdfs:range :Collective_Human_Actant .
 
 
 ###  https://w3id.org/OntoExhibit#isSecondaryCenterTimeRangeOf
 :isSecondaryCenterTimeRangeOf rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf owl:topObjectProperty ;
                               rdfs:domain :Time_Range ;
-                              rdfs:range :Secondary_Center .
+                              rdfs:range :secondary_center_assignment .
 
 
 ###  https://w3id.org/OntoExhibit#isSiteForSecondaryCenterOf
 :isSiteForSecondaryCenterOf rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf owl:topObjectProperty ;
                             rdfs:domain :Physical_Site ;
-                            rdfs:range :Secondary_Center .
-
-
-###  https://w3id.org/OntoExhibit#isSiteOfHeadquartersOf
-:isSiteOfHeadquartersOf rdf:type owl:ObjectProperty ;
-                        rdfs:domain :Physical_Site ;
-                        rdfs:range :Headquarter .
+                            rdfs:range :secondary_center_assignment .
 
 
 ###  https://w3id.org/OntoExhibit#isSiteOfResidencyOf
@@ -2549,8 +2585,15 @@ xsd:date rdf:type rdfs:Datatype .
                          rdfs:range owl:Thing .
 
 
+###  https://w3id.org/OntoExhibit#isSpatialLocusOf
+:isSpatialLocusOf rdf:type owl:ObjectProperty ;
+                  rdfs:domain <https://cidoc-crm.org/cidoc-crm/7.1.1/Place> ;
+                  rdfs:range <https://cidoc-crm.org/cidoc-crm/7.1.1/E5_Event> .
+
+
 ###  https://w3id.org/OntoExhibit#isSpatialUnitOf
 :isSpatialUnitOf rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
                  rdfs:domain :Spatial_Unit ;
                  rdfs:range :Physical_Site .
 
@@ -2565,12 +2608,6 @@ xsd:date rdf:type rdfs:Datatype .
 :isStartingDateOf rdf:type owl:ObjectProperty ;
                   rdfs:domain :Date ;
                   rdfs:range :Time_Range .
-
-
-###  https://w3id.org/OntoExhibit#isStateOf
-:isStateOf rdf:type owl:ObjectProperty ;
-           rdfs:domain :State ;
-           rdfs:range :Country .
 
 
 ###  https://w3id.org/OntoExhibit#isTerritorialLocationOf
@@ -2623,6 +2660,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#isVisitorOf
 :isVisitorOf rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
              rdfs:domain :Visitor ;
              rdfs:range :Exhibitionary_Event .
 
@@ -2631,6 +2669,12 @@ xsd:date rdf:type rdfs:Datatype .
 :isVisualIdentityOf rdf:type owl:ObjectProperty ;
                     rdfs:domain :Visual_Identity ;
                     rdfs:range :Planned_Activity .
+
+
+###  https://w3id.org/OntoExhibit#isVisualOrganizationSchemaOf
+:isVisualOrganizationSchemaOf rdf:type owl:ObjectProperty ;
+                              rdfs:domain :Visual_Organization_Schema ;
+                              rdfs:range :Propositional_Object .
 
 
 ###  https://w3id.org/OntoExhibit#ishostedAt
@@ -2653,6 +2697,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#operatesIn
 :operatesIn rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
             rdfs:domain :Techno-Actant ;
             rdfs:range :Techno-Place .
 
@@ -2675,28 +2720,42 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#serveAsCelebrationOf
 :serveAsCelebrationOf rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty ;
                       rdfs:domain :Planned_Activity ;
                       rdfs:range :Conmemorative_Event .
 
 
-###  https://w3id.org/OntoExhibit#serveAsCommunicationResourceOf
-:serveAsCommunicationResourceOf rdf:type owl:ObjectProperty ;
-                                rdfs:domain [ rdf:type owl:Class ;
-                                              owl:unionOf ( :Planned_Activity
-                                                            :Propositional_Object
-                                                          )
-                                            ] ;
-                                rdfs:range :Communication_Dispositif .
+###  https://w3id.org/OntoExhibit#servesAsCommunicationResourceOf
+:servesAsCommunicationResourceOf rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf :servesAsDispositifResourceOf ;
+                                 rdfs:domain [ rdf:type owl:Class ;
+                                               owl:unionOf ( :Planned_Activity
+                                                             :Propositional_Object
+                                                           )
+                                             ] ;
+                                 rdfs:range :Communication_Dispositif .
+
+
+###  https://w3id.org/OntoExhibit#servesAsDispositifResourceOf
+:servesAsDispositifResourceOf rdf:type owl:ObjectProperty ;
+                              rdfs:domain [ rdf:type owl:Class ;
+                                            owl:unionOf ( :Planned_Activity
+                                                          :Propositional_Object
+                                                        )
+                                          ] ;
+                              rdfs:range :Dispositif .
 
 
 ###  https://w3id.org/OntoExhibit#servesAsDocumentationResourceOf
 :servesAsDocumentationResourceOf rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf :servesAsDispositifResourceOf ;
                                  rdfs:domain :Propositional_Object ;
                                  rdfs:range :Documentation_Dispositif .
 
 
 ###  https://w3id.org/OntoExhibit#servesAsExpansionResourceOf
 :servesAsExpansionResourceOf rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf :servesAsDispositifResourceOf ;
                              rdfs:domain [ rdf:type owl:Class ;
                                            owl:unionOf ( :Planned_Activity
                                                          :Propositional_Object
@@ -2707,6 +2766,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#servesAsMediationResourceOf
 :servesAsMediationResourceOf rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf :servesAsDispositifResourceOf ;
                              rdfs:domain [ rdf:type owl:Class ;
                                            owl:unionOf ( :Planned_Activity
                                                          :Propositional_Object
@@ -2717,12 +2777,22 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#takesPlaceAt
 :takesPlaceAt rdf:type owl:ObjectProperty ;
-              rdfs:domain <https://cidoc-crm.org/cidoc-crm/7.1.1/E5_Event> ;
+              rdfs:subPropertyOf :hasSpatialLocus ;
+              rdfs:domain :Activity ;
               rdfs:range [ rdf:type owl:Class ;
-                           owl:unionOf ( :Digital_Place
+                           owl:unionOf ( :Techno-Place
                                          :Territorial_Entity
                                        )
-                         ] .
+                         ] ;
+              <http://purl.org/dc/terms/description> """This property relates an Activity (including both Process and Planned_Activity) to its broader place of occurrence—the territorial or techno-spatial context in which the activity unfolds. It is used to record the general geographic or infrastructural setting of an activity (e.g., a city, region, country, or a digital/technical environment), independently of the specific host site. In this model, takesPlaceAt complements hasVenue: while hasVenue points to the concrete hosting site (e.g., a museum building, gallery, institutional facility, or platform-as-site), takesPlaceAt captures the wider territorial or techno-place context that situates that venue and the activity within a larger spatial frame.
+
+Typical use:
+
+Exhibition hasVenue Villanueva building (Museo del Prado) (site)
+
+Exhibition takesPlaceAt Madrid (territorial entity)
+
+Online activities may use takesPlaceAt to indicate the relevant techno-place (e.g., a platform/ecosystem) when the broader infrastructural context matters."""@en .
 
 
 ###  https://w3id.org/OntoExhibit#wasProducedBy
@@ -2768,15 +2838,16 @@ xsd:date rdf:type rdfs:Datatype .
 <http://www.w3.org/2003/01/geo/wgs84_pos#lat> rdf:type owl:DatatypeProperty ;
                                               rdfs:domain :Physical_Site ,
                                                           :Territorial_Entity ;
-                                              rdfs:range xsd:string ;
                                               rdfs:label "geo:lat"@en .
 
 
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#long
 <http://www.w3.org/2003/01/geo/wgs84_pos#long> rdf:type owl:DatatypeProperty ;
-                                               rdfs:domain :Physical_Site ,
-                                                           :Territorial_Entity ;
-                                               rdfs:range xsd:string ;
+                                               rdfs:domain [ rdf:type owl:Class ;
+                                                             owl:unionOf ( :Physical_Site
+                                                                           :Territorial_Entity
+                                                                         )
+                                                           ] ;
                                                rdfs:label "geo:long"@en .
 
 
@@ -2836,12 +2907,8 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#address
 :address rdf:type owl:DatatypeProperty ;
-         rdfs:domain :Headquarter ,
-                     :Location ,
-                     :Physical_Site ,
-                     :Place_Of_Activity ,
-                     :Place_Of_Residence ;
-         rdfs:range xsd:string ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:domain :Physical_Site ;
          rdfs:label "address"@en ,
                     "dirección postal"@es .
 
@@ -2858,7 +2925,6 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/OntoExhibit#awards
 :awards rdf:type owl:DatatypeProperty ;
         rdfs:domain :Art_Competition ;
-        rdfs:range xsd:string ;
         <http://purl.org/dc/terms/description> "Describes the prizes or recognitions that will be awarded to the winners."@en ;
         rdfs:label "awards"@en ,
                    "premio"@es .
@@ -2890,22 +2956,14 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/OntoExhibit#description
 :description rdf:type owl:DatatypeProperty ;
              rdfs:domain owl:Thing ;
-             rdfs:range xsd:string ;
              <http://purl.org/dc/terms/description> "A detailed textual description of the entity, including its purpose, functionalities, and key features."@en ;
              rdfs:label "descripción"@es ,
                         "description"@en .
 
 
-###  https://w3id.org/OntoExhibit#email
-:email rdf:type owl:DatatypeProperty ;
-       rdfs:domain :Human_Actant ;
-       rdfs:range xsd:string ;
-       rdfs:label "correo electrónico"@es ,
-                  "email"@en .
-
-
 ###  https://w3id.org/OntoExhibit#executive_position_type
 :executive_position_type rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf owl:topDataProperty ;
                          rdfs:domain :Executive_Position ;
                          rdfs:range [ rdf:type rdfs:Datatype ;
                                       owl:oneOf [ rdf:type rdf:List ;
@@ -2991,14 +3049,6 @@ xsd:date rdf:type rdfs:Datatype .
                         "person name"@en .
 
 
-###  https://w3id.org/OntoExhibit#phone
-:phone rdf:type owl:DatatypeProperty ;
-       rdfs:domain :Human_Actant ;
-       rdfs:range xsd:string ;
-       rdfs:label "phone"@en ,
-                  "teléfono"@es .
-
-
 ###  https://w3id.org/OntoExhibit#population
 :population rdf:type owl:DatatypeProperty ;
             rdfs:domain :Territorial_Entity ;
@@ -3009,6 +3059,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#professional_activity
 :professional_activity rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf owl:topDataProperty ;
                        rdfs:domain <https://cidoc-crm.org/cidoc-crm/7.1.1/E21_Person> ;
                        rdfs:range xsd:string ;
                        rdfs:label "actividad profesional"@es ,
@@ -3021,14 +3072,6 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:range xsd:string ;
          rdfs:label "program"@en ,
                     "programa"@es .
-
-
-###  https://w3id.org/OntoExhibit#size
-:size rdf:type owl:DatatypeProperty ;
-      rdfs:domain :Company ;
-      rdfs:range xsd:string ;
-      rdfs:label "size"@en ,
-                 "tamaño"@es .
 
 
 ###  https://w3id.org/OntoExhibit#socialNetworkProfile
@@ -3093,6 +3136,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#techno-placeType
 :techno-placeType rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
                   rdfs:domain :Techno-Place ;
                   rdfs:range [ rdf:type rdfs:Datatype ;
                                owl:oneOf [ rdf:type rdf:List ;
@@ -3121,21 +3165,11 @@ xsd:date rdf:type rdfs:Datatype .
                          "ticket price"@en .
 
 
-###  https://w3id.org/OntoExhibit#type
-:type rdf:type owl:DatatypeProperty ;
-      rdfs:domain :Exhibitionary_Event ,
-                  :Work_Manifestation ;
-      rdfs:range xsd:string ;
-      rdfs:label "tipo"@es ,
-                 "type"@en .
-
-
 ###  https://w3id.org/OntoExhibit#url
 :url rdf:type owl:DatatypeProperty ;
+     rdfs:subPropertyOf owl:topDataProperty ;
      rdfs:domain :Techno-Place ;
-     rdfs:range xsd:anyURI ;
-     rdfs:label "url"@en ,
-                "url"@es .
+     rdfs:range xsd:anyURI .
 
 
 ###  https://w3id.org/OntoExhibit#webPage
@@ -3145,7 +3179,7 @@ xsd:date rdf:type rdfs:Datatype .
                                      :Planned_Activity
                                    )
                      ] ;
-         rdfs:range xsd:string ;
+         rdfs:range xsd:anyURI ;
          rdfs:label "página web"@es ,
                     "webpage"@en .
 
@@ -3153,6 +3187,24 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 #    Classes
 #################################################################
+
+###  http://www.cidoc-crm.org/cidoc-crm/E7_Activity
+<http://www.cidoc-crm.org/cidoc-crm/E7_Activity> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <https://cidoc-crm.org/cidoc-crm/7.1.1/E5_Event> .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E7_Activity#process
+<http://www.cidoc-crm.org/cidoc-crm/E7_Activity#process> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :Activity ;
+                                                         <http://purl.org/dc/terms/description> "Process comprises transformative activities—coherent sequences of actions or operations—carried out by one or more actants, typically exhibiting an internal structure (e.g., phases, tasks, iterations) and an appreciable duration. A process mobilizes resources, techniques, and collaborations toward an intended purpose, producing state changes and potentially generating material or conceptual outcomes."@en ;
+                                                         rdfs:label "proceso"@es ,
+                                                                    "process"@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class ;
+                                              owl:equivalentClass :ordering_principle .
+
 
 ###  https://cidoc-crm.org/cidoc-crm/7.1.1/E12_Production
 <https://cidoc-crm.org/cidoc-crm/7.1.1/E12_Production> rdf:type owl:Class ;
@@ -3182,7 +3234,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://cidoc-crm.org/cidoc-crm/7.1.1/E5_Event
 <https://cidoc-crm.org/cidoc-crm/7.1.1/E5_Event> rdf:type owl:Class ;
                                                  <http://purl.org/dc/terms/description> "This class comprises any occurrence or happening that involves a change or a series of change over time. It encompasses specific and goal-oriented processes, such as creative and productive activities, that result in particular conceptual or material outcomes, and broader, organized and planned endeavors, such as exhibitions or conferences.  They are characterized by their temporal and spatial dimensions."@en ;
-                                                 rdfs:label "event"@en ,
+                                                 rdfs:label "E5_Event"@en ,
                                                             "evento"@es ;
                                                  owl:equivalentClass "https://cidoc-crm.org/html/cidoc_crm_v7.1.2.html#E5"@en ,
                                                                      "https://www.iflastandards.info/fr/frbr/frbroo#F8"@en .
@@ -3190,14 +3242,14 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://cidoc-crm.org/cidoc-crm/7.1.1/E63_Beginning_of_Existence
 <https://cidoc-crm.org/cidoc-crm/7.1.1/E63_Beginning_of_Existence> rdf:type owl:Class ;
-                                                                   rdfs:subClassOf :Activity ;
+                                                                   rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E7_Activity#process> ;
                                                                    rdfs:label "beginning of existence"@en ,
                                                                               "inicio de existencia"@es .
 
 
 ###  https://cidoc-crm.org/cidoc-crm/7.1.1/E64_End_of_Existence
 <https://cidoc-crm.org/cidoc-crm/7.1.1/E64_End_of_Existence> rdf:type owl:Class ;
-                                                             rdfs:subClassOf :Activity ;
+                                                             rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E7_Activity#process> ;
                                                              rdfs:label "end of existence"@en ,
                                                                         "fin de existencia"@es .
 
@@ -3277,7 +3329,8 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://cidoc-crm.org/cidoc-crm/7.1.1/Place
 <https://cidoc-crm.org/cidoc-crm/7.1.1/Place> rdf:type owl:Class ;
-                                              <http://purl.org/dc/terms/description> "This class represents any location or setting where events occur, encompassing a wide range of spaces from geopolitical entities such as cities and countries to physical sites and digital platforms. This class is designed to capture the diverse environments in which art is displayed or experienced, including outdoor public spaces, temporary exhibition areas, and various digital or virtual environments. By including both macro-scale locations like nations or urban areas and micro-scale venues like exhibition halls or online galleries, \"Place\" facilitates a comprehensive understanding of the spatial dimensions in which culture and art interact with audiences globally. This class is broader than the CIDOC-CRM's E53 Place class, which is explicitly restricted to spaces of a physical nature."@en ;
+                                              <http://purl.org/dc/terms/description> "Place represents any spatial or locative context in which events, practices, or cultural processes are situated. It covers a broad spectrum of locations, ranging from geopolitical entities (e.g., countries, regions, cities) and built environments (e.g., buildings, rooms, exhibition halls) to techno-digital environments (e.g., online platforms, virtual spaces, networked interfaces). The class is intended to support the description of the multiple spatial conditions under which art is produced, curated, mediated, displayed, and experienced. Place is broader than CIDOC CRM’s E53 Place, which is restricted to physical space. OntoExhibit maintains compatibility with CRM by allowing physical places to align with E53 where appropriate, while also accommodating techno-digital places that fall outside CRM’s strictly physical scope."@en ;
+                                              rdfs:comment "Within OntoExhibit, Place functions as a general umbrella category that supports more specific, role-oriented subclasses. In particular, Site captures places in their capacity as exhibition venues (i.e., where an exhibition is presented to audiences), while Process_Locus captures places in their capacity as loci of cultural processes (e.g., where conception, curation, creation, foundation, dissolution, or destruction are situated). A given place may play none, one, or multiple such roles depending on the relationships asserted in the knowledge graph; therefore, these subclasses should not be read as fixed “types of place,” but as analytically meaningful contextualizations of place within exhibition ecosystems."@en ;
                                               rdfs:label "lugar"@es ,
                                                          "place"@en .
 
@@ -3299,10 +3352,20 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#Activity
 :Activity rdf:type owl:Class ;
-          rdfs:subClassOf <https://cidoc-crm.org/cidoc-crm/7.1.1/E5_Event> ;
-          <http://purl.org/dc/terms/description> "This class comprises specific and goal-oriented processes or operations undertaken by a singular or collective agent. Activities are concrete and distinct events that result in particular conceptual or material outcomes."@en ;
+          rdfs:subClassOf <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+          <http://purl.org/dc/terms/description> "This class comprises specific, goal-oriented actions and operations carried out by a single agent or a collective. Activities are concrete, distinguishable events situated in a spatio-temporal context, typically involving coordination, resources, and participation. They may lead to material or conceptual outcomes, and include both transformative processes (e.g., creation, production, curation) and planned or programmed activities (e.g., concerts, lectures, openings)."@en ;
           rdfs:label "actividad"@es ,
                      "activity"@en .
+
+
+###  https://w3id.org/OntoExhibit#Activity_Place
+:Activity_Place rdf:type owl:Class ;
+                rdfs:subClassOf :professional_context ;
+                <http://purl.org/dc/terms/description> """Place of Activity is an intermediary (reified) spatio-temporal context that links a human actant (or collective) to one or more places in which they carry out professional activities during a defined time range. It is intended to capture activity geographies that may be distributed across multiple locations rather than reducible to a single, fixed base. For example, an art gallery may operate through branches, fairs, collaborations, or recurring programs in several cities beyond the city where its main office is located.
+
+In OntoExhibit, Place of Activity supports the analysis of dispersed cultural work and the spatial dynamics of professional trajectories. The set of places connected to an actant through successive or concurrent instances of Place of Activity constitutes the actant’s broader area of activity, enabling comparative study of mobility, networked operations, and the territorial and techno-digital reach of actors within exhibition ecosystems."""@en ;
+                rdfs:label "activity place"@en ,
+                           "lugar de actividad"@es .
 
 
 ###  https://w3id.org/OntoExhibit#Affiche
@@ -3314,7 +3377,10 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#Affiliation
 :Affiliation rdf:type owl:Class ;
-             <http://purl.org/dc/terms/description> "Indicates that an individual holds a position as part of the staff in an organization. This property explicitly reflects a formal employment relationship where the individual performs specific roles and responsibilities within the organization."@en ;
+             rdfs:subClassOf :professional_context ;
+             <http://purl.org/dc/terms/description> """Affiliation is an intermediary (reified) spatio-temporal context that records a formal staff relationship between an individual and an organisation. It captures cases in which a person is affiliated with an institution through employment or an equivalent contractual arrangement, performing defined roles and responsibilities within the organisation during a specific time range (and, where relevant, under particular terms or statuses).
+
+In OntoExhibit, Affiliation supports the analysis of institutional labour and professional trajectories by making staff relationships explicit, time-qualified, and queryable, without reducing them to a timeless link between a person and an organisation."""@en ;
              rdfs:label "affiliation"@en ,
                         "afiliación"@es .
 
@@ -3356,7 +3422,7 @@ xsd:date rdf:type rdfs:Datatype .
                                          owl:onProperty :hasManifestation ;
                                          owl:allValuesFrom :Architectural_Work_Manifestation
                                        ] ;
-                       rdfs:label "arquitectural project"@en ,
+                       rdfs:label "architectural project"@en ,
                                   "proyecto arquitectónico"@es .
 
 
@@ -3404,9 +3470,10 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/OntoExhibit#Art_Exhibition_Digital_Platform
 :Art_Exhibition_Digital_Platform rdf:type owl:Class ;
                                  rdfs:subClassOf :Digital_Platform ;
-                                 <http://purl.org/dc/terms/description> "Art Exhibition Digital Platform"@en ,
-                                                                        "Plataforma para exposiciones"@es ,
-                                                                        "This class represents digital platforms specifically designed to produce, host, and present digital exhibitions. An instance of this class is the ‘New Art City’ platform."@en .
+                                 <http://purl.org/dc/terms/description> "Plataforma para exposiciones"@es ,
+                                                                        "This class represents digital platforms specifically designed to produce, host, and present digital exhibitions. An instance of this class is the ‘New Art City’ platform."@en ;
+                                 rdfs:label "art exhibition digital platform"@en ,
+                                            "plataforma digital para exposiciones"@es .
 
 
 ###  https://w3id.org/OntoExhibit#Art_School
@@ -3439,11 +3506,12 @@ xsd:date rdf:type rdfs:Datatype .
                                 "assessment assignment"@en .
 
 
-###  https://w3id.org/OntoExhibit#Assesment
-:Assesment rdf:type owl:Class ;
-           rdfs:subClassOf :Proposition ;
-           rdfs:label "assessment"@en ,
-                      "valoración"@es .
+###  https://w3id.org/OntoExhibit#Assessment
+:Assessment rdf:type owl:Class ;
+            rdfs:subClassOf :Proposition ;
+            <http://purl.org/dc/terms/description> "An evaluative proposition expressing a judgment (explicit or implicit) according to criteria or standards, potentially including gradations, comparisons, or attributions of quality/fitness."@en ;
+            rdfs:label "assessment"@en ,
+                       "valoración"@es .
 
 
 ###  https://w3id.org/OntoExhibit#Assignment
@@ -3461,7 +3529,9 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#Assistant
 :Assistant rdf:type owl:Class ;
-           rdfs:subClassOf :Role .
+           rdfs:subClassOf :Role ;
+           rdfs:label "asistente"@es ,
+                      "assistant"@en .
 
 
 ###  https://w3id.org/OntoExhibit#Assistant_Curator
@@ -3542,7 +3612,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#Building
 :Building rdf:type owl:Class ;
-          rdfs:subClassOf :Physical_Site ;
+          rdfs:subClassOf :physical_place ;
           rdfs:label "building"@en ,
                      "edificio"@es .
 
@@ -3559,12 +3629,15 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:subClassOf :Information_Object ,
                          :Work_Manifestation ;
          rdfs:label "catalogue"@en ,
-                    "catálogo"@es .
+                    "catálogo"@es ;
+         :modelingNote "Modeling guideline: Use Catalogue as Information_Object when it is primarily modeled as documentary support (credits, lists, descriptions, paratexts, references). Add typing as Work_Manifestation when the catalogue is modeled as a publishable/citable manifestation in its own right (edition, circulation, reception, authorship or editorial responsibility, versioning)."@en .
 
 
-###  https://w3id.org/OntoExhibit#City
-:City rdf:type owl:Class ;
-      rdfs:subClassOf :Territorial_Entity .
+###  https://w3id.org/OntoExhibit#Chapter
+:Chapter rdf:type owl:Class ;
+         rdfs:subClassOf :Narrative_Thematic_Unit ;
+         rdfs:label "capítulo"@es ,
+                    "chapter"@en .
 
 
 ###  https://w3id.org/OntoExhibit#Closing
@@ -3600,9 +3673,19 @@ xsd:date rdf:type rdfs:Datatype .
                       "collector"@en .
 
 
+###  https://w3id.org/OntoExhibit#Comment
+:Comment rdf:type owl:Class ;
+         rdfs:subClassOf :Proposition ;
+         <http://purl.org/dc/terms/description> "A proposition formulated as a comment: a brief, situated—often reactive—statement expressing an observation, evaluation, interpretation, agreement/disagreement, or qualification regarding an entity or situation in the exhibition ecosystem. It is distinct from any specific materialization or carrier (e.g., post, note, or form entry), which is modeled elsewhere."@en ;
+         rdfs:label "comentario"@es ,
+                    "comment"@en .
+
+
 ###  https://w3id.org/OntoExhibit#Commissioner
 :Commissioner rdf:type owl:Class ;
-              rdfs:subClassOf :Role .
+              rdfs:subClassOf :Role ;
+              rdfs:label "comitente"@es ,
+                         "commissioner"@en .
 
 
 ###  https://w3id.org/OntoExhibit#Communication_Activity
@@ -3617,8 +3700,9 @@ xsd:date rdf:type rdfs:Datatype .
 :Communication_Dispositif rdf:type owl:Class ;
                           rdfs:subClassOf :Dispositif ;
                           <http://purl.org/dc/terms/description> "The \"Communication Dispositif\" class represents materials and events used to communicate and disseminate information about cultural activities and productions. These dispositifs typically include press releases, brochures, websites, social media posts, newsletters, and other structured systems or media that convey information to the public and stakeholders. Additionally, other objects and materials can also serve this purpose. Therefore, this class links cultural activities and productions with those propositional objects and events that inform about them, regardless of their nature, genre, or typology."@en ;
-                          rdfs:label "communication dispostif"@en ,
-                                     "dispositivo de comunicación"@es .
+                          rdfs:label "communication dispositif"@en ,
+                                     "dispositivo de comunicación"@es ;
+                          :modelingNote "This class is not disjoint with other dispositif types; see Dispositif modeling note."@en .
 
 
 ###  https://w3id.org/OntoExhibit#Communities
@@ -3654,12 +3738,13 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#Computational_Object
 :Computational_Object rdf:type owl:Class ;
-                      rdfs:subClassOf :Work_Manifestation ,
+                      rdfs:subClassOf :Propositional_Object ,
                                       [ rdf:type owl:Restriction ;
                                         owl:onProperty :hasProduction ;
                                         owl:allValuesFrom :Computational_Development
                                       ] ;
                       <http://purl.org/dc/terms/description> "The \"Computational Object\" class represents entities created with computational languages, and processed or existing within computational systems. These objects include software, algorithms, simulations, virtual environments, AI systems, and other digital productions. Computational Objects are characterized by their creation, manipulation, and existence within digital or computational frameworks, and they play a crucial role in digital art, generative curation, and digital exhibitions. Nevertheless, this class should not be confused with artworks, cultural objects, or other work manifestations that materialize in digital format."@en ;
+                      rdfs:comment "Computational objects are treated as propositional objects because their design, modelling and production embed explicit or implicit propositions (e.g., data models, rules, constraints, affordances, policies, and algorithmic logics). This propositional character holds even when such objects also function under other facets (e.g., place or actant)."@en ;
                       rdfs:label "computational object"@en ,
                                  "objeto computacional"@es .
 
@@ -3700,7 +3785,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#Conmemorative_Event
 :Conmemorative_Event rdf:type owl:Class ;
-                     rdfs:subClassOf :Planned_Activity ,
+                     rdfs:subClassOf :propositional_activity ,
                                      [ rdf:type owl:Restriction ;
                                        owl:onProperty :hasTimeSpan ;
                                        owl:allValuesFrom :Time_Range
@@ -3740,16 +3825,19 @@ xsd:date rdf:type rdfs:Datatype .
                                       "identidad visual corporativa"@es .
 
 
-###  https://w3id.org/OntoExhibit#Country
-:Country rdf:type owl:Class ;
-         rdfs:subClassOf :Territorial_Entity .
-
-
 ###  https://w3id.org/OntoExhibit#Creator
 :Creator rdf:type owl:Class ;
          rdfs:subClassOf :Role ;
          rdfs:label "creador"@es ,
                     "creator"@en .
+
+
+###  https://w3id.org/OntoExhibit#Critique
+:Critique rdf:type owl:Class ;
+          rdfs:subClassOf :Proposition ;
+          rdfs:comment "In OntoExhibit, the Critique class represents a specific type of proposition that constitutes the core content of an art review or critical work. A critique provides an evaluative or interpretative perspective on artworks and exhibitions, offering insights that reflect the author's  analysis or judgment.  This class serves to distinguish the conceptual content  from its medium or context, enabling the analysis of its role in shaping discourses around art and exhibitions."@en ;
+          rdfs:label "critique"@en ,
+                     "crítica"@es .
 
 
 ###  https://w3id.org/OntoExhibit#Cultural_Center
@@ -3763,7 +3851,7 @@ xsd:date rdf:type rdfs:Datatype .
 :Cultural_Institution rdf:type owl:Class ;
                       rdfs:subClassOf :Institution ;
                       <http://purl.org/dc/terms/description> "This class comprises institutions whose main role is the preservation, research, communication and exhibition of cultural productions, such as museums, art centers, foundations, libraries, and other cultural organizations."@en ;
-                      rdfs:label "Cultural Institution"@en ,
+                      rdfs:label "cultural institution"@en ,
                                  "institución cultural"@es .
 
 
@@ -3818,6 +3906,7 @@ xsd:date rdf:type rdfs:Datatype .
                                        owl:onProperty :isPreliminaryIdeasOf ;
                                        owl:allValuesFrom :Exhibition_Curatorial_Project
                                      ] ;
+                     <http://purl.org/dc/terms/description> "Curatorial Proposal designates a propositional entity that sets out a curatorial project in a preliminary, projective form. It articulates the intended concept, scope, rationale, and curatorial approach—often including aims, selection principles, thematic lines, key references, and practical constraints—so that the project can be discussed, evaluated, negotiated, or commissioned prior to its realization."@en ;
                      rdfs:label "curatorial proposal"@en ,
                                 "propuesta de comisariado"@es .
 
@@ -3833,9 +3922,11 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/OntoExhibit#Database
 :Database rdf:type owl:Class ;
           rdfs:subClassOf :Computational_Object ,
-                          :Information_Object ;
+                          :Information_Object ,
+                          :Work_Manifestation ;
           rdfs:label "base de datos"@es ,
-                     "data base"@en .
+                     "database"@en ;
+          :modelingNote "Modeling guideline: Use Database as Information_Object (and as Computational_Object when relevant) when it is modeled primarily as an informational and/or technical resource. Add typing as Work_Manifestation only when the database is modeled as a released, citable manifestation (e.g., curated edition, versioned release, DOI or equivalent publication framing, circulation and reception)."@en .
 
 
 ###  https://w3id.org/OntoExhibit#Date
@@ -3870,7 +3961,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/OntoExhibit#Digital_Place
 :Digital_Place rdf:type owl:Class ;
                rdfs:subClassOf :Techno-Place ;
-               <http://purl.org/dc/terms/description> "This class comprehends a variety of digital environments such as digital platforms, websites, virtual reality (VR) environments, augmented reality (AR) spaces, and other online interfaces where technology facilitates interaction or presentation. In OntoExhibit, “digital places” also represent the digital environments where digital cultural activities, included digital exhibitions, take place. “Digital places” may include “Digital Sites”."@en ;
+               <http://purl.org/dc/terms/description> "This class comprehends a variety of digital environments such as digital platforms, websites, virtual reality (VR) environments, augmented reality (AR) spaces, and other online interfaces where technology facilitates interaction or presentation. In OntoExhibit, “digital places” also represent the digital environments where digital cultural activities, included digital exhibitions, take place. “Digital Places” may act as “Digital Sites”."@en ;
                rdfs:label "digital place"@en ,
                           "espacio digital"@es .
 
@@ -3879,14 +3970,18 @@ xsd:date rdf:type rdfs:Datatype .
 :Digital_Platform rdf:type owl:Class ;
                   rdfs:subClassOf :Digital_Place ;
                   <http://purl.org/dc/terms/description> "The \"Digital Platform\" class represents large-scale technological infrastructures designed to host, manage, and support extensive digital interactions and activities. These platforms provide the backbone for a wide range of digital services and applications, facilitating complex operations and high-volume user engagement. Digital Platforms include large-scale social media networks, comprehensive cloud computing services, extensive content distribution networks, and other robust digital infrastructures that go beyond specific websites. In the art exhibitions domain, an example of a digital platform could be Europeana, which features a dedicated section for the presentation of digital exhibitions."@en ;
-                  rdfs:label "Digital Platform"@en ,
-                             "Plataforma Digital"@es .
+                  rdfs:label "digital platform"@en ,
+                             "plataforma digital"@es .
 
 
 ###  https://w3id.org/OntoExhibit#Digital_Site
 :Digital_Site rdf:type owl:Class ;
-              rdfs:subClassOf :Site ,
-                              :Techno-Place ;
+              owl:equivalentClass [ owl:intersectionOf ( :Digital_Place
+                                                         :Site
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
+              rdfs:subClassOf :Site ;
               <http://purl.org/dc/terms/description> "The \"Digital Site\" class represents specific, smaller-scale digital locations that are part of larger digital environments or platforms. These sites include individual web pages, subdomains, sections of websites, or specific interactive components within a broader digital platform. “Digital Sites” serve focused purposes within their larger digital contexts, such as hosting specific content -including digital exhibitions-, and facilitating targeted interactions, or providing specialized services."@en ;
               rdfs:label "digital site"@en ,
                          "sitio digital"@es .
@@ -3902,6 +3997,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/OntoExhibit#Discourse
 :Discourse rdf:type owl:Class ;
            rdfs:subClassOf :Proposition ;
+           <http://purl.org/dc/terms/description> "An articulated set of propositions that constitutes a discursive framework (conceptual, narrative, or argumentative) through which a phenomenon in the exhibition ecosystem is defined, justified, or interpreted."@en ;
            rdfs:label "discourse"@en ,
                       "discurso"@es .
 
@@ -3910,15 +4006,8 @@ xsd:date rdf:type rdfs:Datatype .
 :Dispositif rdf:type owl:Class ;
             <http://purl.org/dc/terms/description> "In OntoExhibit, the \"Dispositif\" class represents a category that encompasses entities functioning as elements for documenting exhibitions, communicating information about them, facilitating their understanding, expanding their ideas, and more. This class includes various types of dispositifs such as documentation tools, communication materials, mediation activities, interpretative aids, and expansion apparatuses. A dispositif serves to enhance engagement, comprehension, expansion, and dissemination of knowledge related to exhibitions, making it a crucial component in the art exhibition domain’s discursive and social practices. Although in OntoExhibit this class is specifically designed to codify information about exhibitions, it can also be applied to other events and objects."@en ;
             rdfs:label "dispositif"@en ,
-                       "dispositivo"@es .
-
-
-###  https://w3id.org/OntoExhibit#Documenta
-:Documenta rdf:type owl:Class ;
-           rdfs:subClassOf :Exhibition ;
-           <http://purl.org/dc/terms/description> "The \"Documenta\" class represents the recurring large-scale contemporary art exhibition that takes place every five years in Kassel, Germany. Documenta is one of the most prestigious and influential events in the art world, known for showcasing cutting-edge contemporary art and fostering critical dialogue about social, political, and cultural issues."@en ;
-           rdfs:label "documenta"@en ,
-                      "documenta"@es .
+                       "dispositivo"@es ;
+            :modelingNote "In OntoExhibit, Dispositif classes are not intended to be mutually exclusive. A single dispositif instance may be typed under multiple functional subclasses (e.g., Communication_Dispositif and Mediation_Dispositif) when it simultaneously performs more than one function in the exhibition ecosystem. Likewise, the distinction between institutional and non-institutional dispositifs is used as a provenance facet—indicating origin, authorization, or production context—rather than as an essential ontological kind, even though it is represented through subclassing for practical querying and organization. Hybrid provenance is modeled by multiple typing: the same dispositif instance may be asserted both as Institutional Dispositif and Non-Institutional Dispositif when production, authorship, or authorization is mixed or co-produced. Undetermined cases may be left unclassified."@en .
 
 
 ###  https://w3id.org/OntoExhibit#Documentation_Dispositif
@@ -3926,7 +4015,8 @@ xsd:date rdf:type rdfs:Datatype .
                           rdfs:subClassOf :Dispositif ;
                           <http://purl.org/dc/terms/description> "The \"Documentation Dispositif\" class represents propositional objects used to document or register information, data, evidences, features, etc. with the aim of recording and preserving information about something. Classes that are susceptible to be documented are events, material objects, conceptual works, and places. Various propositional objects are typically employed for these purposes, including catalogs, records, inventories, databases, and other structured documentation systems that capture, organize, and store information. Additionally, other propositional objects can also serve this purpose, such as artworks, maps, diagrams, personal photograph albums, socially-built archives, etc., although they have not been primarily conceived or designed for this end. Therefore, this class links entities with those propositional objects that document them regardless their nature, genre, or typology."@en ;
                           rdfs:label "dispositivo de documentación"@es ,
-                                     "documentation dispositif"@en .
+                                     "documentation dispositif"@en ;
+                          :modelingNote "This class is not disjoint with other dispositif types; see Dispositif modeling note."@en .
 
 
 ###  https://w3id.org/OntoExhibit#Editor
@@ -3970,7 +4060,10 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#Executive_Position
 :Executive_Position rdf:type owl:Class ;
-                    <http://purl.org/dc/terms/description> "This class represents the formal and official relationship where an individual represents an organization in a leadership or executive capacity. This class is used to capture the relationship where an individual, such as a CEO of a company, the professional association’s president, or a museum director embodies the organizational authority and is responsible for the decision-making, strategic directives and speaking on behalf of the organization."@en ;
+                    rdfs:subClassOf :professional_context ;
+                    <http://purl.org/dc/terms/description> """Executive Position is an intermediary (reified) spatio-temporal context that models the formal appointment through which an individual holds a leadership role within an organisation. It captures the fact that executive authority is institutionally defined and time-bound, enabling the association of a person, an organisation, and the relevant role or office with a specific time range (and, where applicable, with additional qualifiers such as mandate type, status, or scope of responsibility).
+
+In OntoExhibit, Executive Position covers cases in which an individual—such as a company CEO, the president of a professional association, or a museum director—embodies organisational authority and is accountable for strategic direction, decision-making, and institutional representation (including speaking on behalf of the organisation). By modelling these relations explicitly, the class supports the analysis of governance structures, institutional trajectories, and leadership networks within exhibition ecosystems."""@en ;
                     rdfs:label "executive position"@en ,
                                "puesto ejecutivo"@es .
 
@@ -4015,6 +4108,7 @@ xsd:date rdf:type rdfs:Datatype .
                                    owl:onProperty :isPreliminaryIdeasOf ;
                                    owl:allValuesFrom :Exhibition_Curatorial_Project
                                  ] ;
+                 <http://purl.org/dc/terms/description> "Exhibition Idea designates a preliminary propositional entity expressing an initial concept for an exhibition. It typically outlines a core intuition—such as a theme, question, or curatorial premise—and may include early indications of scope, potential works or materials, and intended modes of presentation. It functions as an early-stage articulation that can be developed into a curatorial proposal, refined through research and discussion, or abandoned."@en ;
                  rdfs:label "exhibition idea"@en ,
                             "idea de exposición"@es .
 
@@ -4033,7 +4127,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#Exhibitionary_Event
 :Exhibitionary_Event rdf:type owl:Class ;
-                     rdfs:subClassOf :Planned_Activity ;
+                     rdfs:subClassOf :propositional_activity ;
                      <http://purl.org/dc/terms/description> "The \"Exhibitionary Event\" class represents any event specifically organized to showcase artworks, artifacts, or cultural items to the public. These events can include art exhibitions, gallery openings, art fairs, and other similar occasions where the primary focus is the presentation and viewing of curated collections."@en ;
                      rdfs:label "evento expositivo"@es ,
                                 "exhibitionary event"@en .
@@ -4042,8 +4136,8 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/OntoExhibit#Exhibitor
 :Exhibitor rdf:type owl:Class ;
            rdfs:subClassOf :Role ;
-           <http://purl.org/dc/terms/description> "exhibitor"@en ;
-           rdfs:label "expositor"@es .
+           rdfs:label "exhibitor"@en ,
+                      "expositor"@es .
 
 
 ###  https://w3id.org/OntoExhibit#Expansion_Dispositif
@@ -4051,7 +4145,8 @@ xsd:date rdf:type rdfs:Datatype .
                       rdfs:subClassOf :Dispositif ;
                       <http://purl.org/dc/terms/description> "The \"Expansion Dispositif\" class represents propositional objects and activities used to expand the interpretation, readings, understanding, and overall comprehension of cultural activities and productions. These dispositifs include supplementary materials, interactive media, extended narratives, academic publications, discussion forums, and other materials and activities designed to deepen and broaden the audience's engagement and understanding of the cultural activities and productions. Additionally, other propositional objects and activities can also serve this purpose. Therefore, this class links cultural activities and productions with those propositional objects and activities that expand their understanding and interpretations, regardless of their nature, genre, or typology."@en ;
                       rdfs:label "dispositivo de expansión"@es ,
-                                 "expansion dispositif"@en .
+                                 "expansion dispositif"@en ;
+                      :modelingNote "This class is not disjoint with other dispositif types; see Dispositif modeling note."@en .
 
 
 ###  https://w3id.org/OntoExhibit#Fair
@@ -4151,17 +4246,11 @@ xsd:date rdf:type rdfs:Datatype .
                     "hashtag"@es .
 
 
-###  https://w3id.org/OntoExhibit#Headquarter
-:Headquarter rdf:type owl:Class ;
-             <http://purl.org/dc/terms/description> "This class represents the central operational location of a group, community or corporate body, serving as the primary place from which an organization conducts its major activities and management. This class acts as an intermediary that connects entities with their principal physical sites over specified periods. This intermediate class is of particular interest to cultural entities, such as galleries, that undergo frequent changes in location and physical addresses."@en ;
-             rdfs:label "headquarters"@en ,
-                        "sede central"@es .
-
-
 ###  https://w3id.org/OntoExhibit#Hoja_de_Sala
 :Hoja_de_Sala rdf:type owl:Class ;
               rdfs:subClassOf :Linguistic_Information_Object ;
-              rdfs:label "hoja de sala"@es .
+              rdfs:label "gallery sheet"@en ,
+                         "hoja de sala"@es .
 
 
 ###  https://w3id.org/OntoExhibit#Human_Actant
@@ -4190,6 +4279,7 @@ xsd:date rdf:type rdfs:Datatype .
 :Information_Object rdf:type owl:Class ;
                     rdfs:subClassOf :Propositional_Object ;
                     <http://purl.org/dc/terms/description> "The \"Informational Object\" class represents entities that primarily consist of data or information, designed to convey knowledge, facts, instructions, or messages. Informational Objects can include documents, digital files, databases, manuals, maps, and other forms of recorded information. They serve as vehicles for the storage, transmission, and presentation of knowledge across various mediums and formats. This class is not equivalent to the E73 Information Object class of the CIDOC-CRM model, as in this reference model, this class is considered a subclass of Conceptual Object, thereby ignoring their material conditions."@en ;
+                    rdfs:comment "Modeling note: Informational Object is used to assert an informational reading of an entity (it is treated as an information-bearing vehicle). This typing is not exclusive: the same entity may also be typed under other classes when a different modeling commitment is intended (e.g., when it is modeled as a publishable/citable manifestation). In ambiguous cases such as catalogs and databases, use Informational Object for their informational function, and add the additional typing only when the modeling explicitly addresses publication framing (edition/release/versioning), circulation, and reception."@en ;
                     rdfs:label "information object"@en ,
                                "objeto de información"@es .
 
@@ -4244,6 +4334,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/OntoExhibit#Interpretation
 :Interpretation rdf:type owl:Class ;
                 rdfs:subClassOf :Proposition ;
+                <http://purl.org/dc/terms/description> "An interpretive proposition: a statement that assigns meaning or a reading to an entity, set, or situation, potentially coexisting with alternative interpretations."@en ;
                 rdfs:label "interpretación"@es ,
                            "interpretation"@en .
 
@@ -4316,15 +4407,37 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/OntoExhibit#Literary_Work_Manifestation
 :Literary_Work_Manifestation rdf:type owl:Class ;
                              rdfs:subClassOf :Work_Manifestation ;
-                             rdfs:label "literaty work"@en ,
+                             rdfs:label "literary work"@en ,
                                         "obra literaria"@es .
 
 
 ###  https://w3id.org/OntoExhibit#Location
 :Location rdf:type owl:Class ;
-          <http://purl.org/dc/terms/description> "This class represents a physical or technological place where various types of collective actants are situated during specific periods. This class serves as an intermediary class linking collective actants, such as groups or corporate organizations, to the specific geographical territories or technoplaces where their headquarters are located. Thus, groups or corporate organizations may have two different and complementary locations. For instance, the Museo del Prado has two locations: Madrid (territorial entity) and the Museo del Prado’s website (technoplace). This class differs from the “Place of Activity” class, which represents the multiple places where an actant (individual or collective) can carry out their activities. For individual actants belonging to the Person class, the intermediary class that represents their place of location is Residency."@en ;
-          rdfs:comment "location"@en ;
-          rdfs:label "emplazamiento"@es .
+          rdfs:subClassOf :institutional_context ,
+                          [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :hasPlaceOfLocation ;
+                                                   owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                        owl:unionOf ( :Techno-Place
+                                                                                      :Territorial_Entity
+                                                                                    )
+                                                                      ]
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :hasPlaceOfLocation ;
+                                                   owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                       owl:unionOf ( :Techno-Place
+                                                                                     :Territorial_Entity
+                                                                                   )
+                                                                     ]
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
+          <http://purl.org/dc/terms/description> """Location is an intermediary (reified) spatio-temporal context that links a collective actant (e.g., a group, community, or corporate body) to the place(s) where it is situated during a specific time range. It is designed to represent organisational location as historically variable rather than as a fixed attribute, allowing multiple location records to coexist for the same entity across different periods.
+
+In OntoExhibit, Location is primarily used to connect collective actants to geographical territories or techno-digital places that function as their institutional points of presence (for example, a headquarters city and an official website or platform). This makes it possible to describe complementary forms of location—physical and techno-digital—without conflating them with broader activity geographies. In contrast to Place of Activity, which captures the distributed set of places where an actant operates professionally, Location captures where an organisation is formally situated in a given period; for individual actants, the analogous biographical construct is Residency."""@en ;
+          rdfs:label "emplazamiento"@es ,
+                     "location"@en .
 
 
 ###  https://w3id.org/OntoExhibit#Main_Topic
@@ -4354,7 +4467,8 @@ xsd:date rdf:type rdfs:Datatype .
                       rdfs:subClassOf :Dispositif ;
                       <http://purl.org/dc/terms/description> "The \"Mediation Dispositif\" class represents propositional objects and activities used to facilitate the interpretation, understanding, and engagement with cultural activities and productions. These dispositifs typically include educational materials, guided tours, interactive displays, workshops, and other structured systems or tools that mediate the relationship between the audience and the cultural activity and production. Additionally, other propositional objects and activities can also serve this purpose. Therefore, this class links cultural activities and productions with those propositional objects and activities that mediate with the audience, regardless of their nature, genre, or typology."@en ;
                       rdfs:label "dispositivo de mediación"@es ,
-                                 "mediation dispositif"@en .
+                                 "mediation dispositif"@en ;
+                      :modelingNote "This class is not disjoint with other dispositif types; see Dispositif modeling note."@en .
 
 
 ###  https://w3id.org/OntoExhibit#Meeting
@@ -4373,7 +4487,10 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#Membership
 :Membership rdf:type owl:Class ;
-            <http://purl.org/dc/terms/description> "This class represents the relationship of an individual or collective as a member within a group or corporate body. This class captures the terms and the period of membership. It is used to manage and analyze the engagement of members in collective entities and organizations. This class is broader than the membershipClass in the FOAF ontology, which restricts the possibility of acting as a membership organization to the class Group. In OntoExhibit, the class collective human actant comprises both groups and corporate bodies, which can act as membership organizations."@en ;
+            rdfs:subClassOf :professional_context ;
+            <http://purl.org/dc/terms/description> """Membership is an intermediary (reified) spatio-temporal context that models the relationship by which an individual or collective human actant participates as a member of a group or corporate body. It represents membership as historically contingent rather than permanent, allowing the association of the member and the membership organisation with a defined time range and, where relevant, with additional qualifying terms (e.g., type of membership, status, or conditions of participation). In OntoExhibit, Membership supports the analysis of institutional and collective engagement by making membership explicit, queryable, and comparable across different organisations and periods.
+
+This class is broader than foaf:membershipClass, which constrains membership organisations to instances of foaf:Group. In OntoExhibit, the category of Collective Human Actant encompasses both groups and corporate bodies, and either may function as a membership organisation; Membership therefore provides a more flexible pattern aligned with exhibition ecosystems and their heterogeneous organisational forms."""@en ;
             rdfs:label "membership"@en ,
                        "membresía"@es .
 
@@ -4428,6 +4545,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/OntoExhibit#Narrative_Structure
 :Narrative_Structure rdf:type owl:Class ;
                      rdfs:subClassOf :Organization_Schema ;
+                     <http://purl.org/dc/terms/description> "An ordering structure that organizes an intellectual work through discursive and/or narrative segmentation (e.g., chapters, sections, thematic units) and their relations. It frames how propositions are developed, distributed, or accumulated across the work’s parts."@en ;
                      rdfs:label "estructura narrativa"@es ,
                                 "narrative structure"@en .
 
@@ -4435,13 +4553,13 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/OntoExhibit#Narrative_Thematic_Unit
 :Narrative_Thematic_Unit rdf:type owl:Class ;
                          rdfs:subClassOf <https://cidoc-crm.org/cidoc-crm/7.1.1/E28_Conceptual_Object> ;
-                         rdfs:comment "las partes discursivas y/o narrativas en las que se articula una obra intelectual. Se trata de una segmentación explícita que puede desarrollar una o más proposiciones"@es ;
+                         <http://purl.org/dc/terms/description> "The discursive and/or narrative parts through which an intellectual work is articulated. This is an explicit segmentation that may develop one or more propositions."@en ;
                          rdfs:label "narrative/discursive unit"@en .
 
 
 ###  https://w3id.org/OntoExhibit#Natural_Landscape
 :Natural_Landscape rdf:type owl:Class ;
-                   rdfs:subClassOf :Physical_Site ;
+                   rdfs:subClassOf :physical_place ;
                    rdfs:label "espacio natural"@es ,
                               "natural landscape"@en .
 
@@ -4459,7 +4577,7 @@ xsd:date rdf:type rdfs:Datatype .
                                             rdfs:subClassOf :Communication_Dispositif ;
                                             <http://purl.org/dc/terms/description> "The \"Non-Institutional Communication Dispositif\" class represents unofficial materials and events used to communicate and disseminate information about cultural activities and productions. These dispositifs often include contributions from individuals, artists, independent groups, and grassroots organizations. They may reflect personal perspectives or community-driven initiatives. Examples include personal blogs, independent social media posts, artist statements, community newsletters, zines, and other forms of informal communication. The non-institutional nature of these dispositifs underscores their role in offering diverse and decentralized forms of communication within the cultural sector."@en ;
                                             rdfs:label "dispositivo de comunicación no institucional"@es ,
-                                                       "non-institucional communication dispositif"@en .
+                                                       "non-institutional communication dispositif"@en .
 
 
 ###  https://w3id.org/OntoExhibit#Non-Institutional_Documentation_Dispositif
@@ -4512,8 +4630,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/OntoExhibit#Object
 :Object rdf:type owl:Class ;
         rdfs:label "object"@en ,
-                   "objeto"@es ;
-        owl:equivalentClass "https://cidoc-crm.org/cidoc-crm/7.1.1/E70_Thing"^^xsd:anyURI .
+                   "objeto"@es .
 
 
 ###  https://w3id.org/OntoExhibit#Open_Day
@@ -4541,8 +4658,8 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#Organization_Schema
 :Organization_Schema rdf:type owl:Class ;
-                     rdfs:subClassOf owl:Thing ;
-                     <http://purl.org/dc/terms/description> "This class refers to an organized system or framework that defines the arrangement, sequence, or prioritization of elements within a set. This structure establishes rules or criteria for the positioning and relationship of items, ensuring a coherent and systematic organization."@en ;
+                     rdfs:subClassOf <https://cidoc-crm.org/cidoc-crm/7.1.1/E28_Conceptual_Object> ;
+                     <http://purl.org/dc/terms/description> "An abstract organization schema that specifies how parts, units, or elements are arranged and related within an intellectual work or exhibition-related articulation. It provides an explicit pattern of ordering (e.g., sequences, groupings, hierarchies, modules) through which content can be structured, independently of the media or dispositifs through which it may later be realized."@en ;
                      rdfs:label "estructura de ordenación"@es ,
                                 "ordering structure"@en .
 
@@ -4560,7 +4677,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#Outdoor_Area
 :Outdoor_Area rdf:type owl:Class ;
-              rdfs:subClassOf :Physical_Site ;
+              rdfs:subClassOf :physical_place ;
               rdfs:label "espacio exterior"@es ,
                          "outdoor area"@en .
 
@@ -4581,30 +4698,28 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#Physical_Site
 :Physical_Site rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( :Site
+                                                          :physical_place
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
                rdfs:subClassOf :Site ;
                <http://purl.org/dc/terms/description> "This class represents physical sites."@en ;
                rdfs:label "lugar físico"@es ,
                           "physical site"@en .
 
 
-###  https://w3id.org/OntoExhibit#Place_Of_Activity
-:Place_Of_Activity rdf:type owl:Class ;
-                   <http://purl.org/dc/terms/description> "This class refers to the place or set of places where human actants carry out activities, developing their professional careers. This class is not limited to a single location but can encompass multiple areas where an activity takes place. For example, an art gallery might operate in several cities beyond the city where its headquarter is located. \"Place of Activity\" allows for a broader range of spatial interactions and dynamics. It is particularly useful for describing scenarios where activities are dispersed or occurs in multiple locations. The set of places of activity in which an individual or collective operates constitutes their area of activity."@en ;
-                   rdfs:label "lugar de actividad"@es ,
-                              "place of activity"@en .
-
-
 ###  https://w3id.org/OntoExhibit#Place_Of_Residence
 :Place_Of_Residence rdf:type owl:Class ;
-                    <http://purl.org/dc/terms/description> "This class serves as an intermediary class that links individuals (People) to their places of residence, accommodating changes over time. It captures the dynamic nature of residential history, allowing for the tracking of different locations where a person has lived during different periods."@en ;
+                    rdfs:subClassOf :biographical_context ;
+                    <http://purl.org/dc/terms/description> "Residency is an intermediary (reified) spatio-temporal context that links a person to a place where they reside for a given time range. It is designed to represent residential history as a sequence of time-qualified relations rather than as a fixed attribute, allowing multiple residences to be recorded for the same individual across different periods. By capturing when and where a person lived, Residency supports the analysis of biographical trajectories, mobility patterns, and the spatial distribution of life contexts over time."@en ;
                     rdfs:label "residencia"@es ,
                                "residency"@en .
 
 
 ###  https://w3id.org/OntoExhibit#Planned_Activity
 :Planned_Activity rdf:type owl:Class ;
-                  rdfs:subClassOf :Activity ,
-                                  :Propositional_Entity ;
+                  rdfs:subClassOf :Activity ;
                   <http://purl.org/dc/terms/description> "The \"Planned Activity\" class represents any type of event that is systematically scheduled and organized ahead of time, often of significant interest, that takes place at a specific time and location. This includes a wide range of activities such as exhibitions, performances, lectures, workshops, openings, and other cultural or social gatherings. These activities are characterized by their temporality, purpose, and the involvement of participants or an audience. They are organized to achieve specific objectives, such as education, entertainment, community engagement, or celebration."@en ;
                   rdfs:label "actividad programada"@es ,
                              "planned activity"@en .
@@ -4624,7 +4739,7 @@ xsd:date rdf:type rdfs:Datatype .
                                   rdfs:subClassOf :Propositional_Object ;
                                   <http://purl.org/dc/terms/description> "The \"Preliminary Propositional Object\" class represents entities that capture initial ideas, drafts, sketches, and other preliminary forms of a conceptual work. These objects are characterized by their formative nature, documenting the early stages of the creative or planning process. Preliminary Propositional Objects are crucial for understanding the development and evolution of a work, as they provide insights into the creator's thought process, experimentation, and conceptual groundwork. Examples include draft manuscripts, rough sketches, conceptual diagrams, provisional reports, and brainstorming notes."@en ;
                                   rdfs:label "objeto proposicional preliminar"@es ,
-                                             "prelimiary propositional object"@en .
+                                             "preliminary propositional object"@en .
 
 
 ###  https://w3id.org/OntoExhibit#Press_Event
@@ -4687,7 +4802,8 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:subClassOf <https://cidoc-crm.org/cidoc-crm/7.1.1/E28_Conceptual_Object> ;
              <http://purl.org/dc/terms/description> "This class refers to a semantic, intellectual, or conceptual element that articulates specific ideas. It can take the form of assertions, theses, hypotheses, arguments, interpretations, among others. Propositions are inherently part of \"propositional entities.\" They can be developed through “conceptual works”, conveyed and embodied in propositional objects, and assigned to any entity."@en ;
              rdfs:label "proposición"@es ,
-                        "proposition"@en .
+                        "proposition"@en ;
+             :modelingNote "Proposition is propositional content. It is related to conceptual objects  via conveys and for propositional objects via embodies."@en .
 
 
 ###  https://w3id.org/OntoExhibit#Proposition_Assignment
@@ -4702,7 +4818,8 @@ xsd:date rdf:type rdfs:Datatype .
 :Propositional_Entity rdf:type owl:Class ;
                       <http://purl.org/dc/terms/description> "The \"Propositional Entity\" class represents any entity, whether conceptual, material, or activity-based, that conveys, embodies, or entails some form of proposition. This proposition can be intentional and explicit or implicit. Propositional Entities encompass a wide range of forms, including artworks, exhibitions, catalogs, literary works, scholarly works, performances, lectures, conferences, and other entities that communicate or represent specific meanings, concepts, or messages. These entities are characterized by their capacity to convey and embody propositional content, which may involve thesis, hypotheses, interpretations, critical discussions, etc."@en ;
                       rdfs:label "entidad proposicional"@es ,
-                                 "propositional entity"@en .
+                                 "propositional entity"@en ;
+                      :modelingNote "Propositional_Entity is used as a transversal category for entities that bear one or more propositions as their propositional content. It does not introduce a separate “kind” of thing, but marks a shared capacity across different branches of the ontology (e.g., conceptual works, preliminary ideas, propositional objects, or planned activities) to be related to Proposition."@en .
 
 
 ###  https://w3id.org/OntoExhibit#Propositional_Object
@@ -4746,7 +4863,8 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#Representation
 :Representation rdf:type owl:Class ;
-                <http://purl.org/dc/terms/description> "This class represents the formal relationship where an art gallery acts as an intermediary for an artist or a collective of artists, handling aspects such as promotion, sales, and exhibitions of artworks. This class is used to manage and analyze the professional interaction between artists and galleries."@en ;
+                rdfs:subClassOf :professional_context ;
+                <http://purl.org/dc/terms/description> "Representation is an intermediary (reified) spatio-temporal context that models the formal relationship in which an organisation—typically an art gallery—represents an artist or an artists’ collective. It captures the fact that representation is historically contingent and may change over time, enabling the association of the represented actant and the representing organisation with a specific time range (and, when relevant, with particular territories or market contexts). In OntoExhibit, Representation supports the analysis of professional networks and institutional mediation, covering activities such as promotion, market brokerage (e.g., sales), and the coordination of exhibition opportunities, without reducing these complex dynamics to a simple, timeless link between artist and gallery."@en ;
                 rdfs:label "representación"@es ,
                            "representation"@en .
 
@@ -4756,14 +4874,6 @@ xsd:date rdf:type rdfs:Datatype .
                     rdfs:subClassOf :Assistant ;
                     rdfs:label "ayudante de investigación"@es ,
                                "research assistant"@en .
-
-
-###  https://w3id.org/OntoExhibit#Review
-:Review rdf:type owl:Class ;
-        rdfs:subClassOf :Proposition ;
-        rdfs:comment "In OntoExhibit, the Critique class represents a specific type of proposition that constitutes the core content of an art review or critical work. A critique provides an evaluative or interpretative perspective on artworks and exhibitions, offering insights that reflect the author's  analysis or judgment.  This class serves to distinguish the conceptual content  from its medium or context, enabling the analysis of its role in shaping discourses around art and exhibitions."@en ;
-        rdfs:label "critique"@en ,
-                   "crítica"@es .
 
 
 ###  https://w3id.org/OntoExhibit#Role
@@ -4782,18 +4892,10 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#Scholarly_Educational_Activity
 :Scholarly_Educational_Activity rdf:type owl:Class ;
-                                rdfs:subClassOf :Planned_Activity ;
+                                rdfs:subClassOf :propositional_activity ;
                                 <http://purl.org/dc/terms/description> "The \"Academic-Educational Activity\" class represents activities designed to provide educational or scholarly value to participants. These activities are aimed at enhancing knowledge, fostering learning, and promoting academic inquiry within the context of art exhibitions and cultural events. Academic-Educational Activities include workshops, lectures, seminars, guided tours, educational programs, and other instructional sessions intended for students, educators, researchers, and the general public."@en ;
                                 rdfs:label "actividad académico-educativa"@es ,
                                            "scholarly-educational activity"@en .
-
-
-###  https://w3id.org/OntoExhibit#Secondary_Center
-:Secondary_Center rdf:type owl:Class ;
-                  rdfs:subClassOf owl:Thing ;
-                  <http://purl.org/dc/terms/description> "This class refers to a subsidiary or additional facility of an institution, distinct from its main headquarters. This center may be the place of activities related to the institution's mission, providing supplementary services, exhibitions, or resources. It usually serves as an extension of the institution, enhancing its reach and capabilities. Example: \"The Villanueva building serve as the headquarters of the Museo del Prado, whereas the Casón del Buen Retiro serves as Secondary Center.\""@en ;
-                  rdfs:label "secondary center"@en ,
-                             "sede secundaria"@es .
 
 
 ###  https://w3id.org/OntoExhibit#Seminar
@@ -4826,13 +4928,6 @@ xsd:date rdf:type rdfs:Datatype .
                                  "social digital place"@en .
 
 
-###  https://w3id.org/OntoExhibit#Social_Generated_Proposition
-:Social_Generated_Proposition rdf:type owl:Class ;
-                              rdfs:subClassOf :Proposition ;
-                              rdfs:label "comentario"@es ,
-                                         "comment"@en .
-
-
 ###  https://w3id.org/OntoExhibit#Social_Interaction
 :Social_Interaction rdf:type owl:Class ;
                     rdfs:subClassOf <https://cidoc-crm.org/cidoc-crm/7.1.1/E5_Event> ;
@@ -4851,15 +4946,10 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/OntoExhibit#Spatial_Unit
 :Spatial_Unit rdf:type owl:Class ;
-              rdfs:subClassOf :Site ;
+              rdfs:subClassOf :physical_place ;
               <http://purl.org/dc/terms/description> "Represents a specific segment or part of a larger spatial structure that serves a distinct function or holds significance within the overall environment. This class includes rooms, halls, wings, or any other designated areas within buildings, complexes, or other types of larger spaces. For example: the “Sala Noble” (spatial unit) is the spatial unit of Palacio de Villalón (Building – physical site), which is the headquarters of Museo Carmen Thyssen (Museum – cultural institution)."@en ;
               rdfs:label "spatial unit"@en ,
                          "unidad espacial"@es .
-
-
-###  https://w3id.org/OntoExhibit#State
-:State rdf:type owl:Class ;
-       rdfs:subClassOf :Territorial_Entity .
 
 
 ###  https://w3id.org/OntoExhibit#Supporter
@@ -4884,7 +4974,9 @@ xsd:date rdf:type rdfs:Datatype .
                                ] ;
                <http://purl.org/dc/terms/description> "A technological entity or digital and/or computational object that actively participates in the artistic process or in the conceptualization, design, development, presentation, or interpretation of exhibitions. It may include software, hardware, and automated systems. The incorporation of this class allows OntoExhibit to capture and analyze the integration and impact of advanced technologies, especially AI systems in their multiple modalities, providing a framework to understand how these technological entities modify and affect the realm of artistic exhibitions and curatorial projects. Unlike the Non-Human Actant class, in the context of the OntoExhibit ontology, it is considered that technological entities and computational and/or digital objects inherently enclosed a human component in their design, conceptualization, development, and execution, and therefore cannot be considered non-human entities in a strict sense. This class is included without prejudice to the fact that further discussion about the role these entities play in the field of artistic and curatorial production and creation, and their agency value (their possibilities and their limits) must be developed in the coming years."@en ;
                rdfs:label "techno-actant"@en ,
-                          "tecnoactante"@es .
+                          "tecnoactante"@es ;
+               :modelingNote "Techno-Actant is treated as a computational object and therefore as a propositional object: its modelling, rules, and operational logics embed explicit or implicit propositions that can intervene in exhibition ecologies (e.g., by producing, filtering, ordering, recommending, or moderating). Its affiliation to Actant expresses an attributed-agency facet in context—how it is referenced as participating in action—without implying personhood and without overriding its status as a produced computational object. This enables research questions such as:  “What implicit propositions about authorship, responsibility, and curatorial agency are embedded in the techno-actant used by exhibition X?” or “How do two techno-actants differ in the propositions they enact through their operational logics—e.g., what they generate, filter, rank, recommend, or moderate—and with what effects on visibility and interpretation?”."@en ;
+               :roce_facet :Actant .
 
 
 ###  https://w3id.org/OntoExhibit#Techno-Place
@@ -4893,7 +4985,9 @@ xsd:date rdf:type rdfs:Datatype .
                               :Computational_Object ;
               <http://purl.org/dc/terms/description> "Represents any virtual or digital environment that is created, enhanced, or enabled through technological means. In OntoExhibit, the techno-place class is a comprehensive class that comprises the variety of digital and/or technological spaces where the digital and/or computational activities of agents within the art exhibition domain are carried out."@en ;
               rdfs:label "techno-place"@en ,
-                         "tecnolugar"@es .
+                         "tecnolugar"@es ;
+              :modelingNote "Techno-Place is treated as a computational object and therefore as a propositional object: its design, data models, rules, affordances, and governance embed explicit or implicit propositions that shape what can appear, circulate, and be accessed. Its affiliation to Place expresses a facet of use and reference—how it functions as a locus for exhibition-related interactions and processes—without denying its objecthood or its propositional character. This enables research questions such as:  “What implicit propositions about audiences/participation are embedded in the platform used by exhibition X?” or “How do the propositions of two techno-places differ in their navigation design, permissions, and visibility regimes?”"@en ;
+              :roce_facet <https://cidoc-crm.org/cidoc-crm/7.1.1/Place> .
 
 
 ###  https://w3id.org/OntoExhibit#Technological_Corporation
@@ -4906,7 +5000,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/OntoExhibit#Territorial_Entity
 :Territorial_Entity rdf:type owl:Class ;
                     rdfs:subClassOf <https://cidoc-crm.org/cidoc-crm/7.1.1/Place> ;
-                    <http://purl.org/dc/terms/description> "This class represents any defined area distinguished by administrative or geopolitical boundaries. This class encompasses a wide range of entities from cities and municipalities to states and countries. Each instance of a Territorial Entity is characterized by its governance structures and the legal and political recognition it holds. This class is crucial for analyzing and documenting the geographical movement of agents and objects, and for analyzing the influence and interactions of various levels of governance in cultural contexts."@en ;
+                    <http://purl.org/dc/terms/description> "This class represents any defined area distinguished by administrative or geopolitical boundaries. This class encompasses a wide range of entities from cities and municipalities to states and countries. Each instance of a Territorial Entity is characterized by its governance structures and the legal and political recognition it holds. This class is crucial for analyzing and documenting the geopolitical movement of agents and objects, and for analyzing the influence and interactions of various levels of governance in cultural contexts."@en ;
                     rdfs:label "entidad territorial"@es ,
                                "territorial entity"@en .
 
@@ -4922,6 +5016,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/OntoExhibit#Thesis
 :Thesis rdf:type owl:Class ;
         rdfs:subClassOf :Proposition ;
+        <http://purl.org/dc/terms/description> "A proposition formulated as a thesis: a defendable statement that articulates a central claim or argument within critical, curatorial, scholarly, or institutional discourse."@en ;
         rdfs:label "tesis"@es ,
                    "thesis"@en .
 
@@ -4986,7 +5081,8 @@ xsd:date rdf:type rdfs:Datatype .
                               owl:allValuesFrom :Date
                             ] ;
             <http://purl.org/dc/terms/description> "The \"Vernissage\" class represents the private viewing or preview of an art exhibition, typically held before the official opening to the public. Vernissages are often exclusive events attended by invited guests such as artists, critics, collectors, and other VIPs. These events provide an opportunity for attendees to view the artworks in an intimate setting, often accompanied by speeches, performances, or social gatherings that celebrate the launch of the exhibition."@en ;
-            rdfs:label "vernissage"@en .
+            rdfs:label "vernissage"@en ,
+                       "vernissage"@es .
 
 
 ###  https://w3id.org/OntoExhibit#Visitor
@@ -5013,6 +5109,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/OntoExhibit#Visual_Organization_Schema
 :Visual_Organization_Schema rdf:type owl:Class ;
                             rdfs:subClassOf :Organization_Schema ;
+                            <http://purl.org/dc/terms/description> "An ordering structure that specifies visual and spatial patterns of arrangement (e.g., layout logics, visual hierarchies, grids, pathways, alignments, groupings) through which content is made legible or navigable. It captures the schema of visual organization independently of any particular material installation or interface."@en ;
                             rdfs:label "organización visual"@es ,
                                        "visual organization schema"@en .
 
@@ -5021,16 +5118,16 @@ xsd:date rdf:type rdfs:Datatype .
 :Web_Page rdf:type owl:Class ;
           rdfs:subClassOf :Digital_Place ,
                           :Information_Object ;
-          rdfs:label "página web"@en ,
-                     "página web"@es .
+          rdfs:label "página web"@es ,
+                     "web page"@en .
 
 
 ###  https://w3id.org/OntoExhibit#Website
 :Website rdf:type owl:Class ;
          rdfs:subClassOf :Digital_Place ;
          <http://purl.org/dc/terms/description> "The \"Website\" class represents a collection of web pages and related content identified by a common domain name and published on at least one web server. In the art exhibition domain, examples include museums' websites that host digital exhibitions and other digital resources related to exhibitions, as well as websites specifically designed for an exhibition, such as the website of the digital exhibition Iconoclash (2023)."@en ;
-         rdfs:label "Website"@en ,
-                    "Website"@es .
+         rdfs:label "website"@en ,
+                    "website"@es .
 
 
 ###  https://w3id.org/OntoExhibit#Work_Manifestation
@@ -5063,11 +5160,38 @@ xsd:date rdf:type rdfs:Datatype .
                                 "assingment critique"@en .
 
 
-###  https://w3id.org/OntoExhibit#chapter
-:chapter rdf:type owl:Class ;
-         rdfs:subClassOf :Narrative_Thematic_Unit ;
-         rdfs:label "capítulo"@es ,
-                    "chapter"@en .
+###  https://w3id.org/OntoExhibit#biographical_context
+:biographical_context rdf:type owl:Class ;
+                      rdfs:subClassOf :spatio-temporal_context ;
+                      <http://purl.org/dc/terms/description> "Biographical context is a subclass of Spatio-temporal context used to model time-qualified circumstances that shape an individual’s life history and trajectory. It groups intermediary constructs that connect a person to places, situations, or other biographical conditions while accounting for change over time (e.g., moving between residences or shifting life settings). Rather than treating such relations as fixed attributes of a person, Biographical context represents them as contextual records anchored to a defined time range, enabling the reconstruction and analysis of biographical geographies and temporal sequences."@en ;
+                      rdfs:label "biographical context"@en ,
+                                 "contexto biográfico"@es .
+
+
+###  https://w3id.org/OntoExhibit#headquarter_assignment
+:headquarter_assignment rdf:type owl:Class ;
+                        rdfs:subClassOf :institutional_center_assignment ;
+                        <http://purl.org/dc/terms/description> """Headquarter is an intermediary (reified) spatio-temporal context that links a collective actant (e.g., a group, community, or corporate body) to its principal physical operational site for a given time range. It represents headquarters information as historically contingent, allowing organisations to be associated with different main addresses or sites across successive periods rather than treating headquarters as a permanent attribute.
+
+In OntoExhibit, Headquarter is intended for cases—especially common in cultural organisations such as galleries—where the official physical base of operations changes over time. It should be distinguished from Location, which may record multiple simultaneous forms of organisational presence (including techno-digital places), and from Activity Place, which captures the wider set of places where an actant conducts activities beyond its principal site.."""@en ;
+                        rdfs:label "headquarter"@en ,
+                                   "sede central"@es .
+
+
+###  https://w3id.org/OntoExhibit#institutional_center_assignment
+:institutional_center_assignment rdf:type owl:Class ;
+                                 rdfs:subClassOf :institutional_context ;
+                                 <http://purl.org/dc/terms/description> "Is an intermediary (reified) spatio-temporal context that links a collective actant to a physical place functioning as an institutional facility within a defined time range. It captures the organisational role of a physical site (as part of an institution’s infrastructure) rather than treating the site itself as a type of institution. Instances of Institutional center support the modelling of institutions with multiple facilities and changing spatial infrastructures over time, enabling analysis of institutional footprints, expansions, relocations, and multi-site configurations."@en ;
+                                 rdfs:label "centro institucional"@es ,
+                                            "institutional center"@en .
+
+
+###  https://w3id.org/OntoExhibit#institutional_context
+:institutional_context rdf:type owl:Class ;
+                       rdfs:subClassOf :spatio-temporal_context ;
+                       <http://purl.org/dc/terms/description> "is a subclass of Spatio-temporal context that groups intermediary (reified) constructs used to describe time-qualified institutional configurations and organisational circumstances. It is intended to model historically variable institutional arrangements—such as official locations, centres, and infrastructural presences—without reducing them to timeless attributes of the organisation or to the intrinsic nature of places. In OntoExhibit, Institutional context provides a shared pattern for representing how collective actants are situated and structured across time through formal, institutionally recognised relations to physical and/or techno-digital places."@es ;
+                       rdfs:label "contexto institucional"@es ,
+                                  "institutional context"@en .
 
 
 ###  https://w3id.org/OntoExhibit#newspaper
@@ -5075,6 +5199,67 @@ xsd:date rdf:type rdfs:Datatype .
            rdfs:subClassOf :Information_Object ;
            rdfs:label "newspaper"@en ,
                       "periódico"@es .
+
+
+###  https://w3id.org/OntoExhibit#ordering_principle
+:ordering_principle rdf:type owl:Class ;
+                    rdfs:subClassOf <https://cidoc-crm.org/cidoc-crm/7.1.1/E28_Conceptual_Object> ;
+                    <http://purl.org/dc/terms/description> "Ordering Principle designates an abstract principle that governs how elements are ordered, sequenced, grouped, or prioritized in an intellectual work or exhibition-related articulation (e.g., chronological, thematic, geographic, typological, algorithmic). It expresses the logic of ordering, independently of the particular structure that realizes it."@en ;
+                    rdfs:label "ordering principle"@en ,
+                               "principio de ordenación"@es .
+
+
+###  https://w3id.org/OntoExhibit#physical_place
+:physical_place rdf:type owl:Class ;
+                rdfs:subClassOf <https://cidoc-crm.org/cidoc-crm/7.1.1/Place> ;
+                rdfs:label "espacio físico"@es ,
+                           "physical place"@en .
+
+
+###  https://w3id.org/OntoExhibit#process_locus
+:process_locus rdf:type owl:Class ;
+               rdfs:subClassOf <https://cidoc-crm.org/cidoc-crm/7.1.1/Place> ;
+               <http://purl.org/dc/terms/description> """Process Locus designates a place understood in its role as the spatial (territorial or techno-digital) locus of a process relevant to curation and/or exhibition making and its associated chains of cultural production. Rather than defining a place by its intrinsic nature (e.g., territory, building, platform), this class captures a contextual function: a place becomes a Process Locus when it is referenced as the location where specific processes occur—such as conception, curation, creation, foundation, dissolution, or destruction—within the broader ecology of exhibitions, artworks, institutions, and cultural agents.
+
+In OntoExhibit, Process Locus is introduced to make explicit the often distributed and multi-sited character of exhibition work. It enables the ontology to distinguish between the frontstage geography of display (e.g., venues/sites where exhibitions are presented) and the backstage geography of production and organization (e.g., where curatorial, creative, and institutional processes are carried out, which may be remote, outsourced, or platform-based). A single place (for instance, a city, a workshop, a museum building, or an online environment) may function as a Process Locus in some contexts and not in others; therefore, Process Locus should not be interpreted as a permanent subtype of place, but as a role inferred from its participation in process-location relations.
+
+By providing a shared conceptual handle over heterogeneous place types, Process Locus supports comparative analysis across cases (e.g., identifying off-site or techno-digital loci of conception and curation, mapping distributed production networks, and measuring degrees of spatial decoupling between production and exhibition). This makes it particularly useful for exhibition studies and curatorial research focused on infrastructures, labor, and the spatial politics of cultural production."""@en ;
+               rdfs:label "lugar de procesos"@es ,
+                          "process locus"@en .
+
+
+###  https://w3id.org/OntoExhibit#professional_context
+:professional_context rdf:type owl:Class ;
+                      rdfs:subClassOf :spatio-temporal_context ;
+                      <http://purl.org/dc/terms/description> "Professional context is a subclass of Spatio-temporal context used to model time-qualified relations through which actants participate in professional, institutional, and organisational environments. It groups intermediary constructs that connect people or collectives to places of activity, memberships, affiliations, representative roles, or executive positions, capturing how these relations evolve across time and (when relevant) across space. By reifying these links as contextual records, Professional context supports analyses of careers, networks, institutional trajectories, and the shifting infrastructures through which cultural work is organised within exhibition ecosystems."@en ;
+                      rdfs:label "contexto profesional"@es ,
+                                 "professional context"@en .
+
+
+###  https://w3id.org/OntoExhibit#propositional_activity
+:propositional_activity rdf:type owl:Class ;
+                        rdfs:subClassOf :Planned_Activity ,
+                                        :Propositional_Entity ;
+                        <http://purl.org/dc/terms/description> "Propositional Activity designates a planned activity whose defining component includes one or more propositions articulated as its propositional content. It covers activities in which statements, arguments, interpretations, or discursive framings are central to what the activity is and does, enabling them to be related to \"Proposition\" via \"conveys\" within OntoExhibit."@en ;
+                        rdfs:label "actividad proposicional"@es ,
+                                   "propositional activity"@en .
+
+
+###  https://w3id.org/OntoExhibit#secondary_center_assignment
+:secondary_center_assignment rdf:type owl:Class ;
+                             rdfs:subClassOf :institutional_center_assignment ;
+                             <http://purl.org/dc/terms/description> "This class refers to a subsidiary or additional facility of an institution, distinct from its main headquarters. This center may be the place of activities related to the institution's mission, providing supplementary services, exhibitions, or resources. It usually serves as an extension of the institution, enhancing its reach and capabilities. Example: \"The Villanueva building serve as the headquarters of the Museo del Prado, whereas the Casón del Buen Retiro serves as Secondary Center.\""@en ;
+                             rdfs:label "secondary center"@en ,
+                                        "sede secundaria"@es .
+
+
+###  https://w3id.org/OntoExhibit#spatio-temporal_context
+:spatio-temporal_context rdf:type owl:Class ;
+                         <http://purl.org/dc/terms/description> """Spatio-temporal context is a superclass for intermediary (reified) constructs that qualify relationships by explicitly attaching them to a time range and, when relevant, to a spatial setting or other contextual parameters. It is used to model situations in which a link between an actant (person, collective, institution) and an entity such as a place, an organization, a role, or a position must be expressed as historically variable rather than fixed. Instances of this class therefore function as contextual “records” that capture how a relationship holds during a specific period (and potentially in specific locations), supporting the representation of change over time (e.g., moving residence, shifting memberships, evolving professional affiliations, or relocating areas of activity).
+
+In OntoExhibit, Spatio-temporal context provides a shared modeling pattern for biographical and professional/institutional histories—such as Residency, Place of Activity, Membership, Representation, Executive Position, and Affiliation—by separating the stable entities involved (actants, places, organizations) from the time-qualified contexts that connect them. This design enables robust querying and comparative analysis of trajectories, networks, and spatial distributions across the exhibition ecosystem without conflating entities with the temporalized circumstances in which their relations are enacted."""@en ;
+                         rdfs:label "contexto espacio-temporal"@es ,
+                                    "spatio-temporal context"@en .
 
 
 ###  https://w3id.org/OntoExhibit#Foundation_(Institution)

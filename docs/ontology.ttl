@@ -20,7 +20,7 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
                                                                     "María Luisa Díez Platas" ,
                                                                     "Nuria Rodriguez Ortega" ;
                                  <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
-                                 <http://purl.org/dc/terms/modified> "2025-12-31"^^xsd:date ;
+                                 <http://purl.org/dc/terms/modified> "2026-06-22" ;
                                  <http://purl.org/dc/terms/references> "Rodríguez Ortega, Nuria & Cruces Rodríguez, Antonio (2019). “Development of Technological Ecosystems for Cultural Analysis: The Case of Expofinder System and Art Exhibitions”. Digital Scholarship in the Humanities, 34(2), 423–448. https://doi.org/10.1093/llc/fqy018" ,
                                                                        "Rodríguez Ortega, Nuria. «Contours of Knowledge: Epistemological Implications of Semantic Models in the Representation of the Art Exhibition Domain through the Lens of the OntoExhibit Ontology», Život umjetnosti, special issue (Digital Art History) (in press, 2024)." ,
                                                                        "Rodríguez Ortega, Nuria; Roldán García, M.ª Mar; Díez Platas, M.ª Luisa; Salvachúa, Martín (2023). “OntoExhibit: una ontología para el modelado del ámbito de las exposiciones artísticas y sus expansiones semántico-discursivas”. VI Congreso de la Sociedad Internacional de Humanidades Digitales Hispánicas (HDH), Encuentros y Transformaciones, UNIR, Logroño, 18–20 October 2023." ,

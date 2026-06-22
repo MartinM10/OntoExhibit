@@ -16,12 +16,12 @@
       "funder" : [ {
         "identifier" : "funder",
         "language" : "undefined",
-        "value" : "https://ciencia.sede.gob.es/",
+        "value" : "https://www.juntadeandalucia.es/",
         "type" : "label"
       }, {
         "identifier" : "funder",
         "language" : "undefined",
-        "value" : "https://www.juntadeandalucia.es/",
+        "value" : "https://ciencia.sede.gob.es/",
         "type" : "label"
       } ],
       "funding" : [ {
@@ -43,11 +43,6 @@
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Maria del Mar Roldán García",
-        "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
         "value" : "María Luisa Díez Platas",
         "type" : "label"
       }, {
@@ -55,13 +50,13 @@
         "language" : "undefined",
         "value" : "https://github.com/MartinM10",
         "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Maria del Mar Roldán García",
+        "type" : "label"
       } ],
       "references" : [ {
-        "identifier" : "references",
-        "language" : "undefined",
-        "value" : "Rodríguez-Ortega, Nuria; Romero Ferrón, Bárbara (2025). “Cartografías entrelazadas: modelar la transnacionalidad en el ecosistema expositivo español (2000–2023) mediante análisis de redes”. VI Congreso de la HDH, Ad Cognoscendum, agendum vel operandum, 22–24 October 2025, Universidad de Valencia. https://doi.org/10.7203/PUV-OA-9788491338307",
-        "type" : "label"
-      }, {
         "identifier" : "references",
         "language" : "undefined",
         "value" : "Rodríguez-Ortega, Nuria; Díez-Platas, M.ª Luisa; Ortiz Tello, María; Lumbreras Fernández, Ángel (2025). “Bridging Discourse: Integrating Text Catalogs and Art Reviews into Knowledge Graphs for Enriched Exhibition Analysis”. ADHO International Conference Digital Humanities 2025: Accessibility and Citizenship, 14–18 July 2025, Universidade Nova de Lisboa.",
@@ -79,12 +74,7 @@
       }, {
         "identifier" : "references",
         "language" : "undefined",
-        "value" : "Romero Ferrón, Bárbara; Rodríguez-Ortega, Nuria (2025). “Ni son todas las que están, ni están todas las que son: Estructuras, márgenes y mujeres artistas en el sistema expositivo andaluz”. VI Congreso de la HDH, Ad Cognoscendum, agendum vel operandum, 22–24 October 2025, Universidad de Valencia. https://doi.org/10.7203/PUV-OA-9788491338307",
-        "type" : "label"
-      }, {
-        "identifier" : "references",
-        "language" : "undefined",
-        "value" : "Rodríguez Ortega, Nuria & Cruces Rodríguez, Antonio (2019). “Development of Technological Ecosystems for Cultural Analysis: The Case of Expofinder System and Art Exhibitions”. Digital Scholarship in the Humanities, 34(2), 423–448. https://doi.org/10.1093/llc/fqy018",
+        "value" : "Rodríguez Ortega, Nuria. «Contours of Knowledge: Epistemological Implications of Semantic Models in the Representation of the Art Exhibition Domain through the Lens of the OntoExhibit Ontology», Život umjetnosti, special issue (Digital Art History) (in press, 2024).",
         "type" : "label"
       }, {
         "identifier" : "references",
@@ -94,7 +84,17 @@
       }, {
         "identifier" : "references",
         "language" : "undefined",
-        "value" : "Rodríguez Ortega, Nuria. «Contours of Knowledge: Epistemological Implications of Semantic Models in the Representation of the Art Exhibition Domain through the Lens of the OntoExhibit Ontology», Život umjetnosti, special issue (Digital Art History) (in press, 2024).",
+        "value" : "Rodríguez-Ortega, Nuria; Romero Ferrón, Bárbara (2025). “Cartografías entrelazadas: modelar la transnacionalidad en el ecosistema expositivo español (2000–2023) mediante análisis de redes”. VI Congreso de la HDH, Ad Cognoscendum, agendum vel operandum, 22–24 October 2025, Universidad de Valencia. https://doi.org/10.7203/PUV-OA-9788491338307",
+        "type" : "label"
+      }, {
+        "identifier" : "references",
+        "language" : "undefined",
+        "value" : "Romero Ferrón, Bárbara; Rodríguez-Ortega, Nuria (2025). “Ni son todas las que están, ni están todas las que son: Estructuras, márgenes y mujeres artistas en el sistema expositivo andaluz”. VI Congreso de la HDH, Ad Cognoscendum, agendum vel operandum, 22–24 October 2025, Universidad de Valencia. https://doi.org/10.7203/PUV-OA-9788491338307",
+        "type" : "label"
+      }, {
+        "identifier" : "references",
+        "language" : "undefined",
+        "value" : "Rodríguez Ortega, Nuria & Cruces Rodríguez, Antonio (2019). “Development of Technological Ecosystems for Cultural Analysis: The Case of Expofinder System and Art Exhibitions”. Digital Scholarship in the Humanities, 34(2), 423–448. https://doi.org/10.1093/llc/fqy018",
         "type" : "label"
       } ],
       "created" : [ {
@@ -133,16 +133,22 @@
         "value" : "oex",
         "type" : "label"
       } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2026-06-22",
+        "type" : "label"
+      } ],
       "logo" : [ {
         "identifier" : "logo",
         "language" : "undefined",
         "value" : "https://raw.githubusercontent.com/iArtHis-Lab/.github/refs/heads/main/resources/logo_ontoexhibit.png",
         "type" : "iri"
       } ],
-      "modified" : [ {
-        "identifier" : "modified",
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
-        "value" : "2025-12-31",
+        "value" : "https://w3id.org/OntoExhibit#",
         "type" : "label"
       } ],
       "codeRepository" : [ {
@@ -155,12 +161,6 @@
         "identifier" : "bibliographicCitation",
         "language" : "undefined",
         "value" : "Nuria Rodríguez Ortega, María del Mar Roldán García, Martín Jerónimo Salvachúa, María Luisa Díez Platas. OntoExhibit version 1.1.0. URL: https://w3id.org/OntoExhibit",
-        "type" : "label"
-      } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "https://w3id.org/OntoExhibit#",
         "type" : "label"
       } ],
       "introduction" : [ {
@@ -257,7 +257,7 @@
     "id" : "135",
     "type" : "owl:unionOf"
   }, {
-    "id" : "31",
+    "id" : "35",
     "type" : "owl:Class"
   }, {
     "id" : "59",
@@ -353,7 +353,7 @@
     "id" : "14",
     "type" : "owl:Class"
   }, {
-    "id" : "38",
+    "id" : "30",
     "type" : "owl:Class"
   }, {
     "id" : "336",
@@ -413,7 +413,7 @@
     "id" : "95",
     "type" : "owl:Class"
   }, {
-    "id" : "30",
+    "id" : "34",
     "type" : "owl:unionOf"
   }, {
     "id" : "461",
@@ -554,10 +554,10 @@
     "id" : "568",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "119",
+    "id" : "170",
     "type" : "owl:Class"
   }, {
-    "id" : "170",
+    "id" : "119",
     "type" : "owl:Class"
   }, {
     "id" : "571",
@@ -719,7 +719,7 @@
     "id" : "652",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "39",
+    "id" : "31",
     "type" : "owl:Class"
   }, {
     "id" : "75",
@@ -755,10 +755,10 @@
     "id" : "332",
     "type" : "owl:Class"
   }, {
-    "id" : "729",
+    "id" : "456",
     "type" : "owl:Class"
   }, {
-    "id" : "456",
+    "id" : "729",
     "type" : "owl:Class"
   }, {
     "id" : "64",
@@ -890,10 +890,10 @@
     "id" : "102",
     "type" : "owl:Class"
   }, {
-    "id" : "412",
+    "id" : "401",
     "type" : "owl:Class"
   }, {
-    "id" : "401",
+    "id" : "412",
     "type" : "owl:Class"
   }, {
     "id" : "223",
@@ -914,7 +914,7 @@
     "id" : "355",
     "type" : "owl:Class"
   }, {
-    "id" : "347",
+    "id" : "345",
     "type" : "owl:Class"
   }, {
     "id" : "66",
@@ -1010,10 +1010,10 @@
     "id" : "806",
     "type" : "owl:Class"
   }, {
-    "id" : "383",
+    "id" : "813",
     "type" : "owl:Class"
   }, {
-    "id" : "813",
+    "id" : "384",
     "type" : "owl:Class"
   }, {
     "id" : "599",
@@ -1088,7 +1088,7 @@
     "id" : "51",
     "type" : "owl:Class"
   }, {
-    "id" : "506",
+    "id" : "508",
     "type" : "owl:Class"
   }, {
     "id" : "689",
@@ -1449,7 +1449,7 @@
       "es" : "dispositivo"
     },
     "subClasses" : [ "139", "110", "103", "140" ],
-    "id" : "31"
+    "id" : "35"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#process_locus",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -1833,7 +1833,7 @@
       "es" : "persona"
     },
     "attributes" : [ "external" ],
-    "id" : "38",
+    "id" : "30",
     "superClasses" : [ "136" ]
   }, {
     "iri" : "https://w3id.org/OntoExhibit#Digital_Place",
@@ -1943,10 +1943,10 @@
       "en" : "digital site",
       "es" : "sitio digital"
     },
-    "intersection" : [ "383", "336" ],
+    "intersection" : [ "384", "336" ],
     "attributes" : [ "intersection" ],
     "id" : "408",
-    "superClasses" : [ "383" ]
+    "superClasses" : [ "384" ]
   }, {
     "instances" : 0,
     "union" : [ "118", "14" ],
@@ -2026,7 +2026,7 @@
     "instances" : 0,
     "union" : [ "43", "118" ],
     "attributes" : [ "anonymous", "union" ],
-    "id" : "30"
+    "id" : "34"
   }, {
     "instances" : 0,
     "union" : [ "58", "91" ],
@@ -2137,7 +2137,7 @@
     "id" : "486"
   }, {
     "instances" : 0,
-    "union" : [ "38", "317" ],
+    "union" : [ "30", "317" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "489"
   }, {
@@ -2314,7 +2314,7 @@
     "id" : "560"
   }, {
     "instances" : 0,
-    "union" : [ "38", "317" ],
+    "union" : [ "30", "317" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "561"
   }, {
@@ -2367,17 +2367,6 @@
       "IRI-based" : "string"
     }
   }, {
-    "iri" : "https://w3id.org/OntoExhibit#Artwork",
-    "baseIri" : "https://w3id.org/OntoExhibit",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Artwork",
-      "en" : "artwork",
-      "es" : "objeto artístico"
-    },
-    "id" : "119",
-    "superClasses" : [ "118" ]
-  }, {
     "iri" : "https://w3id.org/OntoExhibit#Place_Of_Residence",
     "baseIri" : "https://w3id.org/OntoExhibit",
     "instances" : 0,
@@ -2391,6 +2380,17 @@
     },
     "id" : "170",
     "superClasses" : [ "134" ]
+  }, {
+    "iri" : "https://w3id.org/OntoExhibit#Artwork",
+    "baseIri" : "https://w3id.org/OntoExhibit",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Artwork",
+      "en" : "artwork",
+      "es" : "objeto artístico"
+    },
+    "id" : "119",
+    "superClasses" : [ "118" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -2679,7 +2679,7 @@
     },
     "subClasses" : [ "495", "498" ],
     "id" : "139",
-    "superClasses" : [ "31" ]
+    "superClasses" : [ "35" ]
   }, {
     "iri" : "https://w3id.org/OntoExhibit#professional_context",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -2735,7 +2735,7 @@
       "en" : "human actant",
       "es" : "actante humano"
     },
-    "subClasses" : [ "190", "38" ],
+    "subClasses" : [ "190", "30" ],
     "id" : "136",
     "superClasses" : [ "151" ]
   }, {
@@ -2981,7 +2981,7 @@
       "es" : "muerte"
     },
     "attributes" : [ "external" ],
-    "id" : "39",
+    "id" : "31",
     "superClasses" : [ "142" ]
   }, {
     "iri" : "https://w3id.org/OntoExhibit#institutional_context",
@@ -3137,20 +3137,6 @@
     "id" : "332",
     "superClasses" : [ "42" ]
   }, {
-    "iri" : "https://w3id.org/OntoExhibit#Exact_Date",
-    "baseIri" : "https://w3id.org/OntoExhibit",
-    "instances" : 0,
-    "description" : {
-      "en" : "The \"Exact Date\" class represents a specific point in time, defined with precision by a particular calendar date."
-    },
-    "label" : {
-      "IRI-based" : "Exact_Date",
-      "en" : "exact date",
-      "es" : "fecha exacta"
-    },
-    "id" : "729",
-    "superClasses" : [ "172" ]
-  }, {
     "iri" : "https://w3id.org/OntoExhibit#Representation",
     "baseIri" : "https://w3id.org/OntoExhibit",
     "instances" : 0,
@@ -3164,6 +3150,20 @@
     },
     "id" : "456",
     "superClasses" : [ "138" ]
+  }, {
+    "iri" : "https://w3id.org/OntoExhibit#Exact_Date",
+    "baseIri" : "https://w3id.org/OntoExhibit",
+    "instances" : 0,
+    "description" : {
+      "en" : "The \"Exact Date\" class represents a specific point in time, defined with precision by a particular calendar date."
+    },
+    "label" : {
+      "IRI-based" : "Exact_Date",
+      "en" : "exact date",
+      "es" : "fecha exacta"
+    },
+    "id" : "729",
+    "superClasses" : [ "172" ]
   }, {
     "iri" : "https://w3id.org/OntoExhibit#Library",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -3668,7 +3668,7 @@
       "en" : "role",
       "es" : "rol"
     },
-    "subClasses" : [ "857", "392", "506", "858", "859", "613", "175", "483", "301", "816", "777", "533", "550", "755", "827", "347", "411", "831", "271", "207", "418", "263", "806", "467", "211", "704", "813", "552", "619", "639" ],
+    "subClasses" : [ "857", "392", "508", "858", "859", "613", "175", "483", "301", "816", "777", "533", "550", "755", "827", "345", "411", "831", "271", "207", "418", "263", "806", "467", "211", "704", "813", "552", "619", "639" ],
     "id" : "208"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#University",
@@ -3749,6 +3749,20 @@
     "id" : "102",
     "superClasses" : [ "103" ]
   }, {
+    "iri" : "https://w3id.org/OntoExhibit#Foundation",
+    "baseIri" : "https://w3id.org/OntoExhibit",
+    "instances" : 0,
+    "description" : {
+      "en" : "The \"Foundation\" class represents the act of establishing institutions, organizations, groups, or other entities. In the context of art and cultural heritage, this includes the creation of museums, galleries, art collectives, cultural institutions, and similar entities. The foundation process involves legal, administrative, and/or organizational activities necessary to formally create and sustain these entities, ensuring they can operate and achieve their missions."
+    },
+    "label" : {
+      "IRI-based" : "Foundation",
+      "en" : "foundation",
+      "es" : "fundación"
+    },
+    "id" : "401",
+    "superClasses" : [ "512" ]
+  }, {
     "iri" : "https://w3id.org/OntoExhibit#Activity",
     "baseIri" : "https://w3id.org/OntoExhibit",
     "instances" : 0,
@@ -3763,20 +3777,6 @@
     "subClasses" : [ "26", "14" ],
     "id" : "412",
     "superClasses" : [ "212" ]
-  }, {
-    "iri" : "https://w3id.org/OntoExhibit#Foundation",
-    "baseIri" : "https://w3id.org/OntoExhibit",
-    "instances" : 0,
-    "description" : {
-      "en" : "The \"Foundation\" class represents the act of establishing institutions, organizations, groups, or other entities. In the context of art and cultural heritage, this includes the creation of museums, galleries, art collectives, cultural institutions, and similar entities. The foundation process involves legal, administrative, and/or organizational activities necessary to formally create and sustain these entities, ensuring they can operate and achieve their missions."
-    },
-    "label" : {
-      "IRI-based" : "Foundation",
-      "en" : "foundation",
-      "es" : "fundación"
-    },
-    "id" : "401",
-    "superClasses" : [ "512" ]
   }, {
     "iri" : "https://w3id.org/OntoExhibit#Narrative_Structure",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -3862,7 +3862,7 @@
       "en" : "participant",
       "es" : "participante"
     },
-    "id" : "347",
+    "id" : "345",
     "superClasses" : [ "208" ]
   }, {
     "iri" : "https://w3id.org/OntoExhibit#Museum",
@@ -3969,7 +3969,7 @@
       "en" : "place",
       "es" : "lugar"
     },
-    "subClasses" : [ "59", "383", "166", "163", "605" ],
+    "subClasses" : [ "59", "384", "166", "163", "605" ],
     "comment" : {
       "en" : "Within OntoExhibit, Place functions as a general umbrella category that supports more specific, role-oriented subclasses. In particular, Site captures places in their capacity as exhibition venues (i.e., where an exhibition is presented to audiences), while Process_Locus captures places in their capacity as loci of cultural processes (e.g., where conception, curation, creation, foundation, dissolution, or destruction are situated). A given place may play none, one, or multiple such roles depending on the relationships asserted in the knowledge graph; therefore, these subclasses should not be read as fixed “types of place,” but as analytically meaningful contextualizations of place within exhibition ecosystems."
     },
@@ -4254,7 +4254,7 @@
     "instances" : 0,
     "label" : {
       "IRI-based" : "Publisher",
-      "en" : "Publisher",
+      "en" : "publisher",
       "es" : "editor (publisher)"
     },
     "id" : "271",
@@ -4296,6 +4296,17 @@
     "id" : "806",
     "superClasses" : [ "208" ]
   }, {
+    "iri" : "https://w3id.org/OntoExhibit#Museographer",
+    "baseIri" : "https://w3id.org/OntoExhibit",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Museographer",
+      "en" : "museographer",
+      "es" : "museógrafo/a"
+    },
+    "id" : "813",
+    "superClasses" : [ "208" ]
+  }, {
     "iri" : "https://w3id.org/OntoExhibit#Site",
     "baseIri" : "https://w3id.org/OntoExhibit",
     "instances" : 0,
@@ -4308,19 +4319,8 @@
       "es" : "site"
     },
     "subClasses" : [ "167", "408" ],
-    "id" : "383",
+    "id" : "384",
     "superClasses" : [ "161" ]
-  }, {
-    "iri" : "https://w3id.org/OntoExhibit#Museographer",
-    "baseIri" : "https://w3id.org/OntoExhibit",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Museographer",
-      "en" : "museographer",
-      "es" : "museógrafo/a"
-    },
-    "id" : "813",
-    "superClasses" : [ "208" ]
   }, {
     "iri" : "https://w3id.org/OntoExhibit#secondary_center_assignment",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -4406,7 +4406,7 @@
     },
     "subClasses" : [ "348", "541" ],
     "id" : "140",
-    "superClasses" : [ "31" ]
+    "superClasses" : [ "35" ]
   }, {
     "iri" : "https://w3id.org/OntoExhibit#Database",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -4591,7 +4591,7 @@
       "en" : "biological event",
       "es" : "evento biológico"
     },
-    "subClasses" : [ "180", "39" ],
+    "subClasses" : [ "180", "31" ],
     "id" : "142",
     "superClasses" : [ "43" ]
   }, {
@@ -4697,7 +4697,7 @@
       "en" : "instructor",
       "es" : "instructor/a"
     },
-    "id" : "506",
+    "id" : "508",
     "superClasses" : [ "208" ]
   }, {
     "iri" : "https://w3id.org/OntoExhibit#Visual_Identity",
@@ -4787,7 +4787,7 @@
     },
     "subClasses" : [ "102", "106" ],
     "id" : "103",
-    "superClasses" : [ "31" ]
+    "superClasses" : [ "35" ]
   }, {
     "iri" : "https://w3id.org/OntoExhibit#Communication_Dispositif",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -4810,7 +4810,7 @@
     },
     "subClasses" : [ "109", "113" ],
     "id" : "110",
-    "superClasses" : [ "31" ]
+    "superClasses" : [ "35" ]
   }, {
     "iri" : "https://w3id.org/OntoExhibit#Social_Digital_Place",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -4936,10 +4936,10 @@
       "en" : "physical site",
       "es" : "lugar físico"
     },
-    "intersection" : [ "383", "605" ],
+    "intersection" : [ "384", "605" ],
     "attributes" : [ "intersection" ],
     "id" : "167",
-    "superClasses" : [ "383" ]
+    "superClasses" : [ "384" ]
   }, {
     "iri" : "https://w3id.org/OntoExhibit#Coordinator",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -5136,7 +5136,7 @@
     "id" : "29",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "37",
+    "id" : "33",
     "type" : "owl:objectProperty"
   }, {
     "id" : "41",
@@ -5523,7 +5523,7 @@
     "id" : "382",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "385",
+    "id" : "383",
     "type" : "owl:objectProperty"
   }, {
     "id" : "386",
@@ -5577,10 +5577,10 @@
     "id" : "423",
     "type" : "owl:allValuesFrom"
   }, {
-    "id" : "426",
+    "id" : "424",
     "type" : "owl:allValuesFrom"
   }, {
-    "id" : "427",
+    "id" : "425",
     "type" : "owl:allValuesFrom"
   }, {
     "id" : "428",
@@ -5622,7 +5622,7 @@
     "id" : "455",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "345",
+    "id" : "347",
     "type" : "owl:objectProperty"
   }, {
     "id" : "464",
@@ -5697,7 +5697,7 @@
     "id" : "505",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "508",
+    "id" : "507",
     "type" : "owl:objectProperty"
   }, {
     "id" : "510",
@@ -5844,7 +5844,7 @@
     "id" : "628",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "36",
+    "id" : "40",
     "type" : "owl:objectProperty"
   }, {
     "id" : "633",
@@ -5874,10 +5874,10 @@
     "id" : "475",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "645",
+    "id" : "500",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "500",
+    "id" : "645",
     "type" : "owl:objectProperty"
   }, {
     "id" : "647",
@@ -6009,10 +6009,10 @@
     "id" : "700",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "582",
+    "id" : "701",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "701",
+    "id" : "582",
     "type" : "owl:objectProperty"
   }, {
     "id" : "702",
@@ -6066,7 +6066,7 @@
     "id" : "239",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "33",
+    "id" : "37",
     "type" : "owl:objectProperty"
   }, {
     "id" : "723",
@@ -6123,7 +6123,7 @@
     "id" : "738",
     "type" : "owl:allValuesFrom"
   }, {
-    "id" : "507",
+    "id" : "509",
     "type" : "owl:objectProperty"
   }, {
     "id" : "219",
@@ -6255,20 +6255,20 @@
     "id" : "795",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "798",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "409",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "798",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "799",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "800",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "801",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "802",
     "type" : "rdfs:SubClassOf"
@@ -6312,7 +6312,7 @@
     "id" : "819",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "509",
+    "id" : "506",
     "type" : "owl:objectProperty"
   }, {
     "id" : "740",
@@ -6378,7 +6378,7 @@
     "id" : "842",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "40",
+    "id" : "32",
     "type" : "owl:objectProperty"
   }, {
     "id" : "843",
@@ -6423,10 +6423,10 @@
     "id" : "718",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "860",
+    "id" : "554",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "554",
+    "id" : "860",
     "type" : "owl:objectProperty"
   }, {
     "id" : "862",
@@ -6477,10 +6477,10 @@
     "id" : "387",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "711",
+    "id" : "650",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "650",
+    "id" : "711",
     "type" : "owl:objectProperty"
   }, {
     "id" : "881",
@@ -6534,10 +6534,10 @@
     "id" : "620",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "896",
+    "id" : "244",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "244",
+    "id" : "896",
     "type" : "owl:objectProperty"
   }, {
     "id" : "897",
@@ -6582,7 +6582,7 @@
     "id" : "909",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "34",
+    "id" : "38",
     "type" : "owl:objectProperty"
   }, {
     "id" : "910",
@@ -6636,10 +6636,10 @@
     "id" : "907",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "260",
+    "id" : "921",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "921",
+    "id" : "260",
     "type" : "owl:objectProperty"
   }, {
     "id" : "765",
@@ -6657,10 +6657,10 @@
     "id" : "927",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "35",
+    "id" : "597",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "597",
+    "id" : "39",
     "type" : "owl:objectProperty"
   }, {
     "id" : "544",
@@ -6675,7 +6675,7 @@
     "id" : "928",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "424",
+    "id" : "426",
     "type" : "owl:objectProperty"
   }, {
     "id" : "595",
@@ -6774,7 +6774,7 @@
     "id" : "943",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "425",
+    "id" : "427",
     "type" : "owl:objectProperty"
   }, {
     "id" : "941",
@@ -6831,10 +6831,10 @@
     "id" : "722",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "865",
+    "id" : "762",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "762",
+    "id" : "865",
     "type" : "owl:objectProperty"
   }, {
     "id" : "952",
@@ -6864,10 +6864,10 @@
     "id" : "953",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "954",
+    "id" : "284",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "284",
+    "id" : "954",
     "type" : "owl:objectProperty"
   }, {
     "id" : "656",
@@ -6915,7 +6915,7 @@
     "id" : "966",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "384",
+    "id" : "385",
     "type" : "owl:objectProperty"
   }, {
     "id" : "967",
@@ -6978,10 +6978,10 @@
     "id" : "665",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "980",
+    "id" : "36",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "32",
+    "id" : "980",
     "type" : "owl:objectProperty"
   }, {
     "id" : "982",
@@ -7053,10 +7053,10 @@
     "id" : "1000",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "602",
+    "id" : "1001",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "1001",
+    "id" : "602",
     "type" : "owl:objectProperty"
   }, {
     "id" : "61",
@@ -7119,10 +7119,10 @@
     "id" : "933",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "878",
+    "id" : "1005",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "1005",
+    "id" : "878",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
@@ -7156,28 +7156,28 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "20"
   }, {
-    "iri" : "https://w3id.org/OntoExhibit#hasDispositif",
+    "iri" : "https://w3id.org/OntoExhibit#hasDeath",
     "inverse" : "32",
     "baseIri" : "https://w3id.org/OntoExhibit",
     "range" : "31",
     "label" : {
-      "IRI-based" : "hasDispositif"
+      "IRI-based" : "hasDeath"
     },
     "domain" : "30",
-    "subproperty" : [ "33", "34", "35", "36" ],
     "attributes" : [ "object" ],
     "id" : "29"
   }, {
-    "iri" : "https://w3id.org/OntoExhibit#hasDeath",
-    "inverse" : "40",
+    "iri" : "https://w3id.org/OntoExhibit#hasDispositif",
+    "inverse" : "36",
     "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "39",
+    "range" : "35",
     "label" : {
-      "IRI-based" : "hasDeath"
+      "IRI-based" : "hasDispositif"
     },
-    "domain" : "38",
+    "domain" : "34",
+    "subproperty" : [ "37", "38", "39", "40" ],
     "attributes" : [ "object" ],
-    "id" : "37"
+    "id" : "33"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#isRecordingOf",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -7310,7 +7310,7 @@
     "id" : "137"
   }, {
     "range" : "142",
-    "domain" : "39",
+    "domain" : "31",
     "attributes" : [ "anonymous", "object" ],
     "id" : "141"
   }, {
@@ -7464,7 +7464,7 @@
     "label" : {
       "IRI-based" : "hasAlmaMater"
     },
-    "domain" : "38",
+    "domain" : "30",
     "attributes" : [ "object" ],
     "id" : "187"
   }, {
@@ -7474,7 +7474,7 @@
     "id" : "189"
   }, {
     "range" : "136",
-    "domain" : "38",
+    "domain" : "30",
     "attributes" : [ "anonymous", "object" ],
     "id" : "191"
   }, {
@@ -7575,7 +7575,7 @@
   }, {
     "iri" : "https://w3id.org/OntoExhibit#isAffiliationOf",
     "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "38",
+    "range" : "30",
     "label" : {
       "IRI-based" : "isAffiliationOf"
     },
@@ -7607,7 +7607,7 @@
   }, {
     "iri" : "https://w3id.org/OntoExhibit#servesAsDispositifResourceOf",
     "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "31",
+    "range" : "35",
     "label" : {
       "IRI-based" : "servesAsDispositifResourceOf"
     },
@@ -7705,16 +7705,6 @@
     "attributes" : [ "object" ],
     "id" : "262"
   }, {
-    "iri" : "https://w3id.org/OntoExhibit#isFriendOf",
-    "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "38",
-    "label" : {
-      "IRI-based" : "isFriendOf"
-    },
-    "domain" : "38",
-    "attributes" : [ "symmetric", "object" ],
-    "id" : "264"
-  }, {
     "iri" : "https://w3id.org/OntoExhibit#hasAffiliation",
     "inverse" : "232",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -7722,8 +7712,18 @@
     "label" : {
       "IRI-based" : "hasAffiliation"
     },
-    "domain" : "38",
+    "domain" : "30",
     "attributes" : [ "object" ],
+    "id" : "264"
+  }, {
+    "iri" : "https://w3id.org/OntoExhibit#isFriendOf",
+    "baseIri" : "https://w3id.org/OntoExhibit",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "isFriendOf"
+    },
+    "domain" : "30",
+    "attributes" : [ "symmetric", "object" ],
     "id" : "265"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#isNarrativeStructureOf",
@@ -7781,12 +7781,12 @@
   }, {
     "iri" : "https://w3id.org/OntoExhibit#isMasterOf",
     "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "38",
+    "range" : "30",
     "label" : {
       "IRI-based" : "isMasterOf"
     },
     "superproperty" : [ "164" ],
-    "domain" : "38",
+    "domain" : "30",
     "attributes" : [ "object" ],
     "id" : "287"
   }, {
@@ -7991,24 +7991,24 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "343"
   }, {
-    "iri" : "https://w3id.org/OntoExhibit#isCuratorialDiscourseExpandedBy",
-    "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "144",
-    "label" : {
-      "IRI-based" : "isCuratorialDiscourseExpandedBy"
-    },
-    "superproperty" : [ "345" ],
-    "domain" : "80",
-    "attributes" : [ "object" ],
-    "id" : "344"
-  }, {
     "iri" : "https://w3id.org/OntoExhibit#isParticipantOf",
     "baseIri" : "https://w3id.org/OntoExhibit",
     "range" : "14",
     "label" : {
       "IRI-based" : "isParticipantOf"
     },
-    "domain" : "347",
+    "domain" : "345",
+    "attributes" : [ "object" ],
+    "id" : "344"
+  }, {
+    "iri" : "https://w3id.org/OntoExhibit#isCuratorialDiscourseExpandedBy",
+    "baseIri" : "https://w3id.org/OntoExhibit",
+    "range" : "144",
+    "label" : {
+      "IRI-based" : "isCuratorialDiscourseExpandedBy"
+    },
+    "superproperty" : [ "347" ],
+    "domain" : "80",
     "attributes" : [ "object" ],
     "id" : "346"
   }, {
@@ -8105,17 +8105,6 @@
     "attributes" : [ "object" ],
     "id" : "380"
   }, {
-    "iri" : "https://w3id.org/OntoExhibit#hasVenue",
-    "inverse" : "384",
-    "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "383",
-    "label" : {
-      "IRI-based" : "hasVenue"
-    },
-    "domain" : "14",
-    "attributes" : [ "object" ],
-    "id" : "382"
-  }, {
     "iri" : "https://w3id.org/OntoExhibit#hasPreliminaryPropositionalObject",
     "inverse" : "372",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -8125,7 +8114,18 @@
     },
     "domain" : "118",
     "attributes" : [ "object" ],
-    "id" : "385"
+    "id" : "382"
+  }, {
+    "iri" : "https://w3id.org/OntoExhibit#hasVenue",
+    "inverse" : "385",
+    "baseIri" : "https://w3id.org/OntoExhibit",
+    "range" : "384",
+    "label" : {
+      "IRI-based" : "hasVenue"
+    },
+    "domain" : "14",
+    "attributes" : [ "object" ],
+    "id" : "383"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#isPlaceOfDestructionOf",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -8240,15 +8240,19 @@
     "attributes" : [ "allValues", "object" ],
     "id" : "402"
   }, {
-    "iri" : "https://w3id.org/OntoExhibit#hasTimeSpan",
-    "inverse" : "200",
+    "iri" : "https://w3id.org/OntoExhibit#embodies",
+    "inverse" : "129",
     "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "169",
+    "range" : "80",
+    "description" : {
+      "en" : "Embodies relates a propositional object to a proposition when that proposition is materially instantiated in the object (physically or computationally), i.e., realized in its structure, configuration, or operation."
+    },
     "label" : {
-      "IRI-based" : "hasTimeSpan"
+      "IRI-based" : "embodies",
+      "en" : "embodies"
     },
     "domain" : "121",
-    "subproperty" : [ "376" ],
+    "subproperty" : [ "130" ],
     "attributes" : [ "allValues", "object" ],
     "id" : "404"
   }, {
@@ -8308,16 +8312,15 @@
     "attributes" : [ "object" ],
     "id" : "420"
   }, {
-    "iri" : "https://w3id.org/OntoExhibit#hasProduction",
-    "inverse" : "157",
+    "iri" : "https://w3id.org/OntoExhibit#hasTimeSpan",
+    "inverse" : "200",
     "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "91",
+    "range" : "169",
     "label" : {
-      "IRI-based" : "hasProduction"
+      "IRI-based" : "hasTimeSpan"
     },
-    "superproperty" : [ "424" ],
     "domain" : "121",
-    "subproperty" : [ "242", "425" ],
+    "subproperty" : [ "376" ],
     "attributes" : [ "allValues", "object" ],
     "id" : "423"
   }, {
@@ -8330,23 +8333,20 @@
     "superproperty" : [ "164" ],
     "domain" : "359",
     "attributes" : [ "allValues", "object" ],
-    "id" : "426"
+    "id" : "424"
   }, {
-    "iri" : "https://w3id.org/OntoExhibit#embodies",
-    "inverse" : "129",
+    "iri" : "https://w3id.org/OntoExhibit#hasProduction",
+    "inverse" : "157",
     "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "80",
-    "description" : {
-      "en" : "Embodies relates a propositional object to a proposition when that proposition is materially instantiated in the object (physically or computationally), i.e., realized in its structure, configuration, or operation."
-    },
+    "range" : "91",
     "label" : {
-      "IRI-based" : "embodies",
-      "en" : "embodies"
+      "IRI-based" : "hasProduction"
     },
+    "superproperty" : [ "426" ],
     "domain" : "121",
-    "subproperty" : [ "130" ],
+    "subproperty" : [ "242", "427" ],
     "attributes" : [ "allValues", "object" ],
-    "id" : "427"
+    "id" : "425"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#hasProduction",
     "inverse" : "157",
@@ -8355,9 +8355,9 @@
     "label" : {
       "IRI-based" : "hasProduction"
     },
-    "superproperty" : [ "424" ],
+    "superproperty" : [ "426" ],
     "domain" : "332",
-    "subproperty" : [ "242", "425" ],
+    "subproperty" : [ "242", "427" ],
     "attributes" : [ "allValues", "object" ],
     "id" : "428"
   }, {
@@ -8474,7 +8474,7 @@
     "label" : {
       "IRI-based" : "hasPlaceOfDeadth"
     },
-    "domain" : "39",
+    "domain" : "31",
     "attributes" : [ "object" ],
     "id" : "446"
   }, {
@@ -8508,9 +8508,9 @@
       "IRI-based" : "isPropositionExpandedBy"
     },
     "domain" : "3",
-    "subproperty" : [ "344" ],
+    "subproperty" : [ "346" ],
     "attributes" : [ "object" ],
-    "id" : "345"
+    "id" : "347"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#isPlaceOfResidencyOf",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -8667,9 +8667,9 @@
     "id" : "494"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#hasParticipant",
-    "inverse" : "346",
+    "inverse" : "344",
     "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "347",
+    "range" : "345",
     "label" : {
       "IRI-based" : "hasParticipant"
     },
@@ -8713,19 +8713,8 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "504"
   }, {
-    "iri" : "https://w3id.org/OntoExhibit#hasInstructor",
-    "inverse" : "507",
-    "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "506",
-    "label" : {
-      "IRI-based" : "hasInstructor"
-    },
-    "domain" : "48",
-    "attributes" : [ "object" ],
-    "id" : "505"
-  }, {
     "iri" : "https://w3id.org/OntoExhibit#hasRepresentationTimeRange",
-    "inverse" : "509",
+    "inverse" : "506",
     "baseIri" : "https://w3id.org/OntoExhibit",
     "range" : "169",
     "label" : {
@@ -8733,7 +8722,18 @@
     },
     "domain" : "456",
     "attributes" : [ "object" ],
-    "id" : "508"
+    "id" : "505"
+  }, {
+    "iri" : "https://w3id.org/OntoExhibit#hasInstructor",
+    "inverse" : "509",
+    "baseIri" : "https://w3id.org/OntoExhibit",
+    "range" : "508",
+    "label" : {
+      "IRI-based" : "hasInstructor"
+    },
+    "domain" : "48",
+    "attributes" : [ "object" ],
+    "id" : "507"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#isRelatedConceptualizationMaterialOf",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -8756,12 +8756,12 @@
     "attributes" : [ "object" ],
     "id" : "515"
   }, {
-    "range" : "383",
+    "range" : "384",
     "domain" : "167",
     "attributes" : [ "anonymous", "object" ],
     "id" : "524"
   }, {
-    "range" : "383",
+    "range" : "384",
     "domain" : "408",
     "attributes" : [ "anonymous", "object" ],
     "id" : "526"
@@ -8916,7 +8916,7 @@
     "label" : {
       "IRI-based" : "hasResidency"
     },
-    "domain" : "38",
+    "domain" : "30",
     "attributes" : [ "object" ],
     "id" : "569"
   }, {
@@ -8992,7 +8992,7 @@
       "IRI-based" : "holdsExecutivePosition"
     },
     "superproperty" : [ "164" ],
-    "domain" : "38",
+    "domain" : "30",
     "attributes" : [ "object" ],
     "id" : "590"
   }, {
@@ -9044,7 +9044,7 @@
   }, {
     "iri" : "https://w3id.org/OntoExhibit#isPlaceOfDeadthOf",
     "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "39",
+    "range" : "31",
     "label" : {
       "IRI-based" : "isPlaceOfDeadthOf"
     },
@@ -9191,7 +9191,7 @@
     "label" : {
       "IRI-based" : "hasBirth"
     },
-    "domain" : "38",
+    "domain" : "30",
     "attributes" : [ "object" ],
     "id" : "625"
   }, {
@@ -9213,10 +9213,10 @@
     "label" : {
       "IRI-based" : "hasCommunicationDispositif"
     },
-    "superproperty" : [ "29" ],
+    "superproperty" : [ "33" ],
     "domain" : "476",
     "attributes" : [ "object" ],
-    "id" : "36"
+    "id" : "40"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#isFoundationOf",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -9259,7 +9259,7 @@
       "en" : "professional activity",
       "es" : "actividad profesional"
     },
-    "domain" : "38",
+    "domain" : "30",
     "attributes" : [ "datatype" ],
     "id" : "636"
   }, {
@@ -9319,17 +9319,6 @@
     "attributes" : [ "object" ],
     "id" : "475"
   }, {
-    "iri" : "https://w3id.org/OntoExhibit#hasHeadquarters",
-    "inverse" : "646",
-    "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "585",
-    "label" : {
-      "IRI-based" : "hasHeadquarters"
-    },
-    "domain" : "190",
-    "attributes" : [ "object" ],
-    "id" : "645"
-  }, {
     "iri" : "https://w3id.org/OntoExhibit#isLocationTimeRangeOf",
     "baseIri" : "https://w3id.org/OntoExhibit",
     "range" : "74",
@@ -9340,6 +9329,17 @@
     "domain" : "169",
     "attributes" : [ "object" ],
     "id" : "500"
+  }, {
+    "iri" : "https://w3id.org/OntoExhibit#hasHeadquarters",
+    "inverse" : "646",
+    "baseIri" : "https://w3id.org/OntoExhibit",
+    "range" : "585",
+    "label" : {
+      "IRI-based" : "hasHeadquarters"
+    },
+    "domain" : "190",
+    "attributes" : [ "object" ],
+    "id" : "645"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#name",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -9419,7 +9419,7 @@
     "label" : {
       "IRI-based" : "isCommunicationDispositifOf"
     },
-    "superproperty" : [ "32" ],
+    "superproperty" : [ "36" ],
     "domain" : "110",
     "attributes" : [ "object" ],
     "id" : "632"
@@ -9430,7 +9430,7 @@
     "label" : {
       "IRI-based" : "isMediationDispositifOf"
     },
-    "superproperty" : [ "32" ],
+    "superproperty" : [ "36" ],
     "domain" : "139",
     "attributes" : [ "object" ],
     "id" : "654"
@@ -9757,16 +9757,6 @@
     "attributes" : [ "object" ],
     "id" : "700"
   }, {
-    "iri" : "https://w3id.org/OntoExhibit#isAffiliatedWith",
-    "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "269",
-    "label" : {
-      "IRI-based" : "isAffiliatedWith"
-    },
-    "domain" : "233",
-    "attributes" : [ "object" ],
-    "id" : "582"
-  }, {
     "iri" : "https://w3id.org/OntoExhibit#isAttendantOf",
     "baseIri" : "https://w3id.org/OntoExhibit",
     "range" : "14",
@@ -9776,6 +9766,16 @@
     "domain" : "552",
     "attributes" : [ "object" ],
     "id" : "701"
+  }, {
+    "iri" : "https://w3id.org/OntoExhibit#isAffiliatedWith",
+    "baseIri" : "https://w3id.org/OntoExhibit",
+    "range" : "269",
+    "label" : {
+      "IRI-based" : "isAffiliatedWith"
+    },
+    "domain" : "233",
+    "attributes" : [ "object" ],
+    "id" : "582"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#software_version",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -9885,22 +9885,10 @@
       "IRI-based" : "hasDispositifResource"
     },
     "superproperty" : [ "615" ],
-    "domain" : "31",
+    "domain" : "35",
     "subproperty" : [ "651", "718", "719", "614", "615" ],
     "attributes" : [ "object" ],
     "id" : "615"
-  }, {
-    "iri" : "https://w3id.org/OntoExhibit#hasManifestation",
-    "inverse" : "340",
-    "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "118",
-    "label" : {
-      "IRI-based" : "hasManifestation"
-    },
-    "domain" : "56",
-    "subproperty" : [ "403" ],
-    "attributes" : [ "object" ],
-    "id" : "720"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#hasPlaceOfResidency",
     "inverse" : "464",
@@ -9911,6 +9899,18 @@
     },
     "superproperty" : [ "164" ],
     "domain" : "170",
+    "attributes" : [ "object" ],
+    "id" : "720"
+  }, {
+    "iri" : "https://w3id.org/OntoExhibit#hasManifestation",
+    "inverse" : "340",
+    "baseIri" : "https://w3id.org/OntoExhibit",
+    "range" : "118",
+    "label" : {
+      "IRI-based" : "hasManifestation"
+    },
+    "domain" : "56",
+    "subproperty" : [ "403" ],
     "attributes" : [ "object" ],
     "id" : "721"
   }, {
@@ -9932,10 +9932,10 @@
     "label" : {
       "IRI-based" : "hasExpansionDispositif"
     },
-    "superproperty" : [ "29" ],
+    "superproperty" : [ "33" ],
     "domain" : "450",
     "attributes" : [ "object" ],
-    "id" : "33"
+    "id" : "37"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#hasPlaceOfActivity",
     "inverse" : "724",
@@ -10041,7 +10041,7 @@
     "label" : {
       "IRI-based" : "hasExhibition"
     },
-    "superproperty" : [ "720" ],
+    "superproperty" : [ "721" ],
     "domain" : "98",
     "attributes" : [ "object" ],
     "id" : "403"
@@ -10082,7 +10082,7 @@
     "label" : {
       "IRI-based" : "hasTimeSpan"
     },
-    "domain" : "39",
+    "domain" : "31",
     "subproperty" : [ "376" ],
     "attributes" : [ "allValues", "object" ],
     "id" : "734"
@@ -10097,7 +10097,7 @@
       "IRI-based" : "takesPlaceAt"
     },
     "superproperty" : [ "472" ],
-    "domain" : "39",
+    "domain" : "31",
     "subproperty" : [ "473", "474", "475" ],
     "attributes" : [ "allValues", "object" ],
     "id" : "735"
@@ -10140,9 +10140,9 @@
     "label" : {
       "IRI-based" : "isInstructorOf"
     },
-    "domain" : "506",
+    "domain" : "508",
     "attributes" : [ "object" ],
-    "id" : "507"
+    "id" : "509"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#propositionAssignedBy",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -10157,7 +10157,7 @@
   }, {
     "iri" : "https://w3id.org/OntoExhibit#isAlmaMaterOf",
     "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "38",
+    "range" : "30",
     "label" : {
       "IRI-based" : "isAlmaMaterOf"
     },
@@ -10198,7 +10198,7 @@
   }, {
     "iri" : "https://w3id.org/OntoExhibit#isBirthOf",
     "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "38",
+    "range" : "30",
     "label" : {
       "IRI-based" : "isBirthOf"
     },
@@ -10273,7 +10273,7 @@
     "id" : "746"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#expandsCuratorialDiscourse",
-    "inverse" : "344",
+    "inverse" : "346",
     "baseIri" : "https://w3id.org/OntoExhibit",
     "range" : "80",
     "label" : {
@@ -10360,7 +10360,7 @@
       "IRI-based" : "topObjectProperty"
     },
     "domain" : "93",
-    "subproperty" : [ "763", "398", "488", "377", "764", "765", "766", "590", "661", "721", "767", "656", "234", "665", "162", "668", "664", "168", "570", "768", "509", "600", "657", "769", "407", "770", "696", "667", "591", "598", "464", "771", "500", "772", "773", "660", "584", "774", "409", "775", "287" ],
+    "subproperty" : [ "763", "398", "488", "377", "764", "765", "766", "590", "661", "720", "767", "656", "234", "665", "162", "668", "664", "168", "570", "768", "506", "600", "657", "769", "407", "770", "696", "667", "591", "598", "464", "771", "500", "772", "773", "660", "584", "774", "409", "775", "287" ],
     "attributes" : [ "external", "object" ],
     "id" : "164"
   }, {
@@ -10518,6 +10518,17 @@
     "attributes" : [ "object" ],
     "id" : "795"
   }, {
+    "iri" : "https://w3id.org/OntoExhibit#isParentDigitalPlaceOf",
+    "baseIri" : "https://w3id.org/OntoExhibit",
+    "range" : "408",
+    "label" : {
+      "IRI-based" : "isParentDigitalPlaceOf"
+    },
+    "superproperty" : [ "164" ],
+    "domain" : "336",
+    "attributes" : [ "object" ],
+    "id" : "409"
+  }, {
     "iri" : "https://w3id.org/OntoExhibit#numberOfAttendants",
     "baseIri" : "https://w3id.org/OntoExhibit",
     "range" : "562",
@@ -10530,33 +10541,10 @@
     "attributes" : [ "datatype" ],
     "id" : "798"
   }, {
-    "iri" : "https://w3id.org/OntoExhibit#isParentDigitalPlaceOf",
-    "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "408",
-    "label" : {
-      "IRI-based" : "isParentDigitalPlaceOf"
-    },
-    "superproperty" : [ "164" ],
-    "domain" : "336",
-    "attributes" : [ "object" ],
-    "id" : "409"
-  }, {
     "range" : "208",
     "domain" : "639",
     "attributes" : [ "anonymous", "object" ],
     "id" : "799"
-  }, {
-    "iri" : "https://w3id.org/OntoExhibit#gender",
-    "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "568",
-    "label" : {
-      "IRI-based" : "gender",
-      "en" : "gender",
-      "es" : "género"
-    },
-    "domain" : "38",
-    "attributes" : [ "datatype" ],
-    "id" : "800"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#isExhibitionIdeaOf",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -10566,6 +10554,18 @@
     },
     "domain" : "362",
     "attributes" : [ "object" ],
+    "id" : "800"
+  }, {
+    "iri" : "https://w3id.org/OntoExhibit#gender",
+    "baseIri" : "https://w3id.org/OntoExhibit",
+    "range" : "568",
+    "label" : {
+      "IRI-based" : "gender",
+      "en" : "gender",
+      "es" : "género"
+    },
+    "domain" : "30",
+    "attributes" : [ "datatype" ],
     "id" : "801"
   }, {
     "range" : "268",
@@ -10671,7 +10671,7 @@
     "superproperty" : [ "164" ],
     "domain" : "169",
     "attributes" : [ "object" ],
-    "id" : "509"
+    "id" : "506"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#interpretationAssignedBy",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -10720,7 +10720,7 @@
     "id" : "826"
   }, {
     "range" : "208",
-    "domain" : "347",
+    "domain" : "345",
     "attributes" : [ "anonymous", "object" ],
     "id" : "828"
   }, {
@@ -10825,13 +10825,13 @@
   }, {
     "iri" : "https://w3id.org/OntoExhibit#isDeathOf",
     "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "38",
+    "range" : "30",
     "label" : {
       "IRI-based" : "isDeathOf"
     },
-    "domain" : "39",
+    "domain" : "31",
     "attributes" : [ "object" ],
-    "id" : "40"
+    "id" : "32"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#hasAssesmentAssigned",
     "inverse" : "700",
@@ -10857,7 +10857,7 @@
   }, {
     "iri" : "https://w3id.org/OntoExhibit#isResidencyOf",
     "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "38",
+    "range" : "30",
     "label" : {
       "IRI-based" : "isResidencyOf"
     },
@@ -10892,7 +10892,7 @@
     "id" : "852"
   }, {
     "range" : "161",
-    "domain" : "383",
+    "domain" : "384",
     "attributes" : [ "anonymous", "object" ],
     "id" : "853"
   }, {
@@ -10923,17 +10923,6 @@
     "attributes" : [ "object" ],
     "id" : "718"
   }, {
-    "iri" : "https://w3id.org/OntoExhibit#hasVisualIdentity",
-    "inverse" : "861",
-    "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "689",
-    "label" : {
-      "IRI-based" : "hasVisualIdentity"
-    },
-    "domain" : "14",
-    "attributes" : [ "object" ],
-    "id" : "860"
-  }, {
     "iri" : "https://w3id.org/OntoExhibit#isConceptionAuthorOf",
     "baseIri" : "https://w3id.org/OntoExhibit",
     "range" : "537",
@@ -10945,6 +10934,17 @@
     "subproperty" : [ "553" ],
     "attributes" : [ "object" ],
     "id" : "554"
+  }, {
+    "iri" : "https://w3id.org/OntoExhibit#hasVisualIdentity",
+    "inverse" : "861",
+    "baseIri" : "https://w3id.org/OntoExhibit",
+    "range" : "689",
+    "label" : {
+      "IRI-based" : "hasVisualIdentity"
+    },
+    "domain" : "14",
+    "attributes" : [ "object" ],
+    "id" : "860"
   }, {
     "range" : "95",
     "domain" : "460",
@@ -11061,18 +11061,6 @@
     "attributes" : [ "object" ],
     "id" : "387"
   }, {
-    "iri" : "https://w3id.org/OntoExhibit#isCuratorialDiscourseOf",
-    "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "99",
-    "label" : {
-      "IRI-based" : "isCuratorialDiscourseOf"
-    },
-    "superproperty" : [ "710" ],
-    "domain" : "80",
-    "subproperty" : [ "307" ],
-    "attributes" : [ "object" ],
-    "id" : "711"
-  }, {
     "iri" : "https://w3id.org/OntoExhibit#hasCreator",
     "inverse" : "628",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -11084,6 +11072,18 @@
     "subproperty" : [ "880", "649", "818" ],
     "attributes" : [ "object" ],
     "id" : "650"
+  }, {
+    "iri" : "https://w3id.org/OntoExhibit#isCuratorialDiscourseOf",
+    "baseIri" : "https://w3id.org/OntoExhibit",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "isCuratorialDiscourseOf"
+    },
+    "superproperty" : [ "710" ],
+    "domain" : "80",
+    "subproperty" : [ "307" ],
+    "attributes" : [ "object" ],
+    "id" : "711"
   }, {
     "range" : "354",
     "domain" : "56",
@@ -11134,7 +11134,7 @@
     "label" : {
       "IRI-based" : "hasConception"
     },
-    "superproperty" : [ "424" ],
+    "superproperty" : [ "426" ],
     "domain" : "354",
     "subproperty" : [ "176" ],
     "attributes" : [ "object" ],
@@ -11182,7 +11182,7 @@
     "label" : {
       "IRI-based" : "isDocumentationDispositifOf"
     },
-    "superproperty" : [ "32" ],
+    "superproperty" : [ "36" ],
     "domain" : "140",
     "attributes" : [ "object" ],
     "id" : "894"
@@ -11208,6 +11208,19 @@
     "attributes" : [ "object" ],
     "id" : "620"
   }, {
+    "iri" : "https://w3id.org/OntoExhibit#hasProduction",
+    "inverse" : "157",
+    "baseIri" : "https://w3id.org/OntoExhibit",
+    "range" : "227",
+    "label" : {
+      "IRI-based" : "hasProduction"
+    },
+    "superproperty" : [ "426" ],
+    "domain" : "559",
+    "subproperty" : [ "242", "427" ],
+    "attributes" : [ "object" ],
+    "id" : "244"
+  }, {
     "iri" : "https://w3id.org/OntoExhibit#isOrganizerOf",
     "baseIri" : "https://w3id.org/OntoExhibit",
     "range" : "14",
@@ -11218,19 +11231,6 @@
     "subproperty" : [ "260" ],
     "attributes" : [ "object" ],
     "id" : "896"
-  }, {
-    "iri" : "https://w3id.org/OntoExhibit#hasProduction",
-    "inverse" : "157",
-    "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "227",
-    "label" : {
-      "IRI-based" : "hasProduction"
-    },
-    "superproperty" : [ "424" ],
-    "domain" : "559",
-    "subproperty" : [ "242", "425" ],
-    "attributes" : [ "object" ],
-    "id" : "244"
   }, {
     "range" : "14",
     "domain" : "13",
@@ -11324,11 +11324,11 @@
     "iri" : "https://w3id.org/OntoExhibit#isFatherOf",
     "inverse" : "907",
     "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "38",
+    "range" : "30",
     "label" : {
       "IRI-based" : "isFatherOf"
     },
-    "domain" : "38",
+    "domain" : "30",
     "attributes" : [ "object" ],
     "id" : "906"
   }, {
@@ -11376,10 +11376,10 @@
     "label" : {
       "IRI-based" : "hasDocumentationDispositif"
     },
-    "superproperty" : [ "29" ],
+    "superproperty" : [ "33" ],
     "domain" : "451",
     "attributes" : [ "object" ],
-    "id" : "34"
+    "id" : "38"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#conveys",
     "inverse" : "895",
@@ -11529,7 +11529,7 @@
     "label" : {
       "IRI-based" : "hasFoundation"
     },
-    "superproperty" : [ "424" ],
+    "superproperty" : [ "426" ],
     "domain" : "190",
     "attributes" : [ "object" ],
     "id" : "918"
@@ -11559,24 +11559,13 @@
   }, {
     "iri" : "https://w3id.org/OntoExhibit#isSonOf",
     "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "38",
+    "range" : "30",
     "label" : {
       "IRI-based" : "isSonOf"
     },
-    "domain" : "38",
+    "domain" : "30",
     "attributes" : [ "object" ],
     "id" : "907"
-  }, {
-    "iri" : "https://w3id.org/OntoExhibit#isAuctionHouseOrganizerOf",
-    "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "258",
-    "label" : {
-      "IRI-based" : "isAuctionHouseOrganizerOf"
-    },
-    "superproperty" : [ "896" ],
-    "domain" : "259",
-    "attributes" : [ "object" ],
-    "id" : "260"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#hasConsultant",
     "inverse" : "922",
@@ -11588,6 +11577,17 @@
     "domain" : "412",
     "attributes" : [ "object" ],
     "id" : "921"
+  }, {
+    "iri" : "https://w3id.org/OntoExhibit#isAuctionHouseOrganizerOf",
+    "baseIri" : "https://w3id.org/OntoExhibit",
+    "range" : "258",
+    "label" : {
+      "IRI-based" : "isAuctionHouseOrganizerOf"
+    },
+    "superproperty" : [ "896" ],
+    "domain" : "259",
+    "attributes" : [ "object" ],
+    "id" : "260"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#isVisitorOf",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -11608,7 +11608,7 @@
       "en" : "person name",
       "es" : "nombre"
     },
-    "domain" : "38",
+    "domain" : "30",
     "attributes" : [ "datatype" ],
     "id" : "923"
   }, {
@@ -11641,21 +11641,9 @@
       "en" : "degree",
       "es" : "titulación"
     },
-    "domain" : "38",
+    "domain" : "30",
     "attributes" : [ "datatype" ],
     "id" : "927"
-  }, {
-    "iri" : "https://w3id.org/OntoExhibit#hasMediationDispositif",
-    "inverse" : "654",
-    "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "139",
-    "label" : {
-      "IRI-based" : "hasMediationDispositif"
-    },
-    "superproperty" : [ "29" ],
-    "domain" : "452",
-    "attributes" : [ "object" ],
-    "id" : "35"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#isReenactmentOf",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -11664,8 +11652,20 @@
       "IRI-based" : "isReenactmentOf"
     },
     "domain" : "121",
-    "attributes" : [ "asymmetric", "object" ],
+    "attributes" : [ "object", "asymmetric" ],
     "id" : "597"
+  }, {
+    "iri" : "https://w3id.org/OntoExhibit#hasMediationDispositif",
+    "inverse" : "654",
+    "baseIri" : "https://w3id.org/OntoExhibit",
+    "range" : "139",
+    "label" : {
+      "IRI-based" : "hasMediationDispositif"
+    },
+    "superproperty" : [ "33" ],
+    "domain" : "452",
+    "attributes" : [ "object" ],
+    "id" : "39"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#isRoleOf",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -11727,7 +11727,7 @@
     "domain" : "462",
     "subproperty" : [ "178", "929", "918", "244" ],
     "attributes" : [ "object" ],
-    "id" : "424"
+    "id" : "426"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#isDisplayedAt",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -11764,11 +11764,11 @@
     "iri" : "https://w3id.org/OntoExhibit#isDaugtherOf",
     "inverse" : "931",
     "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "38",
+    "range" : "30",
     "label" : {
       "IRI-based" : "isDaugtherOf"
     },
-    "domain" : "38",
+    "domain" : "30",
     "attributes" : [ "object" ],
     "id" : "930"
   }, {
@@ -11904,7 +11904,7 @@
     "id" : "770"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#expandsProposition",
-    "inverse" : "345",
+    "inverse" : "347",
     "baseIri" : "https://w3id.org/OntoExhibit",
     "range" : "3",
     "label" : {
@@ -12101,7 +12101,7 @@
     "superproperty" : [ "244" ],
     "domain" : "156",
     "attributes" : [ "object" ],
-    "id" : "425"
+    "id" : "427"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#isLecturerOf",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -12127,12 +12127,12 @@
     "iri" : "https://w3id.org/OntoExhibit#isDiscipleOf",
     "inverse" : "287",
     "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "38",
+    "range" : "30",
     "label" : {
       "IRI-based" : "isDiscipleOf"
     },
     "superproperty" : [ "164" ],
-    "domain" : "38",
+    "domain" : "30",
     "attributes" : [ "object" ],
     "id" : "766"
   }, {
@@ -12204,7 +12204,7 @@
   }, {
     "iri" : "https://w3id.org/OntoExhibit#isExecutivePositionOf",
     "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "38",
+    "range" : "30",
     "label" : {
       "IRI-based" : "isExecutivePositionOf"
     },
@@ -12247,7 +12247,7 @@
     "id" : "945"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#isBasedOnExhibitionIdea",
-    "inverse" : "801",
+    "inverse" : "800",
     "baseIri" : "https://w3id.org/OntoExhibit",
     "range" : "362",
     "label" : {
@@ -12301,20 +12301,10 @@
     "label" : {
       "IRI-based" : "isExpansionDispositifOf"
     },
-    "superproperty" : [ "32" ],
+    "superproperty" : [ "36" ],
     "domain" : "103",
     "attributes" : [ "object" ],
     "id" : "722"
-  }, {
-    "iri" : "https://w3id.org/OntoExhibit#isCelebratedThemeOf",
-    "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "329",
-    "label" : {
-      "IRI-based" : "isCelebratedThemeOf"
-    },
-    "domain" : "353",
-    "attributes" : [ "object" ],
-    "id" : "865"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#isSourceOfInformationOf",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -12325,6 +12315,16 @@
     "domain" : "586",
     "attributes" : [ "object" ],
     "id" : "762"
+  }, {
+    "iri" : "https://w3id.org/OntoExhibit#isCelebratedThemeOf",
+    "baseIri" : "https://w3id.org/OntoExhibit",
+    "range" : "329",
+    "label" : {
+      "IRI-based" : "isCelebratedThemeOf"
+    },
+    "domain" : "353",
+    "attributes" : [ "object" ],
+    "id" : "865"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#hasOrderingPrinciple",
     "inverse" : "230",
@@ -12353,11 +12353,11 @@
     "iri" : "https://w3id.org/OntoExhibit#isMotherOf",
     "inverse" : "907",
     "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "38",
+    "range" : "30",
     "label" : {
       "IRI-based" : "isMotherOf"
     },
-    "domain" : "38",
+    "domain" : "30",
     "attributes" : [ "object" ],
     "id" : "931"
   }, {
@@ -12431,6 +12431,17 @@
     "attributes" : [ "datatype" ],
     "id" : "953"
   }, {
+    "iri" : "https://w3id.org/OntoExhibit#isThemeOf",
+    "baseIri" : "https://w3id.org/OntoExhibit",
+    "range" : "144",
+    "label" : {
+      "IRI-based" : "isThemeOf"
+    },
+    "domain" : "353",
+    "subproperty" : [ "515", "282" ],
+    "attributes" : [ "object" ],
+    "id" : "284"
+  }, {
     "iri" : "https://w3id.org/OntoExhibit#hasInterpretationAssigned",
     "inverse" : "746",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -12442,17 +12453,6 @@
     "domain" : "209",
     "attributes" : [ "object" ],
     "id" : "954"
-  }, {
-    "iri" : "https://w3id.org/OntoExhibit#isThemeOf",
-    "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "144",
-    "label" : {
-      "IRI-based" : "isThemeOf"
-    },
-    "domain" : "353",
-    "subproperty" : [ "515", "282" ],
-    "attributes" : [ "object" ],
-    "id" : "284"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#isPreliminaryIdeasOf",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -12492,7 +12492,7 @@
     "id" : "957"
   }, {
     "range" : "208",
-    "domain" : "506",
+    "domain" : "508",
     "attributes" : [ "anonymous", "object" ],
     "id" : "958"
   }, {
@@ -12559,9 +12559,9 @@
     "label" : {
       "IRI-based" : "isVenueOf"
     },
-    "domain" : "383",
+    "domain" : "384",
     "attributes" : [ "object" ],
-    "id" : "384"
+    "id" : "385"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#isHeadquarteredAt",
     "inverse" : "916",
@@ -12599,22 +12599,22 @@
     "id" : "880"
   }, {
     "range" : "43",
-    "domain" : "212",
+    "domain" : "213",
     "attributes" : [ "anonymous", "object" ],
     "id" : "968"
   }, {
     "range" : "43",
-    "domain" : "142",
+    "domain" : "214",
     "attributes" : [ "anonymous", "object" ],
     "id" : "969"
   }, {
     "range" : "43",
-    "domain" : "213",
+    "domain" : "215",
     "attributes" : [ "anonymous", "object" ],
     "id" : "970"
   }, {
-    "range" : "43",
-    "domain" : "214",
+    "range" : "26",
+    "domain" : "25",
     "attributes" : [ "anonymous", "object" ],
     "id" : "971"
   }, {
@@ -12628,8 +12628,8 @@
     "attributes" : [ "object" ],
     "id" : "390"
   }, {
-    "range" : "43",
-    "domain" : "215",
+    "range" : "26",
+    "domain" : "511",
     "attributes" : [ "anonymous", "object" ],
     "id" : "972"
   }, {
@@ -12665,13 +12665,13 @@
     "attributes" : [ "object" ],
     "id" : "763"
   }, {
-    "range" : "26",
-    "domain" : "25",
+    "range" : "43",
+    "domain" : "212",
     "attributes" : [ "anonymous", "object" ],
     "id" : "977"
   }, {
-    "range" : "26",
-    "domain" : "511",
+    "range" : "43",
+    "domain" : "142",
     "attributes" : [ "anonymous", "object" ],
     "id" : "978"
   }, {
@@ -12720,6 +12720,17 @@
     "attributes" : [ "object" ],
     "id" : "665"
   }, {
+    "iri" : "https://w3id.org/OntoExhibit#isDispositifOf",
+    "baseIri" : "https://w3id.org/OntoExhibit",
+    "range" : "519",
+    "label" : {
+      "IRI-based" : "isDispositifOf"
+    },
+    "domain" : "35",
+    "subproperty" : [ "722", "654", "894", "632" ],
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
     "iri" : "https://w3id.org/OntoExhibit#comprisesProposition",
     "inverse" : "981",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -12731,28 +12742,17 @@
     "attributes" : [ "object" ],
     "id" : "980"
   }, {
-    "iri" : "https://w3id.org/OntoExhibit#isDispositifOf",
-    "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "519",
-    "label" : {
-      "IRI-based" : "isDispositifOf"
-    },
-    "domain" : "31",
-    "subproperty" : [ "722", "654", "894", "632" ],
-    "attributes" : [ "object" ],
-    "id" : "32"
-  }, {
-    "range" : "31",
+    "range" : "35",
     "domain" : "110",
     "attributes" : [ "anonymous", "object" ],
     "id" : "982"
   }, {
-    "range" : "31",
+    "range" : "35",
     "domain" : "103",
     "attributes" : [ "anonymous", "object" ],
     "id" : "983"
   }, {
-    "range" : "31",
+    "range" : "35",
     "domain" : "140",
     "attributes" : [ "anonymous", "object" ],
     "id" : "984"
@@ -12803,7 +12803,7 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "991"
   }, {
-    "range" : "31",
+    "range" : "35",
     "domain" : "139",
     "attributes" : [ "anonymous", "object" ],
     "id" : "992"
@@ -12885,16 +12885,6 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "1000"
   }, {
-    "iri" : "https://w3id.org/OntoExhibit#isCommemoratedBy",
-    "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "329",
-    "label" : {
-      "IRI-based" : "isCommemoratedBy"
-    },
-    "domain" : "43",
-    "attributes" : [ "object" ],
-    "id" : "602"
-  }, {
     "iri" : "https://w3id.org/OntoExhibit#hostsPropositionalObject",
     "inverse" : "589",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -12905,6 +12895,16 @@
     "domain" : "163",
     "attributes" : [ "object" ],
     "id" : "1001"
+  }, {
+    "iri" : "https://w3id.org/OntoExhibit#isCommemoratedBy",
+    "baseIri" : "https://w3id.org/OntoExhibit",
+    "range" : "329",
+    "label" : {
+      "IRI-based" : "isCommemoratedBy"
+    },
+    "domain" : "43",
+    "attributes" : [ "object" ],
+    "id" : "602"
   }, {
     "iri" : "https://w3id.org/OntoExhibit#hasPlaceOfConception",
     "inverse" : "948",
@@ -13064,7 +13064,7 @@
     "label" : {
       "IRI-based" : "hasComputationalDevelopment"
     },
-    "superproperty" : [ "424" ],
+    "superproperty" : [ "426" ],
     "domain" : "332",
     "attributes" : [ "object" ],
     "id" : "929"
@@ -13133,17 +13133,6 @@
     "attributes" : [ "object" ],
     "id" : "933"
   }, {
-    "iri" : "https://w3id.org/OntoExhibit#isSpatialLocusOf",
-    "baseIri" : "https://w3id.org/OntoExhibit",
-    "range" : "43",
-    "label" : {
-      "IRI-based" : "isSpatialLocusOf"
-    },
-    "domain" : "161",
-    "subproperty" : [ "387" ],
-    "attributes" : [ "object" ],
-    "id" : "878"
-  }, {
     "iri" : "https://w3id.org/OntoExhibit#hasClosing",
     "inverse" : "725",
     "baseIri" : "https://w3id.org/OntoExhibit",
@@ -13154,5 +13143,16 @@
     "domain" : "14",
     "attributes" : [ "object" ],
     "id" : "1005"
+  }, {
+    "iri" : "https://w3id.org/OntoExhibit#isSpatialLocusOf",
+    "baseIri" : "https://w3id.org/OntoExhibit",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "isSpatialLocusOf"
+    },
+    "domain" : "161",
+    "subproperty" : [ "387" ],
+    "attributes" : [ "object" ],
+    "id" : "878"
   } ]
 }

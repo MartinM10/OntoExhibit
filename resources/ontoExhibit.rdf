@@ -10,7 +10,8 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:vocab="https://w3id.org/widoco/vocab#"
      xmlns:schema="https://schema.org/"
-     xmlns:dcterms="http://purl.org/dc/terms/">
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:schema1="http://schema.org/">
     <owl:Ontology rdf:about="https://w3id.org/OntoExhibit#">
         <owl:versionIRI rdf:resource="https://w3id.org/OntoExhibit/1.1.0"/>
         <dcterms:abstract xml:lang="en">OntoExhibit is the result of transforming and extending the conceptual model underlying Expofinder, a relational database developed within the Exhibitium project (Rodríguez-Ortega, Cruces-Rodríguez, 2019). The Expofinder model adheres to the traditional conception of the exhibition field: a network made up of the relationships that exhibitions establish among heterogeneous actors (artists, curators, institutions, etc.) and the cultural objects displayed. This model served as the starting point for the design and construction of the OntoExhibit model, which is an enhanced version born out of a refined conceptualization of the exhibition field. This development was informed by extensive conversations and dialogues with a diverse community of researchers, curators, gallery owners, and art critics.
@@ -22,15 +23,15 @@ According to this conceptualization, OntoExhibit aims to deepen our understandin
         <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-11</dcterms:created>
         <dcterms:creator rdf:resource="https://github.com/MartinM10"/>
         <dcterms:creator>Maria del Mar Roldán García</dcterms:creator>
-		<dcterms:creator>María Luisa Díez Platas</dcterms:creator>															
+        <dcterms:creator>María Luisa Díez Platas</dcterms:creator>
         <dcterms:creator>Nuria Rodriguez Ortega</dcterms:creator>
         <dcterms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://creativecommons.org/licenses/by/4.0/</dcterms:license>
-        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-31</dcterms:modified>
-		<dcterms:references>Rodríguez Ortega, Nuria &amp; Cruces Rodríguez, Antonio (2019). “Development of Technological Ecosystems for Cultural Analysis: The Case of Expofinder System and Art Exhibitions”. Digital Scholarship in the Humanities, 34(2), 423–448. https://doi.org/10.1093/llc/fqy018</dcterms:references>
+        <dcterms:modified>2026-06-22</dcterms:modified>
+        <dcterms:references>Rodríguez Ortega, Nuria &amp; Cruces Rodríguez, Antonio (2019). “Development of Technological Ecosystems for Cultural Analysis: The Case of Expofinder System and Art Exhibitions”. Digital Scholarship in the Humanities, 34(2), 423–448. https://doi.org/10.1093/llc/fqy018</dcterms:references>
+        <dcterms:references>Rodríguez Ortega, Nuria. «Contours of Knowledge: Epistemological Implications of Semantic Models in the Representation of the Art Exhibition Domain through the Lens of the OntoExhibit Ontology», Život umjetnosti, special issue (Digital Art History) (in press, 2024).</dcterms:references>
         <dcterms:references>Rodríguez Ortega, Nuria; Roldán García, M.ª Mar; Díez Platas, M.ª Luisa; Salvachúa, Martín (2023). “OntoExhibit: una ontología para el modelado del ámbito de las exposiciones artísticas y sus expansiones semántico-discursivas”. VI Congreso de la Sociedad Internacional de Humanidades Digitales Hispánicas (HDH), Encuentros y Transformaciones, UNIR, Logroño, 18–20 October 2023.</dcterms:references>
         <dcterms:references>Rodríguez Ortega, Nuria; Roldán García, M.ª Mar; Díez Platas, M.ª Luisa; Salvachúa, Martín (2024). “OntoExhibit: An Ontology for Modeling the Field of Art Exhibitions and Its Semantic-Discursive Dimension”. In: Karajgikar, Jajwalya; Janco, Andrew; Otis, Jessica (eds.), Digital Humanities 2024: Book of Abstracts, VA 2024. https://doi.org/10.5281/zenodo.13761079</dcterms:references>
-        <dcterms:references>Rodríguez Ortega, Nuria. «Contours of Knowledge: Epistemological Implications of Semantic Models in the Representation of the Art Exhibition Domain through the Lens of the OntoExhibit Ontology», Život umjetnosti, special issue (Digital Art History) (in press, 2024).</dcterms:references>
-		<dcterms:references>Rodríguez-Ortega, Nuria; Díez-Platas, M.ª Luisa; Ortiz Tello, María; Lumbreras Fernández, Ángel (2025). “Bridging Discourse: Integrating Text Catalogs and Art Reviews into Knowledge Graphs for Enriched Exhibition Analysis”. ADHO International Conference Digital Humanities 2025: Accessibility and Citizenship, 14–18 July 2025, Universidade Nova de Lisboa.</dcterms:references>
+        <dcterms:references>Rodríguez-Ortega, Nuria; Díez-Platas, M.ª Luisa; Ortiz Tello, María; Lumbreras Fernández, Ángel (2025). “Bridging Discourse: Integrating Text Catalogs and Art Reviews into Knowledge Graphs for Enriched Exhibition Analysis”. ADHO International Conference Digital Humanities 2025: Accessibility and Citizenship, 14–18 July 2025, Universidade Nova de Lisboa.</dcterms:references>
         <dcterms:references>Rodríguez-Ortega, Nuria; Romero Ferrón, Bárbara (2025). “Cartografías entrelazadas: modelar la transnacionalidad en el ecosistema expositivo español (2000–2023) mediante análisis de redes”. VI Congreso de la HDH, Ad Cognoscendum, agendum vel operandum, 22–24 October 2025, Universidad de Valencia. https://doi.org/10.7203/PUV-OA-9788491338307</dcterms:references>
         <dcterms:references>Rodríguez-Ortega, Nuria; Romero Ferrón, Bárbara; Salvachúa, Martín (2025). “Empowering Peripheral Voices: Data Sovereignty and Low-Tech Solutions for Art Galleries Data Preservation”. ADHO International Conference Digital Humanities 2025: Accessibility and Citizenship, 14–18 July 2025, Universidade Nova de Lisboa.</dcterms:references>
         <dcterms:references>Romero Ferrón, Bárbara; Rodríguez-Ortega, Nuria (2025). “Ni son todas las que están, ni están todas las que son: Estructuras, márgenes y mujeres artistas en el sistema expositivo andaluz”. VI Congreso de la HDH, Ad Cognoscendum, agendum vel operandum, 22–24 October 2025, Universidad de Valencia. https://doi.org/10.7203/PUV-OA-9788491338307</dcterms:references>
@@ -4690,9 +4691,9 @@ Online activities may use takesPlaceAt to indicate the relevant techno-place (e.
 
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
-    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
         <owl:equivalentClass rdf:resource="https://w3id.org/OntoExhibit#ordering_principle"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -7592,4 +7593,5 @@ In OntoExhibit, Spatio-temporal context provides a shared modeling pattern for b
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
